@@ -26,12 +26,12 @@ defineProps({
         link: "https://twitter.com/creativetim"
       },
       {
-        icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://dribbble.com/creativetim"
+        icon: '<i class="fab fa-instagram text-lg opacity-8"></i>',
+        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
       },
       {
-        icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial"
+        icon: '<i class="fab fa-whatsapp text-lg opacity-8"></i>',
+        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w"
       },
       {
         icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
@@ -49,7 +49,7 @@ defineProps({
     },
     default: () => [
       {
-        name: "company",
+        name: "Company",
         items: [
           {
             name: "about us",
@@ -59,15 +59,11 @@ defineProps({
             name: "freebies",
             href: "https://www.creative-tim.com/templates/free"
           },
-          {
-            name: "premium tools",
-            href: "https://www.creative-tim.com/templates/premium"
-          },
-          { name: "blog", href: "https://www.creative-tim.com/blog" }
+          { name: "Blog", href: "https://www.creative-tim.com/blog" }
         ]
       },
       {
-        name: "resources",
+        name: "Resources",
         items: [
           { name: "illustrations", href: "https://iradesign.io/" },
           {
@@ -81,7 +77,7 @@ defineProps({
         ]
       },
       {
-        name: "help & support",
+        name: "Help & Support",
         items: [
           {
             name: "contact us",
@@ -102,7 +98,7 @@ defineProps({
         ]
       },
       {
-        name: "legal",
+        name: "Qualitifies & Legals",
         items: [
           {
             name: "terms & conditions",
@@ -111,10 +107,6 @@ defineProps({
           {
             name: "privacy policy",
             href: "https://www.creative-tim.com/privacy"
-          },
-          {
-            name: "licenses (EULA)",
-            href: "https://www.creative-tim.com/license"
           }
         ]
       }
@@ -122,11 +114,12 @@ defineProps({
   }
 });
 </script>
+
 <template>
-  <footer class="footer pt-5 mt-5">
+  <footer class="footer pt-5 mt-5" id="color">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-4 ms-auto">
+        <div class="col-md-4 mb-4 ms-auto">
           <div>
             <a :href="brand.route">
               <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
@@ -152,7 +145,7 @@ defineProps({
           </div>
         </div>
         <div
-          class="col-md-2 col-sm-6 col-6 mb-4"
+          class="col-md-2 col-sm-5 col-6 mb-4"
           v-for="{ name, items } of menus"
           :key="name"
         >
@@ -171,10 +164,6 @@ defineProps({
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
-              Material Kit by
-              <a href="https://www.creative-tim.com" target="_blank"
-                >Creative Tim</a
-              >.
             </p>
           </div>
         </div>
@@ -182,3 +171,9 @@ defineProps({
     </div>
   </footer>
 </template>
+
+<style>
+ /* #color {
+  background-color: red;
+ } */
+</style>

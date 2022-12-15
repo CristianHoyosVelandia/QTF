@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
+// Contactanos
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
+import ContatanosView from "../views/LandingPages/ContactUs/ContactanosView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
+
+//Materias Primas
+import MateriasPrimasView from "../views/LandingPages/AboutUs/MateriasPrimasView.vue";
+import ajimashJalaPeñoRojoMash from "../views/LandingPages/AboutUs/TipodeAjis/ajimashJalaPeñoRojoMash.vue";
+//Procesos
+import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.vue";
+
+
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
@@ -23,6 +33,9 @@ import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vu
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
+import RecetasView from '../views/Recetas/RecetasView.vue';
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -31,6 +44,30 @@ const router = createRouter({
       name: "presentation",
       component: PresentationView,
     },
+    // PATHS PAGES
+    {
+      path: "/recetas",
+      name: "recetas",
+      component: RecetasView,
+    },
+    {
+      path: "/nuestroProceso-QFT",
+      name: "procesosFab",
+      component: ProcesosFab,
+    },
+
+    {
+      path: "/materias-primas-QFT",
+      name: "Materias",
+      component: MateriasPrimasView,
+    },
+    {
+      path: "/nuestrosAjisJRM-QFT",
+      name: "ajimashJalaPeñoRojoMash",
+      component: ajimashJalaPeñoRojoMash,
+    },
+    
+    // END PATH PAGEs
     {
       path: "/pages/landing-pages/about-us",
       name: "about",
@@ -40,6 +77,12 @@ const router = createRouter({
       path: "/pages/landing-pages/contact-us",
       name: "contactus",
       component: ContactView,
+    },
+
+    {
+      path: "/contacto-QFT",
+      name: "contactanos",
+      component: ContatanosView,
     },
     {
       path: "/pages/landing-pages/author",

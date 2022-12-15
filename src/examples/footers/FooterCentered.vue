@@ -17,10 +17,10 @@ defineProps({
         icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
         link: "https://dribbble.com/creativetim",
       },
-      {
-        icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial",
-      },
+      // {
+      //   icon: '<i class="fab fa-github text-lg opacity-8"></i>',
+      //   link: "https://github.com/creativetimofficial",
+      // },
       {
         icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
         link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",

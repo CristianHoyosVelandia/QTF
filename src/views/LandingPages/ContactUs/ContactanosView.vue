@@ -6,7 +6,9 @@ import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
-import image from "@/assets/img/illustrations/illustration-signin.jpg";
+// import image from "@/assets/img/illustrations/illustration-signin.jpg";
+import image from "@/assets/img/Contacto.jpg";
+
 
 //material components
 import MaterialInput from "@/components/MaterialInput.vue";
@@ -32,7 +34,7 @@ onMounted(() => {
 
   
   <section>
-    <div class="page-header min-vh-100">
+    <div class="page-header min-vh-90">
       <div class="container">
         <div class="row">
           <div
@@ -48,35 +50,36 @@ onMounted(() => {
             ></div>
           </div>
           <div
-            class="mt-8 col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
+            class="mt-7 col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
           >
-            <div
-              class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-8 mb-5"
-            >
+            <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-5 mb-5">
               <div
                 class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
               >
                 <div
                   class="bg-gradient-success shadow-success border-radius-lg p-3"
                 >
-                  <h3 class="text-white text-success mb-0">Contact us</h3>
+                  <h3 class="text-white text-success mb-0">Contactanos</h3>
                 </div>
               </div>
               <div class="card-body">
-                <p class="pb-3">
-                  For further questions, including partnership opportunities,
-                  please email hello@creative-tim.com or contact using our
-                  contact form.
+                <p class="pb-3 mb-2">
+                  Si quieres mas información sobre nuestros productos no dudes en contactarnos 
+                  por medio del formulario adjunto o a través de nuestras redes, 
+                  no olvides poner tus datos de contacto para que podamos comunicarnos contigo.
                 </p>
+                <!-- For further questions, including partnership opportunities,
+                  please email hello@creative-tim.com or contact using our
+                  contact form. -->
                 <form id="contact-form" method="post" autocomplete="off">
                   <div class="card-body p-0 my-3">
                     <div class="row">
                       <div class="col-md-6">
                         <MaterialInput
-                          class="input-group-static mb-4"
+                          class="input-group-static mb-3"
                           type="text"
-                          label="Full Name"
-                          placeholder="Full Name"
+                          label="Nombre Completo"
+                          placeholder="Ingresa tu nombre aqui"
                         />
                       </div>
                       <div class="col-md-6 ps-md-2">
@@ -84,17 +87,17 @@ onMounted(() => {
                           class="input-group-static mb-4"
                           type="email"
                           label="Email"
-                          placeholder="hello@creative-tim.com"
+                          placeholder="Ingresa tu correo aqui"
                         />
                       </div>
                     </div>
-                    <div class="form-group mb-0 mt-md-0 mt-4">
+                    <div class="form-group mb-0 mt-md-0 mt-2">
                       <MaterialTextArea
                         id="message"
-                        class="input-group-static mb-4"
-                        :rows="6"
-                        placeholder="Describe your problem in at least 250 characters"
-                        >How can we help you?</MaterialTextArea
+                        class="input-group-static mb-0"
+                        :rows="3"
+                        placeholder=""
+                        > ¿Como podemos Ayudarte? Dejanos tu mensaje.</MaterialTextArea
                       >
                     </div>
                     <div class="row">
