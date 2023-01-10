@@ -1,13 +1,58 @@
 <script setup>
-// example components
-import CenteredBlogCardMP from "../../../../../examples/cards/blogCards/CenteredBlogCardMP.vue";
-import mashImg from "@/assets/img/mash.png";
-import img1 from "@/assets/img/ajimashJalapenoRojo/1.jpg";
-import img2 from "@/assets/img/ajimashJalapenoRojo/2.jpg";
-import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
+  // example components
 
+  import mashImg from "@/assets/img/mash.png";
+  import test from "../../../../../assets/img/mash.png";
+  import img1 from "@/assets/img/ajimashJalapenoRojo/1.jpg";
+  import img2 from "@/assets/img/ajimashJalapenoRojo/2.jpg";
+  import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
+
+  import { onMounted, ref, computed} from 'vue';
+    
+    function imageSrc(route) {
+        return new URL(route, import.meta.url).href;
+      }
+
+    // variables de los props
+
+    const mainImg = ref('');
+    const Mimg1 = ref('');
+    const Mimg2 = ref('');
+    const Mimg3 = ref('');
+    const content = ref('');
+    const especie = ref('');
+    const scoville = ref('');
+    const presentation = ref('');
+    const vidaUtil = ref('');
+
+    const props = defineProps({ 
+      mainImg:      { default: '@/assets/img/mash.png"',         type: String },
+      Mimg1:        { default: '@/assets/img/mash.png"',         type: String },
+      Mimg2:        { default: '@/assets/img/mash.png"',         type: String },
+      Mimg3:        { default: '@/assets/img/mash.png"',         type: String },
+      content:      { default: '',         type: String },
+      especie:      { default: '@/assets/img/mash.png"',         type: String },
+      scoville:     { default: '@/assets/img/mash.png"',         type: String },
+      presentation: { default: '@/assets/img/mash.png"',         type: String },
+      vidaUtil:     { default: '@/assets/img/mash.png"',         type: String },
+
+    });
+
+  onMounted(() => {
+    console.log('valores de los props:', props);
+    mainImg.value   =   props.mainImg;
+    Mimg1.value     =   props.Mimg1;
+    Mimg2.value     =   props.Mimg2;
+    Mimg3.value     =   props.Mimg3;
+    content.value   =   props.content;
+    especie.value   =   props.especie;
+    scoville.value  =   props.scoville;
+    presentation.value  = props.presentation;
+    vidaUtil.value  = props.vidaUtil;
+  })
 
 </script>
+
 <template>
   <section class="py-6">
     <div>
@@ -20,7 +65,7 @@ import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
           <h3> Conoce: </h3>
           <br>
           <p>
-            El jalapeño es uno de los ajís más famosos, tiene presentación rojo o verde. La mayoría de los jalapeños son suaves, pero hay especies mucho más calientes. Este ají lleva el nombre de la ciudad mexicana de Jalapa. La gruesa pared frutal es difícil de secar y, por lo tanto, cuando están maduras, a menudo se secan y se ahúman sobre madera dura. Este producto se llama chipotle. El jalapeño tiene un sabor único. Los jalapeños se pueden usar frescos en salsas o cortados en aros para nachos y también son deliciosos en sopas, guisos y pizzas. A menudo se rellenan con carne o queso. Cuando está en estado verde, el jalapeño es bueno para comer y será un poco más dulce cuando esté rojo.
+            {{props.content}}
           </p>
           <section>
             <div class="row justify-content-start">
@@ -28,19 +73,19 @@ import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
               <div class="col-md-4">
                 
                 <div class="info">
-                  <img :src="img1" class="img-fluid border-radius-lg" id="imgMash" />
+                  <img :src="imageSrc(props.Mimg1)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
               </div>
 
               <div class="col-md-4">
                 <div class="info">
-                  <img :src="img2" class="img-fluid border-radius-lg" id="imgMash" />
+                  <img :src="imageSrc(props.Mimg2)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
               </div>
 
               <div class="col-md-4">
                 <div class="info">
-                  <img :src="img3" class="img-fluid border-radius-lg" id="imgMash" />
+                  <img :src="imageSrc(props.Mimg3)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
               </div>
               
@@ -56,7 +101,7 @@ import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
             <div class="card" id="card-position">
             <div class="card-header p-0 mt-n4 mx-3 z-index-2">
               <a class="d-block blur-shadow-image">
-                <img :src="mashImg" class="img-fluid border-radius-lg" />
+                <img :src="imageSrc(props.mainImg)" class="img-fluid border-radius-lg" />
               </a>
             </div>
             <div class="card-body text-center">
@@ -64,11 +109,11 @@ import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
                 <a href="javascript:;"> Datos Relevantes </a>
               </h5>
               <p class="mb-0" id="justifycontent">
-                <span  class="font-weight-normal" id="subtittle"> Especie: </span>  Capsicum Annuum
+                <span  class="font-weight-normal" id="subtittle"> Especie: </span>  {{props.especie}}
               </p>
               <br>
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-normal" id="subtittle"> Scoville Unidades: </span> 2.500 – 8.000
+                <span class="font-weight-normal" id="subtittle"> Scoville Unidades: </span> {{props.scoville}}
               </p>
               <br>
               <h5 class="font-weight-normal" id="subtittle">Composición:</h5>
@@ -81,12 +126,12 @@ import img3 from "@/assets/img/ajimashJalapenoRojo/3.jpg";
               <br>
 
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-normal" id="subtittle"> Presentación: </span> Tambores por 20 kg, 50 kg, 200 kg, 220 kg.
+                <span class="font-weight-normal" id="subtittle"> Presentación: </span> {{props.presentation}}
               </p>
               <br>
 
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-normal" id="subtittle"> Vida Util: </span> 24 meses.
+                <span class="font-weight-normal" id="subtittle"> Vida Util: </span> {{props.vidaUtil}}
               </p>
             </div>
           </div>

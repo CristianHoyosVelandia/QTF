@@ -506,7 +506,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
+                        :to="{ name: 'el-badges' }"
                       >
                         Avatars
                       </RouterLink>
@@ -691,7 +691,7 @@ watch(
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-avatars' }"
+                    :to="{ name: 'el-badges' }"
                   >
                     Avatars
                   </RouterLink>

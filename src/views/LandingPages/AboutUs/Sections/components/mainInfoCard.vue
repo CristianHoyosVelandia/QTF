@@ -1,28 +1,28 @@
 <template>
   <section>
-            <div class="card" id="card-position">
-            <div class="card-header p-0 mt-n4 mx-3 z-index-2">
-              <a class="d-block blur-shadow-image">
-                <img :src="srcimg" class="img-fluid border-radius-lg" />
-              </a>
-            </div>
-            <div class="card-body text-center">
-              <h5 class="font-weight-normal">
-                <a href="javascript:;"> AJI MASH </a>
-              </h5>
-              <p class="mb-0" id="justifycontent">
-                Producto obtenido a partir de la molienda de ají Jalapeño rojo con presencia de semillas del propio fruto, mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
-              </p>
-              <br>
-              <p class="mb-0" id="justifycontent">
-                Este producto está desarrollado a las necesidades del mercado. 
-              </p>
-              <button type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">
-                Conoce Mas
-              </button>
-            </div>
-          </div>
-          </section>
+    <div class="card" id="card-position">
+      <div class="card-header p-0 mt-n4 mx-3 z-index-2">
+        <a class="d-block blur-shadow-image">
+          <img :src="srcimg" class="img-fluid border-radius-lg" />
+        </a>
+      </div>
+      <div class="card-body text-center">
+        <h5 class="font-weight-normal">
+          <a href="javascript:;"> {{label}} </a>
+        </h5>
+        <p class="mb-0" id="justifycontent">
+         {{desc1}}
+        </p>
+        <br>
+        <p class="mb-0" id="justifycontent">
+          {{desc2}} 
+        </p>
+        <a :href="routerLink" type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">
+          Conoce Mas
+        </a>
+      </div>
+    </div>
+  </section>
 </template>
 
 
@@ -33,12 +33,17 @@
   // variables de los props
   const srcimg = ref(' ');
   const routerLink = ref(' ');
-  const label = ref('name')
-  
+  const label = ref('name');
+  const desc1 = ref('');
+  const desc2= ref('');
+
   const props = defineProps({ 
     srcimg:       { default: 'name',         type: String },
     routerLink:   { default: 'hashtag',      type: String },
     label:        { default: 'name',         type: String },
+    desc1:        { default: 'name',         type: String },
+    desc2:        { default: 'name',         type: String },
+
   });
 
   onMounted(() => {
@@ -46,7 +51,8 @@
     srcimg.value      = props.srcimg
     routerLink.value  = props.routerLink
     label.value      =  props.label
-
+    desc1.value      =  props.desc1
+    desc2.value      =  props.desc2
   })
 
 </script>

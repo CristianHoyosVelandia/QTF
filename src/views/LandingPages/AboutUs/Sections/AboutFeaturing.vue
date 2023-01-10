@@ -1,6 +1,6 @@
 <script setup>
 // example component
-import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultCounterCard.vue";
+import DefaultCounterCard from "../../../../components/counterCards/DefaultCounterCard.vue";
 </script>
 <template>
   <section class="pt-4 pb-6" id="count-stats">

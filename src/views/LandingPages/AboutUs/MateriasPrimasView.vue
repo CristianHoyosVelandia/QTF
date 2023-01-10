@@ -21,6 +21,11 @@
   import Featuring from "./Sections/AboutFeaturing.vue";
   import Newsletter from "./Sections/AboutNewsletter.vue";
 
+
+  const ParamsMash = {
+    "DescItems": "Algunos de nuestros ejemplares:"
+  }
+
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
@@ -103,13 +108,11 @@
   </header>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <AboutMP />
-    <Divider />
-    <AboutMP />
-    <Divider />
+    <!-- <Divider /> -->
     <AboutMPPulpa />
-    <!-- <AboutTeam />
-    <Featuring />
-    <Newsletter /> -->
+    <AboutTeam />
+    <!-- <Featuring /> -->
+    <!-- <Newsletter /> -->
   </div>
   <DefaultFooter />
 </template>

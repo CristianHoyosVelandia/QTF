@@ -6,7 +6,6 @@ import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
-// import image from "@/assets/img/illustrations/illustration-signin.jpg";
 import image from "@/assets/img/Contacto.jpg";
 
 
@@ -34,14 +33,15 @@ onMounted(() => {
 
   
   <section>
-    <div class="page-header min-vh-90">
+    <div class="page-header min-vh-100">
       <div class="container">
         <div class="row">
           <div
             class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column"
           >
             <div
-              class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center"
+              class="position-relative h-100 m-5 px-2 border-radius-lg d-flex flex-column justify-content-center"
+              id="imgId"
               :style="{
                 backgroundImage: `url(${image})`,
                 backgroundSize: 'cover',
@@ -49,10 +49,10 @@ onMounted(() => {
               loading="lazy"
             ></div>
           </div>
-          <div
-            class="mt-7 col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
-          >
-            <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-5 mb-5">
+
+          <div class="mt-1 col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+            <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-4 mt-2 mb-2"
+            >
               <div
                 class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
               >
@@ -106,8 +106,8 @@ onMounted(() => {
                           variant="gradient"
                           color="success"
                           class="mt-3 mb-0"
-                          >Send Message</MaterialButton
-                        >
+                          >Enviar Mensaje
+                        </MaterialButton>
                       </div>
                     </div>
                   </div>
@@ -121,3 +121,15 @@ onMounted(() => {
   </section>
   <DefaultFooter />
 </template>
+
+
+<style>
+  #cardcomponent {
+    background-color: red;
+    border-radius: 15px;
+
+  }
+  #imgId {
+    border-radius: 35px;
+  }
+</style>

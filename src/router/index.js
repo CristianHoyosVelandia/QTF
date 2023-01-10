@@ -1,17 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
+
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 // Contactanos
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import ContatanosView from "../views/LandingPages/ContactUs/ContactanosView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
-import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
 
 //Materias Primas
 import MateriasPrimasView from "../views/LandingPages/AboutUs/MateriasPrimasView.vue";
 import ajimashJalaPeñoRojoMash from "../views/LandingPages/AboutUs/TipodeAjis/ajimashJalaPeñoRojoMash.vue";
+
+//Vista de Ajis complete
+import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vue";
+
+
 //Procesos
 import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.vue";
 
@@ -24,7 +29,7 @@ import InputAreasForms from "../layouts/sections/input-areas/forms/FormsView.vue
 import ACAlerts from "../layouts/sections/attention-catchers/alerts/AlertsView.vue";
 import ACModals from "../layouts/sections/attention-catchers/modals/ModalsView.vue";
 import ACTooltipsPopovers from "../layouts/sections/attention-catchers/tooltips-popovers/TooltipsPopoversView.vue";
-import ElAvatars from "../layouts/sections/elements/avatars/AvatarsView.vue";
+// import ElAvatars from "../layouts/sections/elements/avatars/AvatarsView.vue";
 import ElBadges from "../layouts/sections/elements/badges/BadgesView.vue";
 import ElBreadcrumbs from "../layouts/sections/elements/breadcrumbs/BreadcrumbsView.vue";
 import ElButtons from "../layouts/sections/elements/buttons/ButtonsView.vue";
@@ -66,6 +71,12 @@ const router = createRouter({
       name: "ajimashJalaPeñoRojoMash",
       component: ajimashJalaPeñoRojoMash,
     },
+
+    {
+      path: "/nuestrosAjisMash-QFT/:id",
+      name: "NuestrosAjis",
+      component: AjiMashDesc,
+    },
     
     // END PATH PAGEs
     {
@@ -88,11 +99,6 @@ const router = createRouter({
       path: "/pages/landing-pages/author",
       name: "author",
       component: AuthorView,
-    },
-    {
-      path: "/pages/landing-pages/basic",
-      name: "signin-basic",
-      component: SignInBasicView,
     },
     {
       path: "/sections/page-sections/page-headers",
@@ -143,11 +149,6 @@ const router = createRouter({
       path: "/sections/attention-catchers/tooltips-popovers",
       name: "ac-tooltips-popovers",
       component: ACTooltipsPopovers,
-    },
-    {
-      path: "/sections/elements/avatars",
-      name: "el-avatars",
-      component: ElAvatars,
     },
     {
       path: "/sections/elements/badges",

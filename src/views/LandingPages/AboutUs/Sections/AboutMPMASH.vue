@@ -4,11 +4,13 @@ import CenteredBlogCardMP from "../../../../examples/cards/blogCards/CenteredBlo
 import mashImg from "@/assets/img/mash.png";
 import rojoPicanteImg from "@/assets/img/AjiRojoPicante.jpg";
 import AmarilloImg from "@/assets/img/AjiAmarillo.jpg";
+import Ajijolokee from "@/assets/img/AjiJoloke.jpg";
+import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";
 import RojoMash from "@/assets/img/RojoMash.png";
 import dulceRojo from "@/assets/img/dulceRojo.png";
 
 import InfoCards from '@/views/LandingPages/AboutUs/Sections/components/infoCards.vue'
-import mainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainInfoCard.vue'
+import MainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainInfoCard.vue'
 
 
 </script>
@@ -27,35 +29,66 @@ import mainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainI
 
             <InfoCards
               :srcimg = "RojoMash"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisMash-QFT/1"
               label = "Ají Jalapeño Rojo"
             />
 
             <InfoCards
-              :srcimg = "dulceRojo"
-              routerLink = "/nuestrosAjisJRM-QFT"
-              label = "Ají Dulce Rojo Mash"
+              :srcimg = "AjijalapenoVerde"
+              routerLink = "/nuestrosAjisMash-QFT/2"
+              label = "Ají Jalapeño Verde Mash"
             />
 
             <InfoCards
-              :srcimg = "AmarilloImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
-              label = "Ají Amarillo"
+              :srcimg = "dulceRojo"
+              routerLink = "/nuestrosAjisMash-QFT/3"
+              label = "Ají Cayene Rojo Mash"
             />
 
             <InfoCards
               :srcimg = "rojoPicanteImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisMash-QFT/4"
               label = "Ají Picante Rojo"
             />
+
+            <InfoCards
+              :srcimg = "AmarilloImg"
+              routerLink = "/nuestrosAjisMash-QFT/5"
+              label = "Ají Amarillo Mash"
+            />
+
+            <InfoCards
+              :srcimg = "AmarilloImg"
+              routerLink = "/nuestrosAjisMash-QFT/6"
+              label = "Ají Habanero Rojo Mash"
+            />
+
+            <InfoCards
+              :srcimg = "AmarilloImg"
+              routerLink = "/nuestrosAjisMash-QFT/7"
+              label = "Ají Naga Jolokia Mash"
+            />
+
+            <InfoCards
+              :srcimg = "AmarilloImg"
+              routerLink = "/nuestrosAjisMash-QFT/8"
+              label = "Ají Rojo Dulce Mash"
+            />
+
+
+
 
           </div>
 
         </div>
 
         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 ms-auto mt-2">
-          <mainInfoCard
+          <MainInfoCard
             :srcimg="mashImg"
+            label = "AJI MASH"
+            routerLink = "/contacto-QFT"
+            desc1 ="Producto obtenido a partir de la molienda de ají Jalapeño rojo con presencia de semillas del propio fruto, mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos."
+            desc2 = "Este producto está desarrollado a las necesidades del mercado."
           />
           
         </div>

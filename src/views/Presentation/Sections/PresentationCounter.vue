@@ -1,5 +1,7 @@
 <script setup>
-import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCounterCard.vue";
+// import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCounterCard.vue";
+import DefaultCounterCard from "../../../components/counterCards/DefaultCounterCard.vue";
+
 </script>
 
 <template>
@@ -10,7 +12,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
           <div class="row">
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
-                color="success"
+                color="primary"
                 title="Toneladas Producidas"
                 :count="400"
                 suffix="+"
@@ -19,18 +21,8 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
               />
             </div>
             <div class="col-md-4 position-relative">
-              <!-- <DefaultCounterCard
-                color="success"
-                title="Toneladas Vendidas"
-                description="Mix the sections, change the colors and unleash your
-                  creativity"
-                :count="284"
-                suffix="+"
-                :duration="3000"
-                divider="vertical"
-              /> -->
               <DefaultCounterCard
-                color="success"
+                color="primary"
                 title="Toneladas Vendidas"
                 :count="284"
                 suffix="+"
@@ -40,7 +32,7 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
             </div>
             <div class="col-md-4">
               <DefaultCounterCard
-                color="success"
+                color="primary"
                 title="Clientes Nacionales"
                 :count="6"
                 :duration="3000"

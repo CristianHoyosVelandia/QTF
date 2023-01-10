@@ -88,158 +88,79 @@ watch(
 
 <template>
   
-  <nav class="navbar navbar-expand-lg top-0 my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4">
+  <nav
+    class="navbar navbar-expand-lg top-0"
+    :class="{
+      'z-index-3 w-100 shadow-none navbar-transparent position-absolute my-3':
+        props.transparent,
+      'my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4':
+        props.sticky,
+      'navbar-light bg-white py-3': props.light,
+      ' navbar-dark bg-gradient-dark z-index-3 py-3': props.dark
+    }"
+  >
     
-    <div class="container-fluid px-0">
+    <div :class="
+      props.transparent || props.light || props.dark
+        ? 'container'
+        : 'container-fluid px-0'
+    ">
       
-      <RouterLink class="navbar-brand d-none d-md-block text-dark font-weight-bolder ms-sm-3"
+      <RouterLink class="navbar-brand d-none d-md-block"
+        :class="[
+          (props.transparent && textDark.value) || !props.transparent
+            ? 'text-dark font-weight-bolder ms-sm-3'
+            : 'text-white font-weight-bolder ms-sm-3'
+        ]"
         :to="{ name: 'presentation' }"
         rel="tooltip"
-        title="Inserte acción aqui"
+        title="QFT Quality Tropical Foods SAS, expertos en Ají"
         data-placement="bottom"
       >
         QTF Quality Tropical Foods SAS
       </RouterLink>
       
+      <!-- Vamos aqui -->
+      <RouterLink
+        class="navbar-brand d-block d-md-none"
+        :class="
+          props.transparent || props.dark
+            ? 'text-white'
+            : 'font-weight-bolder ms-sm-3'
+        "
+        to="/"
+        rel="tooltip"
+        title="QFT Quality Tropical Foods SAS, expertos en Ají"
+        data-placement="bottom"
+      >
+        QTF SAS
+      </RouterLink>
+
+      <a :href="action.route" class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"  id = 'icontheme' target="_blank">
+        <i class="fab fa-whatsapp" id='icon'></i>
+      </a>
+
+      <button
+        class="navbar-toggler shadow-none ms-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+
       <div
         class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
         id="navigation"
       >
         <ul class="navbar-nav navbar-nav-hover ms-auto">
-          <!--Productos-->
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
-              id="dropdownMenuPages"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="material-icons opacity-6 me-2 text-md text-dark">
-                search
-              </i>
-              Productos
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-1 d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
-            >
-              <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
-                  <div class="row">
-                    <div class="position-relative">
-                      
-                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Nuestros Productos y Sabores
-                      </div>
-
-                       <RouterLink
-                        :to="{ name: 'Materias' }"
-                        class="dropdown-item border-radius-md"
-                        >
-                          <span>Materias Primas</span>
-                        </RouterLink>
-
-                        <RouterLink
-                          :to="{ name: 'author' }"
-                          class="dropdown-item border-radius-md"
-                        >
-                          <span>Productos Terminados</span>
-                        </RouterLink>
-
-                        <RouterLink
-                          :to="{ name: 'about' }"
-                          class="dropdown-item border-radius-md"
-                        >
-                          <span>Fichas Tecnicas</span>
-                        </RouterLink>
-
-                        
-                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
-                        Contactanos
-                      </div>
-                        <RouterLink
-                          :to="{ name: 'contactanos' }"
-                          class="dropdown-item border-radius-md"
-                        >
-                          <i id="material-icons">
-                            message
-                          </i>
-                          <span> Escribenos </span>
-                        </RouterLink>
-                      <!-- <RouterLink
-                        :to="{ name: 'signin-basic' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Sign In</span>
-                      </RouterLink> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-lg-none">
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                >
-                  Landing Pages
-                </div>
-                <RouterLink
-                  :to="{ name: 'about' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>About Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'contactus' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Contact Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'author' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Author</span>
-                </RouterLink>
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
-                >
-                  Account
-                </div>
-                <RouterLink
-                  :to="{ name: 'signin-basic' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Sign In</span>
-                </RouterLink>
-              </div>
-            </div>
-          </li>
-      
-          <!-- Recetas -->
-          <RouterLink
-            to="/recetas"
-            rel="tooltip"
-            data-placement="bottom"
-          >
-            <li class="nav-item dropdown dropdown-hover mx-2">
-              <a
-                class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
-              >
-                Recetas
-              </a>
-            </li>
-          </RouterLink>
 
           <!-- Nuestra Compañia -->
           <li class="nav-item dropdown dropdown-hover mx-2">
@@ -250,10 +171,7 @@ watch(
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i
-                class="material-icons opacity-6 me-2 text-md text-dark"
-                >view_day</i
-              >
+              <i class="material-icons opacity-6 me-2 text-md text-dark"> view_day </i>
                 Nuestra Compañía
               <img
                 :src="getArrowColor()"
@@ -304,18 +222,6 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-headers' }"
-                      >
-                        Page Headers
-                      </RouterLink>
-                      <!-- <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'page-features' }"
-                      >
-                        Features
-                      </RouterLink> -->
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
                         :to="{ name: 'procesosFab' }"
                       >
                         Proceso de Fabricacion
@@ -336,40 +242,18 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                            <RouterLink
+                            :to="{ name: 'inputareas-inputs' }"
+                            >
+                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
                               Noticias
                             </h6>
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navbars' }"
-                      >
-                        Navbars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-navtabs' }"
-                      >
-                        Nav Tabs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'navigation-pagination' }"
-                      >
-                        Pagination
-                      </RouterLink>
-                    </div>
                   </li>
 
                   <!-- Centros de Distribución -->
@@ -385,35 +269,20 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                            <RouterLink
+                            :to="{ name: 'inputareas-inputs' }"
                             >
-                              Centros de Distribución
-                            </h6>
-                            <span class="text-sm"> ¿Donde estamos? </span>
+                              <h6
+                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              >
+                                Centros de Distribución
+                              </h6>
+                              <span class="text-sm"> ¿Donde estamos? </span>
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-inputs' }"
-                      >
-                        Inputs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-forms' }"
-                      >
-                        Forms
-                      </RouterLink>
-                    </div>
                   </li>
 
                   <!-- Publicaciones -->
@@ -429,40 +298,19 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
+                            <RouterLink
+                            :to="{ name: 'inputareas-inputs' }"
+                            >
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
                               Publicaciones
                             </h6>
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-alerts' }"
-                      >
-                        Alerts
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-modals' }"
-                      >
-                        Modals
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'ac-tooltips-popovers' }"
-                      >
-                        Tooltips & Popovers
-                      </RouterLink>
-                    </div>
                   </li>
 
                   <!-- Nuestros Procesos -->
@@ -478,76 +326,19 @@ watch(
                           class="w-100 d-flex align-items-center justify-content-between"
                         >
                           <div>
-                            <h6
-                              class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                            <RouterLink
+                            :to="{ name: 'inputareas-inputs' }"
                             >
-                              Nuestros Procesos
-                            </h6>
+                              <h6
+                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
+                              >
+                                Nuestros Procesos
+                              </h6>
+                            </RouterLink>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
                         </div>
                       </div>
                     </a>
-                    <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
-                      >
-                        Avatars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
-                      >
-                        Badges
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-breadcrumbs' }"
-                      >
-                        Breadcrumbs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
-                      >
-                        Buttons
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-button-groups' }"
-                      >
-                        Button Groups
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
-                      >
-                        Dropdowns
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-progress-bars' }"
-                      >
-                        Progress Bars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-toggles' }"
-                      >
-                        Toggles
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-typography' }"
-                      >
-                        Typography
-                      </RouterLink>
-                    </div>
                   </li>
 
                   <!-- Certificaciones -->
@@ -580,57 +371,9 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-avatars' }"
-                      >
-                        Avatars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
                         :to="{ name: 'el-badges' }"
                       >
-                        Badges
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-breadcrumbs' }"
-                      >
-                        Breadcrumbs
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
-                      >
-                        Buttons
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-button-groups' }"
-                      >
-                        Button Groups
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
-                      >
-                        Dropdowns
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-progress-bars' }"
-                      >
-                        Progress Bars
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-toggles' }"
-                      >
-                        Toggles
-                      </RouterLink>
-                      <RouterLink
-                        class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-typography' }"
-                      >
-                        Typography
+                        HACCP
                       </RouterLink>
                     </div>
                   </li>
@@ -638,189 +381,168 @@ watch(
               </div>
               <div class="row d-lg-none">
                 <div class="col-md-12">
-                  <div class="d-flex mb-2">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Page Sections
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
+
                   <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md mt-3 mb-1"
                     :to="{ name: 'page-headers' }"
                   >
-                    Page Headers
+                    Información General
                   </RouterLink>
+
                   <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'page-features' }"
                   >
-                    Features
+                    Noticias
                   </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Navigation
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
+                  
                   <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
+                    :to="{ name: 'page-features' }"
+                  >
+                    Centros de Distribución
+                  </RouterLink>
+
+                  <RouterLink
+                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'navigation-navbars' }"
                   >
-                    Navbars
+                    Publicaciones
                   </RouterLink>
+
                   <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'navigation-navtabs' }"
                   >
-                    Nav Tabs
+                    Nuestros Procesos
                   </RouterLink>
+
                   <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'navigation-pagination' }"
                   >
-                    Pagination
-                  </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Input Areas
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-inputs' }"
-                  >
-                    Inputs
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-forms' }"
-                  >
-                    Forms
-                  </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Attention Catchers
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-alerts' }"
-                  >
-                    Alerts
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-modals' }"
-                  >
-                    Modals
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'ac-tooltips-popovers' }"
-                  >
-                    Tooltips & Popovers
-                  </RouterLink>
-                  <div class="d-flex mb-2 mt-3">
-                    <div
-                      class="w-100 d-flex align-items-center justify-content-between"
-                    >
-                      <div>
-                        <h6
-                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                        >
-                          Elements
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-avatars' }"
-                  >
-                    Avatars
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-badges' }"
-                  >
-                    Badges
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-breadcrumbs' }"
-                  >
-                    Breadcrumbs
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-buttons' }"
-                  >
-                    Buttons
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-button-groups' }"
-                  >
-                    Button Groups
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-dropdowns' }"
-                  >
-                    Dropdowns
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-progress-bars' }"
-                  >
-                    Progress Bars
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-toggles' }"
-                  >
-                    Toggles
-                  </RouterLink>
-                  <RouterLink
-                    class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-typography' }"
-                  >
-                    Typography
+                    Certificaciones
                   </RouterLink>
                 </div>
               </div>
             </div>
           </li>
+          
+          <!--Productos-->
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a
+              role="button"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
+              id="dropdownMenuPages"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="material-icons opacity-6 me-2 text-md text-dark">
+                search
+              </i>
+              Productos
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-2 d-lg-block d-none"
+              />
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-1 d-lg-none d-block ms-auto"
+              />
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
+              aria-labelledby="dropdownMenuPages"
+            >
+              <div class="row d-none d-lg-block">
+                <div class="col-12 px-4 py-2">
+                  <div class="row">
+                    <div class="position-relative">
+                      
+                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+                        Nuestros Productos y Sabores
+                      </div>
+
+                       <RouterLink
+                        :to="{ name: 'Materias' }"
+                        class="dropdown-item border-radius-md"
+                        >
+                          <span>Mash y Pulpas</span>
+                        </RouterLink>
+                        
+                      <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
+                        Contactanos
+                      </div>
+                        <RouterLink
+                          :to="{ name: 'contactanos' }"
+                          class="dropdown-item border-radius-md"
+                        >
+                          <i id="material-icons">
+                            message
+                          </i>
+                          <span> Escribenos </span>
+                        </RouterLink>
+                      <!-- <RouterLink
+                        :to="{ name: 'signin-basic' }"
+                        class="dropdown-item border-radius-md"
+                      >
+                        <span>Sign In</span>
+                      </RouterLink> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Que es aca tio -->
+              <div class="d-lg-none">
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
+                >
+                  Nuestros Productos y Sabores
+                </div>
+                <RouterLink
+                  :to="{ name: 'about' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <span>Productos Terminados</span>
+                </RouterLink>
+
+                <div
+                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-1"
+                >
+                  Contactanos
+                </div>
+
+                <RouterLink
+                  :to="{ name: 'contactanos' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <i id="material-icons">
+                    message
+                  </i>
+                  <span> Escribenos </span>
+                </RouterLink>
+              </div>
+            </div>
+          </li>
+      
+          <!-- Recetas -->
+          <RouterLink
+            to="/recetas"
+            rel="tooltip"
+            data-placement="bottom"
+          >
+            <li class="nav-item dropdown dropdown-hover mx-2">
+              <a
+                class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
+              >
+                Recetas
+              </a>
+            </li>
+          </RouterLink>
+
+          
 
         </ul>
 
