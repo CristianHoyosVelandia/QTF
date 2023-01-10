@@ -23,7 +23,7 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
-  import logonb from "@/assets/img/iconnbw.png"
+  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
 
 
   // variables de los props

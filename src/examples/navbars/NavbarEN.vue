@@ -416,7 +416,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'inputareas-inputs' }"
+                        :to="{ name: 'el-buttons' }"
                       >
                         Inputs
                       </RouterLink>
@@ -506,13 +506,13 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
+                        :to="{ name: 'el-buttons' }"
                       >
                         Avatars
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
+                        :to="{ name: 'el-buttons' }"
                       >
                         Badges
                       </RouterLink>
@@ -536,7 +536,7 @@ watch(
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-dropdowns' }"
+                        :to="{ name: 'el-buttons' }"
                       >
                         Dropdowns
                       </RouterLink>
@@ -635,7 +635,7 @@ watch(
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'inputareas-inputs' }"
+                    :to="{ name: 'el-buttons' }"
                   >
                     Inputs
                   </RouterLink>
@@ -691,13 +691,13 @@ watch(
                   </div>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-badges' }"
+                    :to="{ name: 'el-buttons' }"
                   >
                     Avatars
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-badges' }"
+                    :to="{ name: 'el-buttons' }"
                   >
                     Badges
                   </RouterLink>
@@ -721,7 +721,7 @@ watch(
                   </RouterLink>
                   <RouterLink
                     class="dropdown-item ps-3 border-radius-md mb-1"
-                    :to="{ name: 'el-dropdowns' }"
+                    :to="{ name: 'el-buttons' }"
                   >
                     Dropdowns
                   </RouterLink>

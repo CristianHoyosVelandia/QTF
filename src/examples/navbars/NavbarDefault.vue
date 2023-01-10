@@ -243,7 +243,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'inputareas-inputs' }"
+                            :to="{ name: 'el-buttons' }"
                             >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
@@ -270,7 +270,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'inputareas-inputs' }"
+                            :to="{ name: 'el-buttons' }"
                             >
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -299,7 +299,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'inputareas-inputs' }"
+                            :to="{ name: 'el-buttons' }"
                             >
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -327,7 +327,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'inputareas-inputs' }"
+                            :to="{ name: 'el-buttons' }"
                             >
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -371,7 +371,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-badges' }"
+                        :to="{ name: 'el-buttons' }"
                       >
                         HACCP
                       </RouterLink>

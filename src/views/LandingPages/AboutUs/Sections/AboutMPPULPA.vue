@@ -2,7 +2,7 @@
 // example components
 import pulpaImg from "@/assets/img/pulpa.jpg";
 import rojoPicanteImg from "@/assets/img/AjiRojoPicante.jpg";
-import AmarilloImg from "@/assets/img/AjiAmarillo.jpg";
+import AmarilloImg from "@/assets/img/AjiAmarillo/AjiAmarillo.jpg";
 import RojoMash from "@/assets/img/RojoMash.png";
 import dulceRojo from "@/assets/img/dulceRojo.png";
 

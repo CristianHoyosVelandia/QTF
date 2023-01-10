@@ -12,7 +12,7 @@
 
   //images
   import vueMkAjiHeader from "@/assets/img/aji.png";
-  import logonb from "@/assets/img/iconnbw.png"
+  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
   
   //hooks
   const body = document.getElementsByTagName("body")[0];

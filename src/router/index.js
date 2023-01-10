@@ -24,20 +24,8 @@ import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
-import InputAreasInputs from "../layouts/sections/input-areas/inputs/InputsView.vue";
 import InputAreasForms from "../layouts/sections/input-areas/forms/FormsView.vue";
-import ACAlerts from "../layouts/sections/attention-catchers/alerts/AlertsView.vue";
-import ACModals from "../layouts/sections/attention-catchers/modals/ModalsView.vue";
-import ACTooltipsPopovers from "../layouts/sections/attention-catchers/tooltips-popovers/TooltipsPopoversView.vue";
-// import ElAvatars from "../layouts/sections/elements/avatars/AvatarsView.vue";
-import ElBadges from "../layouts/sections/elements/badges/BadgesView.vue";
-import ElBreadcrumbs from "../layouts/sections/elements/breadcrumbs/BreadcrumbsView.vue";
 import ElButtons from "../layouts/sections/elements/buttons/ButtonsView.vue";
-import ElButtonGroups from "../layouts/sections/elements/button-groups/ButtonGroupsView.vue";
-import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vue";
-import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
-import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
-import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
 import RecetasView from '../views/Recetas/RecetasView.vue';
 
 
@@ -126,69 +114,14 @@ const router = createRouter({
       component: NavigationPagination,
     },
     {
-      path: "/sections/input-areas/inputs",
-      name: "inputareas-inputs",
-      component: InputAreasInputs,
-    },
-    {
       path: "/sections/input-areas/forms",
       name: "inputareas-forms",
       component: InputAreasForms,
     },
     {
-      path: "/sections/attention-catchers/alerts",
-      name: "ac-alerts",
-      component: ACAlerts,
-    },
-    {
-      path: "/sections/attention-catchers/modals",
-      name: "ac-modals",
-      component: ACModals,
-    },
-    {
-      path: "/sections/attention-catchers/tooltips-popovers",
-      name: "ac-tooltips-popovers",
-      component: ACTooltipsPopovers,
-    },
-    {
-      path: "/sections/elements/badges",
-      name: "el-badges",
-      component: ElBadges,
-    },
-    {
-      path: "/sections/elements/breadcrumbs",
-      name: "el-breadcrumbs",
-      component: ElBreadcrumbs,
-    },
-    {
       path: "/sections/elements/buttons",
       name: "el-buttons",
       component: ElButtons,
-    },
-    {
-      path: "/sections/elements/button-groups",
-      name: "el-button-groups",
-      component: ElButtonGroups,
-    },
-    {
-      path: "/sections/elements/dropdowns",
-      name: "el-dropdowns",
-      component: ElDropdowns,
-    },
-    {
-      path: "/sections/elements/progress-bars",
-      name: "el-progress-bars",
-      component: ElProgressBars,
-    },
-    {
-      path: "/sections/elements/toggles",
-      name: "el-toggles",
-      component: ElToggles,
-    },
-    {
-      path: "/sections/elements/typography",
-      name: "el-typography",
-      component: ElTypography,
     },
   ],
 });
