@@ -19,6 +19,10 @@ import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vu
 
 //Procesos
 import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.vue";
+import Noticias    from "../layouts/sections/page-sections/features/Noticias.vue";
+import Ubicacion    from "../layouts/sections/page-sections/features/Ubicacion.vue";
+
+
 
 
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
@@ -82,6 +86,16 @@ const router = createRouter({
       path: "/contacto-QFT",
       name: "contactanos",
       component: ContatanosView,
+    },
+    {
+      path: "/Noticias",
+      name: "Noticias",
+      component: Noticias,
+    },
+    {
+      path: "/Ubicacion",
+      name: "Ubicacion",
+      component: Ubicacion,
     },
     {
       path: "/pages/landing-pages/author",

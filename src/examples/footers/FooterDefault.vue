@@ -53,11 +53,11 @@ defineProps({
         items: [
           {
             name: "Información General",
-            href: "procesosFab"
+            href: "presentation"
           },
           {
             name: "Noticias",
-            href: "procesosFab"
+            href: "Noticias"
           },
           { name: "Certificaciones",
             href: "procesosFab" 
@@ -67,12 +67,12 @@ defineProps({
       {
         name: "Productos",
         items: [
-          { name: "Productos Terminados", href: "procesosFab" },
+          { name: "Nuestros Ajis", href: "Materias" },
           {
             name: "Contactanos",
-            href: "procesosFab"
+            href: "contactanos"
           },
-          { name: "Recetas", href: "procesosFab" },
+          // { name: "Recetas", href: "recetas" },
         ]
       },
       {
@@ -80,11 +80,11 @@ defineProps({
         items: [
           {
             name: "Centros de Experiencia",
-            href: "procesosFab"
+            href: "Ubicacion"
           },
           {
             name: "Visitas Guiadas",
-            href: "procesosFab"
+            href: "Ubicacion"
           }
         ]
       }

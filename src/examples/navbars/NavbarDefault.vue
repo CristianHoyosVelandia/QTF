@@ -243,7 +243,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'el-buttons' }"
+                            :to="{ name: 'Noticias' }"
                             >
                             <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
@@ -270,7 +270,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'el-buttons' }"
+                            :to="{ name: 'Ubicacion' }"
                             >
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -363,7 +363,7 @@ watch(
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'page-features' }"
+                    :to="{ name: 'Noticias' }"
                   >
                     Noticias
                   </RouterLink>
@@ -493,7 +493,7 @@ watch(
           </li>
       
           <!-- Recetas -->
-          <RouterLink
+          <!-- <RouterLink
             to="/recetas"
             rel="tooltip"
             data-placement="bottom"
@@ -505,7 +505,7 @@ watch(
                 Recetas
               </a>
             </li>
-          </RouterLink>
+          </RouterLink> -->
 
           
 

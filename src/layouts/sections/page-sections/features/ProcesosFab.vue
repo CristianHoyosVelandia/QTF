@@ -5,6 +5,8 @@
   import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
   import DefaultFooter from "@/examples/footers/FooterDefault.vue";
   import AboutProcess from "../../../../views/LandingPages/AboutUs/Sections/AboutTeam.vue"
+  //image
+  import bg0 from "@/assets/img/chilop2.jpg";
 
 
   const ParamsMash = {
