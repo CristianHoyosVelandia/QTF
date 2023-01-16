@@ -6,8 +6,8 @@ import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
-import image from "@/assets/img/Contacto.jpg";
-
+import image from "@/assets/img/aji.jpg";
+import iconimg from "@/assets/img/LogosQFT/iconnbw.png"
 
 //material components
 import MaterialInput from "@/components/MaterialInput.vue";
@@ -36,30 +36,32 @@ onMounted(() => {
     <div class="page-header min-vh-100">
       <div class="container">
         <div class="row">
+
+          <!-- Image -->
           <div
-            class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column"
+            class="col-6 d-lg-flex d-none h-100 mt-5 pe-0 position-absolute top-0 start-0 flex-column"         
           >
             <div
-              class="position-relative h-100 m-5 px-2 border-radius-lg d-flex flex-column justify-content-center"
               id="imgId"
               :style="{
                 backgroundImage: `url(${image})`,
                 backgroundSize: 'cover',
               }"
-              loading="lazy"
             ></div>
           </div>
 
-          <div class="mt-1 col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
-            <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-4 mt-2 mb-2"
+          <!-- <div class="col-xl-1 col-lg-1 col-md-1"/> -->
+
+          <div class="col-xl-6 col-lg-6 col-md-12 d-flex flex-column ms-lg-auto me-lg-1">
+            <div 
+              class="card d-flex blur justify-content-center shadow-lg my-2 sm-0 my-sm-2 mt-1 mb-2"
             >
               <div
-                class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent"
+                class="card-header p-0 position-relative mx-0 z-index-2 bg-transparent"
               >
-                <div
-                  class="bg-gradient-success shadow-success border-radius-lg p-3"
+                <div class="bg-gradient-success shadow-success border-radius-md p-3"
                 >
-                  <h3 class="text-white text-success mb-0">Contactanos</h3>
+                  <h3 class="text-white text-success ml-2 mb-0">Contactanos</h3>
                 </div>
               </div>
               <div class="card-body">
@@ -115,6 +117,7 @@ onMounted(() => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -130,6 +133,20 @@ onMounted(() => {
 
   }
   #imgId {
-    border-radius: 35px;
+    border-radius: 50px;
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #imgIconID {
+    border-radius: 50px;
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>

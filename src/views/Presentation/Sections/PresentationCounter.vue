@@ -5,6 +5,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
 </script>
 
 <template>
+  <!-- <section class="pb-4 position-relative bg-gradient-dark mx-n3" > -->
   <section class="pt-3 pb-4" id="count-stats">
     <div class="container">
       <div class="row">
@@ -12,7 +13,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
           <div class="row">
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
-                color="primary"
+                color="success"
                 title="Toneladas Producidas"
                 :count="400"
                 suffix="+"
@@ -22,7 +23,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
             </div>
             <div class="col-md-4 position-relative">
               <DefaultCounterCard
-                color="primary"
+                color="success"
                 title="Toneladas Vendidas"
                 :count="284"
                 suffix="+"
@@ -32,7 +33,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
             </div>
             <div class="col-md-4">
               <DefaultCounterCard
-                color="primary"
+                color="success"
                 title="Clientes Nacionales"
                 :count="6"
                 :duration="3000"

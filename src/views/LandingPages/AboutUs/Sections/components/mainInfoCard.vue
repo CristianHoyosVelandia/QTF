@@ -1,11 +1,16 @@
 <template>
+    
   <section>
-    <div class="card" id="card-position">
-      <div class="card-header p-0 mt-n4 mx-3 z-index-2">
+    <!-- class="pb-5 position-relative bg-gradient-dark mx-n3" -->
+    <div class="card box-shadow-xl overflow-hidden mb-5">
+      
+      <div class="card-header">
         <a class="d-block blur-shadow-image">
           <img :src="srcimg" class="img-fluid border-radius-lg" />
         </a>
       </div>
+
+      
       <div class="card-body text-center">
         <h5 class="font-weight-normal">
           <a href="javascript:;"> {{label}} </a>
@@ -21,7 +26,9 @@
           Conoce Mas
         </a>
       </div>
+
     </div>
+
   </section>
 </template>
 

@@ -6,7 +6,7 @@ import MaterialAvatar from "@/components/MaterialAvatar.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 
 // image
-import profilePic from "@/assets/img/bruce-mars.jpg";
+import profilePic from "@/assets/img/aji.jpg";
 
 // material-input
 import setMaterialInput from "@/assets/js/material-input";

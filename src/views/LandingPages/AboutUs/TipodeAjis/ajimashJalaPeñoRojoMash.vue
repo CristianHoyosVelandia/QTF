@@ -6,7 +6,8 @@
   import DefaultFooter from "../../../../examples/footers/FooterDefault.vue";
 
   //image
-  import bg0 from "@/assets/img/bcgroundMaterias.png";
+  // import bg0 from "@/assets/img/bcgroundMaterias.png";
+  import bg0  from "@/assets/img/chilop2.jpg";
 
   //dep
   import Typed from "typed.js";

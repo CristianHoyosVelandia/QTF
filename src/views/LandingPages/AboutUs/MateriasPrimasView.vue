@@ -6,7 +6,7 @@
   import DefaultFooter from "../../../examples/footers/FooterDefault.vue";
 
   //image
-  import bg0 from "@/assets/img/bcgroundMaterias.png";
+  import bg0 from "@/assets/img/chilop2.jpg";
 
   //dep
   import Typed from "typed.js";
@@ -17,7 +17,7 @@
   import Divider from "./Sections/components/divider.vue";
 
 
-  import AboutTeam from "./Sections/AboutTeam.vue";
+  import AboutProcess from "./Sections/AboutTeam.vue";
   import Featuring from "./Sections/AboutFeaturing.vue";
   import Newsletter from "./Sections/AboutNewsletter.vue";
 
@@ -106,13 +106,10 @@
       </div>
     </div>
   </header>
-  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+  <div class="card card-body bg-gradient-dark shadow-xl mx-3 mx-md-4 mt-n6">
     <AboutMP />
-    <!-- <Divider /> -->
     <AboutMPPulpa />
-    <AboutTeam />
-    <!-- <Featuring /> -->
-    <!-- <Newsletter /> -->
+    <!-- <AboutProcess /> -->
   </div>
   <DefaultFooter />
 </template>

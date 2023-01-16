@@ -94,7 +94,8 @@
   }
 
   .bg-gradient-dark {
-    background-image: linear-gradient(195deg, $dark-gradient-dark, $dark-gradient-state-dark) !important;
+    background-image: linear-gradient($dark-gradient-state-dark, $dark-gradient-state-dark) !important;
+    // background-image: linear-gradient(195deg, $dark-gradient-dark, $dark-gradient-state-dark) !important;
   }
 
   .dropdown {

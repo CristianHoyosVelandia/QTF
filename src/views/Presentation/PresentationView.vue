@@ -7,31 +7,36 @@
   import Header from "../../examples/Header.vue";
   // sections
   import PresentationCounter from "./Sections/PresentationCounter.vue";
-  import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
   import InformacionRelevante from './Sections/informacionRelevanteyRegistros.vue'
 
   //images
-  import vueMkAjiHeader from "@/assets/img/aji.png";
-  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
+  // import vueMkAjiHeader from "@/assets/img/aji.png";
+  // import vueMkAjiHeader from "@/assets/img/backgrounds/bgt1.png";
+  import vueMkAjiHeader from "@/assets/img/backgrounds/bgt2.png";
+  import vueMkAjiHeaderMobile from "@/assets/img/backgrounds/bgt1.png";
+
+
+  import logonb from "@/assets/img/LogosQFT/icnbnd.png"
   
   //hooks
   const body = document.getElementsByTagName("body")[0];
 
   var ancho = window.innerWidth;
   var hancho = calcularHight(ancho);
-
+  var imgbg  = calcularBg(ancho);
+ 
   function calcularHight(ancho) {
     
     var au;
-
-    console.log(ancho)
     if(  0 <= ancho  && ancho <= 350 ) {
-      console.log('entramos aqui en 0 a 350')
-      au = 50
+      au = 80
     }
     
-    else if ( 351 <= ancho  && ancho <= 540  ){ 
-      console.log('entramos aqui en menos de 540')
+    else if ( 351 <= ancho  && ancho <= 450  ){ 
+      au = 80
+    }
+
+    else if ( 451 <= ancho  && ancho <= 540  ){ 
       au = 85
     }
     
@@ -39,6 +44,36 @@
       au = 85
     }
 
+    return au;
+  }
+
+  function calcularBg(ancho) {
+    
+    var au;
+
+    console.log(ancho)
+    if(  0 <= ancho  && ancho <= 350 ) {
+      console.log('entramos aqui en 0 a 350')
+      au = vueMkAjiHeaderMobile
+    }
+    
+    else if ( 351 <= ancho  && ancho <= 450  ){ 
+      console.log('entramos aqui en menos de 450')
+      au = vueMkAjiHeaderMobile
+
+    }
+
+    else if ( 451 <= ancho  && ancho <= 540  ){ 
+      console.log('entramos aqui en menos de 540')
+      au = vueMkAjiHeader
+
+    }
+    
+    else {
+      au = vueMkAjiHeader
+
+    }
+    console.log(au)
     return au;
   }
 
@@ -65,21 +100,27 @@
   </div>
   <!-- HEADEEEER -->
   <Header>
+
+      <!-- class="page-header min-height-400" -->
     <div
       :class="`page-header min-vh-${hancho ?? '85'}`"
-      :style="`background-image: url(${vueMkAjiHeader})`"
+      :style="`background-image: url(${imgbg})`"
+      id= "imgBgMainQFT"
+      loading="lazy"
     >
+      <span class="mask bg-gradient-dark opacity-8"></span>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center mx-auto position-relative">
 
             <div class="row">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
-                <center>
+                <center v-if="hancho>80">
                   <img :src="logonb" alt="QFT" class='brandQFT'>  
                 </center>
               </div>
-              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2 mt-4">
+              <div v-if="hancho>80" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2 mt-4">
                 <h1
                   class="text-white pt-3 mt-n5 me-2"
                   :style="{ display: 'inline-block ', fontWeight: '700'}"
@@ -89,7 +130,10 @@
               </div>
             </div>
             
-            <p class="lead text-white px-5 mt-2" :style="{ fontWeight: '300' }">
+            <h2 v-if="hancho<=80" class="lead text-white px-5 mt-10" :style="{ fontWeight: '300' }">
+              Un producto 100% Colombiano, somos expertos en ají.
+            </h2>
+            <p v-else class="lead text-white px-5 mt-2" :style="{ fontWeight: '300' }">
               Un producto 100% Colombiano, somos expertos en ají.
             </p>
           </div>
@@ -110,7 +154,9 @@
 </template>
 
 <style>
-  @media only screen and (max-width: 480px) {
+
+
+  @media only screen and (max-width: 450px) {
     .brandQFT {
       min-height: 25px;
       min-width: 25px;
@@ -119,14 +165,25 @@
       margin-top: 15px;
       margin-bottom: 15px;
     }
+
+    #imgBgMainQFT{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
   }
-  @media only screen and (min-width: 481px) {
+
+  @media only screen and (min-width: 451px) {
     .brandQFT {
       color: white;
       min-height: 80px;
       min-width: 80px;
       width: 150px;
       height: 150px;
+    }
+
+    #imgBgMainQFT{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
   }
 </style>
