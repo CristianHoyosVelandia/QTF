@@ -11,9 +11,9 @@
             </div>
           </figure>
         </div>
-            <p class="font-weight-normal mt-4 mb-4">
-              {{label}}
-            </p>
+          <h5 class="font-weight-normal text-white mt-4 mb-4">
+            {{label}}
+          </h5>
       </center>
     </RouterLink>
   </div>
@@ -23,7 +23,17 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
-  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
+  import logonb from "@/assets/img/LogosQFT/iconnb.png"
+
+  // Images Assets
+  import rojoPicanteImg from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg";
+  import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
+  import CayeneMash from "@/assets/img/CayeneMash.jpg";
+  import NagaJolokiaMash from "@/assets/img/AjiJoloke.jpg";
+  import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";
+  import RojoMash from "@/assets/img/JalapenoRojo1.jpg";
+  import dulceRojo from "@/assets/img/DulceRojo/AjiDulceRojo.jpg";
+  import AmarilloImg from '@/assets/img/AjiAmarillo/Amarillo.png'
 
 
   // variables de los props
@@ -32,14 +42,45 @@
   const label = ref('name')
   
   const props = defineProps({ 
-    srcimg:       { default: 'name',         type: String },
+    srcimg:       { default: '@/assets/img/AjiAmarillo/Amarillo.png',         type: String },
     routerLink:   { default: 'hashtag',      type: String },
     label:        { default: 'name',         type: String },
   });
 
   onMounted(() => {
     console.log('valores de los props:', props);
-    srcimg.value      = props.srcimg
+    switch (props.srcimg) {
+      case 'RojoMash':
+        srcimg.value = RojoMash
+      break;
+      case 'AjijalapenoVerde':
+        srcimg.value = AjijalapenoVerde
+      break;
+      case 'dulceRojo':
+        srcimg.value = dulceRojo
+      break;
+      case 'rojoPicanteImg':
+        srcimg.value = rojoPicanteImg
+      break;
+      case 'AmarilloImg':
+        srcimg.value = AmarilloImg
+      break;
+      case 'habaneroRojo':
+        srcimg.value = habaneroRojo
+      break;
+      case 'NagaJolokiaMash':
+        srcimg.value = NagaJolokiaMash
+      break;
+      case 'RojoDulce':
+        srcimg.value = dulceRojo
+      break;
+      case 'CayeneMash':
+        srcimg.value = CayeneMash
+      break;
+      default:
+        srcimg.value = AmarilloImg
+    }
+
     routerLink.value  = props.routerLink
     label.value      =  props.label
 
@@ -48,15 +89,24 @@
 </script>
 
 <style>
+
+  
+
+  #imgMash{
+    border-radius: 20px;
+    height: 200px;
+    width: 220px;
+  }
+
   #justifycontent{
     text-align: justify;
   }
 
   .contenedor{
-    width: 200px;
+    width: 220px;
+    height: 200px;
     margin: auto;
     border-radius: 20px;
-    height: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +114,12 @@
 
   .contenedor figure{
     position: relative;
-    height: 180px;
-    width: 200px;
+    height: 200px;
+    width: 220px;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0px 15px 25px
-    rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 15px 25px
+    rgba(255, 255, 255, 0.1);
     cursor:pointer
   }
 
@@ -82,10 +132,11 @@
   .contenedor figure .capa{
     position: absolute;
     top: 0;
+    padding-top: 15%;
     width: 100%;
     height: 100%;
     /* background: #4AB6B4; */
-    background: #375496;
+    background: #3A3A40;
     transition: all 500ms ease-out;
     opacity: 0.3;
     visibility: hidden;
@@ -98,8 +149,8 @@
   }
 
   .contenedor figure:hover > .capa p{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px;
     color: #fff;

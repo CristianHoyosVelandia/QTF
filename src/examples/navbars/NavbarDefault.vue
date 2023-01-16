@@ -313,34 +313,6 @@ watch(
                     </a>
                   </li>
 
-                  <!-- Nuestros Procesos -->
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <RouterLink
-                            :to="{ name: 'el-buttons' }"
-                            >
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                              >
-                                Nuestros Procesos
-                              </h6>
-                            </RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
                   <!-- Certificaciones -->
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
@@ -409,14 +381,7 @@ watch(
                   >
                     Publicaciones
                   </RouterLink>
-
-                  <RouterLink
-                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'navigation-navtabs' }"
-                  >
-                    Nuestros Procesos
-                  </RouterLink>
-
+                  
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'navigation-pagination' }"

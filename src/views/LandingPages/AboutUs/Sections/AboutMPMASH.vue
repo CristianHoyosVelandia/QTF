@@ -2,15 +2,62 @@
 // example components
 import CenteredBlogCardMP from "../../../../examples/cards/blogCards/CenteredBlogCardMP.vue";
 import mashImg from "@/assets/img/mash.png";
-import rojoPicanteImg from "@/assets/img/AjiRojoPicante.jpg";
-import AmarilloImg from "@/assets/img/AjijAmarillo/AjiAmarillo.jpg";
-import Ajijolokee from "@/assets/img/AjiJoloke.jpg";
-import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";
-import RojoMash from "@/assets/img/RojoMash.png";
-import dulceRojo from "@/assets/img/dulceRojo.png";
 
+import Carrousel from './Carrousel.vue'
 import InfoCards from '@/views/LandingPages/AboutUs/Sections/components/infoCards.vue'
 import MainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainInfoCard.vue'
+
+import { onMounted, ref } from 'vue';
+
+// variables de los props
+const listCarrousel = ref([]);
+  
+onMounted(() => {
+  listCarrousel.value = [
+    {
+      srcimg : "RojoMash",
+      routerLink : "/nuestrosAjisMash-QFT/1",
+      label : "Ají Jalapeño Rojo"
+    },
+    {
+      srcimg : "AjijalapenoVerde",
+      routerLink : "/nuestrosAjisMash-QFT/2",
+      label : "Ají Jalapeño Verde Mash"
+    },
+    {
+      srcimg : "CayeneMash",
+      routerLink : "/nuestrosAjisMash-QFT/3",
+      label : "Ají Cayene Rojo Mash"
+    },
+    {
+      srcimg : "rojoPicanteImg",
+      routerLink : "/nuestrosAjisMash-QFT/4",
+      label : "Ají Picante Rojo"
+    },
+    {
+      srcimg : "AmarilloImg",
+      routerLink : "/nuestrosAjisMash-QFT/5",
+      label : "Ají Amarillo Mash"
+    },    
+    {
+      srcimg : "habaneroRojo",
+      routerLink : "/nuestrosAjisMash-QFT/6",
+      label : "Ají Habanero Rojo Mash"
+    },
+    {
+      srcimg : "NagaJolokiaMash",
+      routerLink : "/nuestrosAjisMash-QFT/7",
+      label : "Ají Naga Jolokia Mash"
+    },
+    {
+      srcimg : "RojoDulce",
+      routerLink : "/nuestrosAjisMash-QFT/8",
+      label : "Ají Rojo Dulce Mash"
+    },
+
+
+  ]
+})
 
 </script>
 <template>
@@ -98,6 +145,9 @@ import MainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainI
 
             <h3 class="mb-4 text-white"> Algunos de nuestros ejemplares: </h3>
 
+            <Carrousel
+              :listCarrousel="listCarrousel"
+            />
 
         </div>
 
@@ -110,12 +160,6 @@ import MainInfoCard from '@/views/LandingPages/AboutUs/Sections/components/mainI
 <style>
   #justifycontent{
     text-align: justify;
-  }
-
-  #imgMash{
-    border-radius: 20px;
-    height: 180px;
-    width: 220px;
   }
 
 </style>

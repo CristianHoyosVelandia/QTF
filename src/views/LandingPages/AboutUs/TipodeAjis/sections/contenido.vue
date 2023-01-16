@@ -155,7 +155,7 @@
 
   #imgMash{
     border-radius: 20px;
-    height: 180px;
+    height: 200px;
     width: 220px;
   }
   .FillHeight{

@@ -50,7 +50,7 @@ defineProps({
         suffix
       }}
     </h1>
-    <h5 class="mt-3" :class="`text-gradient text-${color ?? 'success'}`">{{ title }}</h5>
+    <h5 class="mt-3 mb-5" :class="`text-gradient text-${color ?? 'success'}`">{{ title }}</h5>
     <!-- <p class="text-sm font-weight-normal">  {{ description }} </p> -->
   </div>
   <hr :class="`${divider ? divider : ''} dark`" />

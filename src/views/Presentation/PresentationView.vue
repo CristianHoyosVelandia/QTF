@@ -142,11 +142,19 @@
     </div>
   </Header>
 
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+  <div v-if="hancho>80" class="card card-body mx-3 mx-md-4 mt-n6">
     
 
-    <PresentationCounter />
+    <PresentationCounter/>
     <InformacionRelevante />
+    <!-- <PresentationTestimonials /> -->
+
+  </div>
+
+  <div v-else class="card card-body mx-3 mx-md-4 mt-n6">
+    
+    <InformacionRelevante />
+    <PresentationCounter/>
     <!-- <PresentationTestimonials /> -->
 
   </div>

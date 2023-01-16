@@ -59,9 +59,6 @@ defineProps({
             name: "Noticias",
             href: "https://www.creative-tim.com/templates/free"
           },
-          { name: "Nuestros Procesos",
-            href: "https://www.creative-tim.com/blog" 
-          },
           { name: "Certificaciones",
             href: "https://www.creative-tim.com/blog" 
           }
