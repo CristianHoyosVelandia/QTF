@@ -1,10 +1,11 @@
 <template>
-  <carousel :items-to-show="1" class="mt-lg-5">
+  <carousel :items-to-show="1" class="mt-lg-2">
     <slide v-for="item in props.listCarrousel" :key="item">
       <InfoCards
         :srcimg = "item.srcimg"
         :routerLink = "item.routerLink"
         :label = "item.label"
+        :desc =  "item.desc"
       />
     </slide>
 

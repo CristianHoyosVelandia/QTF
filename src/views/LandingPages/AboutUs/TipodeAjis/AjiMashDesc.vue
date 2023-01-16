@@ -64,10 +64,10 @@
         ingredientes.value = ["Mash ají jalapeño Rojo", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
         vidaUtil.value = '24 meses.'
-        mainImg.value = "../../../../../assets/img/mash.png"
-        Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-        Mimg2.value = "../../../../../assets/img/JalapenoRojo1.jpg"
-        Mimg3.value = "../../../../../assets/img/JalapeñosRojos2.jpg"
+        mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/3.jpg"
+        Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/2.jpg"
+        Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/jr1.jpg"
+        Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/jr2.jpg"
 
         break;
       case '2':
@@ -79,43 +79,43 @@
         ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
         vidaUtil.value = '24 Meses'
-        mainImg.value = "../../../../../assets/img/mash.jpg"
-        Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-        Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-        Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+        mainImg.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv3.jpg"
+        Mimg1.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv2.jpg"
+        Mimg2.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv1.jpg"
+        Mimg3.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv4.jpg"
 
         break;
 
       case '3':
         
-          tittle.value ='AJÍ CAYENNE ROJO MASH ',
-          contentido.value = 'Los pimientos de cayena son un grupo de pimientos ahusados, de 10 a 25 cm de largo, generalmente delgados, mayoritariamente de color rojo, Normalmente es un ají moderadamente picante, a menudo con una punta curvada y una piel un poco ondulada, que cuelga del arbusto, los chiles se originaron en América del Sur, donde han estado bajo cultivo desde tiempos prehistóricos. La larga viabilidad de la semilla facilitó la rápida propagación de la planta a través de los trópicos y subtrópicos por los españoles y portugueses, el Cayenne es usado para fabricación de salsas, especia en la cocina, condimento en mesa, encurtidos, kétchups y alimentos ahumados.',
-          img.value = '',
-          especie.value = 'Capsicum annuum',
-          scoville.value = '30.000 – 50.000',
-          ingredientes.value = ["Mash ají Cayenne Rojo", "Ácido acético", "Sal"]
-          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
-          vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+        tittle.value ='AJÍ CAYENNE ROJO MASH ',
+        contentido.value = 'Los pimientos de cayena son un grupo de pimientos ahusados, de 10 a 25 cm de largo, generalmente delgados, mayoritariamente de color rojo, Normalmente es un ají moderadamente picante, a menudo con una punta curvada y una piel un poco ondulada, que cuelga del arbusto, los chiles se originaron en América del Sur, donde han estado bajo cultivo desde tiempos prehistóricos. La larga viabilidad de la semilla facilitó la rápida propagación de la planta a través de los trópicos y subtrópicos por los españoles y portugueses, el Cayenne es usado para fabricación de salsas, especia en la cocina, condimento en mesa, encurtidos, kétchups y alimentos ahumados.',
+        img.value = '',
+        especie.value = 'Capsicum annuum',
+        scoville.value = '30.000 – 50.000',
+        ingredientes.value = ["Mash ají Cayenne Rojo", "Ácido acético", "Sal"]
+        presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+        vidaUtil.value = '24 meses'
+        mainImg.value = "../../../../../assets/img/CayeneMash/c1.jpg"
+        Mimg1.value = "../../../../../assets/img/CayeneMash/c2.jpg"
+        Mimg2.value = "../../../../../assets/img/CayeneMash/c3.jpg"
+        Mimg3.value = "../../../../../assets/img/CayeneMash/c4.jpg"
 
         break;
 
       case '4':
         
-          tittle.value ='AJÍ PICANTE ROJO MASH',
-          contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
-          img.value = '',
-          especie.value = 'Capsicum frutescens',
-          scoville.value = '30.000 - 70.000',
-          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
-          vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+        tittle.value ='AJÍ PICANTE ROJO MASH',
+        contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
+        img.value = '',
+        especie.value = 'Capsicum frutescens',
+        scoville.value = '30.000 - 70.000',
+        presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+        vidaUtil.value = '24 meses '
+        mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
+        Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
+        Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
+        Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
 
         break;
 
@@ -129,10 +129,10 @@
           ingredientes.value = ["Mash ají Amarillo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+          mainImg.value = "../../../../../assets/img/AjiAmarillo/Amarillo.png"
+          Mimg1.value = "../../../../../assets/img/AjiAmarillo/AjiAmarillo.jpg"
+          Mimg2.value = "../../../../../assets/img/AjiAmarillo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/AjiAmarillo/4.jpg"
 
         break;
 
@@ -146,10 +146,41 @@
           ingredientes.value = ["Mash ají picante rojo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+          mainImg.value = "../../../../../assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg"
+          Mimg1.value = "../../../../../assets/img/AjiHabaneroRojo/habanero.jpg"
+          Mimg2.value = "../../../../../assets/img/AjiHabaneroRojo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/AjiHabaneroRojo/4.jpg"
+
+        break;
+      case '7':
+          tittle.value ='AJÍ PICANTE ROJO MASH',
+          contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
+          img.value = '',
+          especie.value = 'Capsicum frutescens',
+          scoville.value = '30.000 - 70.000',
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
+          vidaUtil.value = '24 meses '
+          mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
+          Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
+          Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
+
+        break;
+      
+      case '9':
+          tittle.value ='AJÍ NAGA JOLOKIA MASH',
+          contentido.value = 'El Naga Jolokia es uno de los pimientos más picantes del mundo, Una gota de extracto de este pimiento necesita un millón de gotas de agua para que ya no se perciba como fuerte. ¡Este ají es 125 veces más picante que un jalapeño! Esta pimienta proviene del noreste de la India, particularmente de Assam, Nagaland y Manipur. Bhut Jolokia (o Naga Jolokia, Pimienta Fantasma) es dos veces más picante que el campeón anterior, la Savina Roja, y fue registrado en el Libro Guinness de los Récords como el pimiento más picante del mundo. Las plantas pueden crecer hasta 45-120 cm. Las vainas miden de 5 a 8,5 cm de largo y de 2,5 a 3 cm de ancho. El Bhut Jolokia ama el calor y la humedad, pero con un poco más de cuidado y amor crecerá bien en un clima más fresco. El tiempo de germinación es similar al de los chiles habaneros, por lo que tardará más que otros.',
+          img.value = '',
+          especie.value = 'Capsicum chinense',
+          scoville.value = '800.000 - 1.001.300',
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          ingredientes.value = ["Mash ají Naga jolokia ", "Ácido acético", "Sal"]
+          vidaUtil.value = '24 meses '
+          mainImg.value = "../../../../../assets/img/Joloke/AjiJoloke.jpg"
+          Mimg1.value = "../../../../../assets/img/Joloke/2.jpg"
+          Mimg2.value = "../../../../../assets/img/Joloke/3.jpg"
+          Mimg3.value = "../../../../../assets/img/Joloke/4.jpg"
 
         break;
 
@@ -162,10 +193,10 @@
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
           vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/1.jpg"
+          mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
+          Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
+          Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
 
         break;
     }
@@ -202,6 +233,7 @@
   </header>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <Contenido 
+      :tittle="tittle"
       :mainImg="mainImg"
       :Mimg1 ="Mimg1"
       :Mimg2 ="Mimg2"

@@ -1,7 +1,7 @@
 <template>
-  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+  <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
     <RouterLink :to="routerLink">
-      <center>
+      <div class="row justify-content-center">
         <div class="info contenedor">
           <figure>
             <img :src="srcimg" :alt="label" class="img-fluid border-radius-lg" id="imgMash" />
@@ -11,10 +11,37 @@
             </div>
           </figure>
         </div>
-          <h5 class="font-weight-normal text-white mt-4 mb-4">
+        <div v-if="hancho<=80" class="m-lg-4 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+
+          <div class="row justify-content-center">
+            <div class="col-4" v-for="item in props.desc" :key="item">
+              <img :src="fire" id="fireGFT">
+            </div>
+            <div class="col-4" v-for="item in (3-props.desc)" :key="item">
+              <img :src="fireoff" id="fireGFT">
+            </div>
+          </div>
+          <h4 class="font-weight-normal text-white mt-2 mb-4">
             {{label}}
-          </h5>
-      </center>
+          </h4>
+        </div>
+      </div>
+    </RouterLink>
+  </div>
+  
+  <div v-if="hancho>80" class="m-lg-4 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+    <RouterLink :to="routerLink">
+        <div class="row justify-content-center">
+          <div class="col-4" v-for="item in props.desc" :key="item">
+            <img :src="fire" id="fireGFT">
+          </div>
+          <div class="col-4" v-for="item in (3-props.desc)" :key="item">
+            <img :src="fireoff" id="fireGFT">
+          </div>
+        </div>
+      <h4 class="font-weight-normal text-white mt-2 mb-4">
+        {{label}}
+      </h4>
     </RouterLink>
   </div>
     
@@ -24,18 +51,45 @@
 <script setup>
   import { onMounted, ref } from 'vue';
   import logonb from "@/assets/img/LogosQFT/iconnb.png"
+  import fire from "@/assets/img/fuego/fire.png"
+  import fireoff from "@/assets/img/fuego/fireoff.png"
+
 
   // Images Assets
+  import PicanteRojo from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg"
   import rojoPicanteImg from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg";
   import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
-  import CayeneMash from "@/assets/img/CayeneMash.jpg";
+  import CayeneMash from "@/assets/img/CayeneMash/c1.jpg";
   import NagaJolokiaMash from "@/assets/img/AjiJoloke.jpg";
   import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";
   import RojoMash from "@/assets/img/JalapenoRojo1.jpg";
   import dulceRojo from "@/assets/img/DulceRojo/AjiDulceRojo.jpg";
   import AmarilloImg from '@/assets/img/AjiAmarillo/Amarillo.png'
 
+  var ancho = window.innerWidth;
+  var hancho = calcularHight(ancho);
 
+  function calcularHight(ancho) {
+    
+    var au;
+    if(  0 <= ancho  && ancho <= 350 ) {
+      au = 80
+    }
+    
+    else if ( 351 <= ancho  && ancho <= 450  ){ 
+      au = 80
+    }
+
+    else if ( 451 <= ancho  && ancho <= 781  ){ 
+      au = 80
+    }
+    
+    else {
+      au = 85
+    }
+
+    return au;
+  }
   // variables de los props
   const srcimg = ref(' ');
   const routerLink = ref(' ');
@@ -45,6 +99,8 @@
     srcimg:       { default: '@/assets/img/AjiAmarillo/Amarillo.png',         type: String },
     routerLink:   { default: 'hashtag',      type: String },
     label:        { default: 'name',         type: String },
+    desc:         { default:  2 ,           type: Number},
+
   });
 
   onMounted(() => {
@@ -76,6 +132,9 @@
       break;
       case 'CayeneMash':
         srcimg.value = CayeneMash
+      break;
+      case 'PicanteRojo':
+        srcimg.value =PicanteRojo
       break;
       default:
         srcimg.value = AmarilloImg
@@ -112,6 +171,11 @@
     align-items: center;
   }
 
+  #fireGFT{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 50px;
+  }
   .contenedor figure{
     position: relative;
     height: 200px;

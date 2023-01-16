@@ -17,42 +17,63 @@ onMounted(() => {
     {
       srcimg : "RojoMash",
       routerLink : "/nuestrosAjisMash-QFT/1",
-      label : "Ají Jalapeño Rojo"
+      label : "Ají Jalapeño Rojo",
+      desc  : 1
     },
     {
       srcimg : "AjijalapenoVerde",
       routerLink : "/nuestrosAjisMash-QFT/2",
-      label : "Ají Jalapeño Verde Mash"
+      label : "Ají Jalapeño Verde Mash",
+      desc  : 1
+
     },
     {
       srcimg : "CayeneMash",
       routerLink : "/nuestrosAjisMash-QFT/3",
-      label : "Ají Cayene Rojo Mash"
+      label : "Ají Cayene Rojo Mash",
+      desc  : 2
+
     },
     {
       srcimg : "rojoPicanteImg",
       routerLink : "/nuestrosAjisMash-QFT/4",
-      label : "Ají Picante Rojo"
+      label : "Ají Picante Rojo",
+      desc  : 3
+
     },
     {
       srcimg : "AmarilloImg",
       routerLink : "/nuestrosAjisMash-QFT/5",
-      label : "Ají Amarillo Mash"
+      label : "Ají Amarillo Mash",
+      desc  : 2
+
     },    
     {
       srcimg : "habaneroRojo",
       routerLink : "/nuestrosAjisMash-QFT/6",
-      label : "Ají Habanero Rojo Mash"
+      label : "Ají Habanero Rojo Mash",
+      desc  : 3
+
     },
     {
-      srcimg : "NagaJolokiaMash",
+      srcimg : "PicanteRojo",
       routerLink : "/nuestrosAjisMash-QFT/7",
-      label : "Ají Naga Jolokia Mash"
+      label : "Ají Picante Rojo",
+      desc  : 2
+
     },
     {
       srcimg : "RojoDulce",
       routerLink : "/nuestrosAjisMash-QFT/8",
-      label : "Ají Rojo Dulce Mash"
+      label : "Ají Rojo Dulce Mash",
+      desc  : 2
+
+    },
+    {
+      srcimg : "NagaJolokiaMash",
+      routerLink : "/nuestrosAjisMash-QFT/9",
+      label : "Ají Naga Jolokia Mash",
+      desc  : 3
     },
 
 
@@ -85,65 +106,8 @@ onMounted(() => {
         <div class="col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0 ms-auto mt-2"/>
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ms-auto mt-2">
-  
-            <!-- <h6 class="mb-4"> Algunos de nuestros ejemplares: </h6>
 
-            <div class="row justify-content-center">
-
-              <InfoCards
-                :srcimg = "RojoMash"
-                routerLink = "/nuestrosAjisMash-QFT/1"
-                label = "Ají Jalapeño Rojo"
-              />
-
-              <InfoCards
-                :srcimg = "AjijalapenoVerde"
-                routerLink = "/nuestrosAjisMash-QFT/2"
-                label = "Ají Jalapeño Verde Mash"
-              />
-
-              <InfoCards
-                :srcimg = "dulceRojo"
-                routerLink = "/nuestrosAjisMash-QFT/3"
-                label = "Ají Cayene Rojo Mash"
-              />
-
-              <InfoCards
-                :srcimg = "rojoPicanteImg"
-                routerLink = "/nuestrosAjisMash-QFT/4"
-                label = "Ají Picante Rojo"
-              />
-
-              <InfoCards
-                :srcimg = "AmarilloImg"
-                routerLink = "/nuestrosAjisMash-QFT/5"
-                label = "Ají Amarillo Mash"
-              />
-
-              <InfoCards
-                :srcimg = "AmarilloImg"
-                routerLink = "/nuestrosAjisMash-QFT/6"
-                label = "Ají Habanero Rojo Mash"
-              />
-
-              <InfoCards
-                :srcimg = "AmarilloImg"
-                routerLink = "/nuestrosAjisMash-QFT/7"
-                label = "Ají Naga Jolokia Mash"
-              />
-
-              <InfoCards
-                :srcimg = "AmarilloImg"
-                routerLink = "/nuestrosAjisMash-QFT/8"
-                label = "Ají Rojo Dulce Mash"
-              />
-
-
-
-
-            </div> -->
-
-            <h3 class="mb-4 text-white"> Algunos de nuestros ejemplares: </h3>
+            <h3 class="mt-2 mb-6 text-white"> Algunos de nuestros ejemplares: </h3>
 
             <Carrousel
               :listCarrousel="listCarrousel"

@@ -26,6 +26,7 @@
     const vidaUtil = ref('');
 
     const props = defineProps({ 
+      tittle:      { default: 'name',         type: String },
       mainImg:      { default: '@/assets/img/mash.png"',         type: String },
       Mimg1:        { default: '@/assets/img/mash.png"',         type: String },
       Mimg2:        { default: '@/assets/img/mash.png"',         type: String },
@@ -118,7 +119,7 @@
               <br>
               <h5 class="font-weight-normal" id="subtittle">Composición:</h5>
               <p class="mb-0" id="justifycontent">
-                •	Mash ají jalapeño rojo
+                •	{{props.tittle}}
               </p>
               <p class="mb-0" id="justifycontent">    
                 •	Conservantes Naturales

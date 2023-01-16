@@ -53,26 +53,26 @@ defineProps({
         items: [
           {
             name: "Información General",
-            href: "https://www.creative-tim.com/presentation"
+            href: "procesosFab"
           },
           {
             name: "Noticias",
-            href: "https://www.creative-tim.com/templates/free"
+            href: "procesosFab"
           },
           { name: "Certificaciones",
-            href: "https://www.creative-tim.com/blog" 
+            href: "procesosFab" 
           }
         ]
       },
       {
         name: "Productos",
         items: [
-          { name: "Productos Terminados", href: "https://iradesign.io/" },
+          { name: "Productos Terminados", href: "procesosFab" },
           {
             name: "Contactanos",
-            href: "https://www.creative-tim.com/bits"
+            href: "procesosFab"
           },
-          { name: "Recetas", href: "https://iradesign.io/" },
+          { name: "Recetas", href: "procesosFab" },
         ]
       },
       {
@@ -80,11 +80,11 @@ defineProps({
         items: [
           {
             name: "Centros de Experiencia",
-            href: "https://www.creative-tim.com/knowledge-center"
+            href: "procesosFab"
           },
           {
             name: "Visitas Guiadas",
-            href: "https://services.creative-tim.com/"
+            href: "procesosFab"
           }
         ]
       }
@@ -131,9 +131,9 @@ defineProps({
           <h6 class="text-sm">{{ name }}</h6>
           <ul class="flex-column ms-n3 nav">
             <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href" target="_blank">
+              <RouterLink class="nav-link" :to="{ name: item.href }">
                 {{ item.name }}
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
