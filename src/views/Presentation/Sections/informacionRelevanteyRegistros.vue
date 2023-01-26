@@ -40,14 +40,14 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
         </div>
         <div class="col-lg-6 ms-auto">
           <div class="row justify-content-start">
+              <!-- icon="content_copy" -->
             <DefaultInfoCard
-              icon="content_copy"
               title="100% Vallecaucanos"
               description="Agricultores del y para el Valle del Cauca; especialistas en el procesamiento de materias primas,
               que garantizan la satisfacción de nuestros clientes y generen el mínimo impacto al medio ambiente. "
             />
+              <!-- icon="flip_to_front" -->
             <DefaultInfoCard
-              icon="flip_to_front"
               title="Capacitaciones"
               description="Construyendo y Formando Tejido Social."
             />

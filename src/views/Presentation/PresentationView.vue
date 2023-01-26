@@ -12,11 +12,11 @@
   //images
   // import vueMkAjiHeader from "@/assets/img/aji.png";
   // import vueMkAjiHeader from "@/assets/img/backgrounds/bgt1.png";
-  import vueMkAjiHeader from "@/assets/img/backgrounds/bgt2.png";
+  import vueMkAjiHeader from "@/assets/img/backgrounds/bg1.png";
   import vueMkAjiHeaderMobile from "@/assets/img/backgrounds/bgt1.png";
 
 
-  import logonb from "@/assets/img/LogosQFT/icnbnd.png"
+  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
   
   //hooks
   const body = document.getElementsByTagName("body")[0];

@@ -1,5 +1,21 @@
 <script setup>
-defineProps({
+
+  import { onMounted, ref } from 'vue';
+  const emit = defineEmits(['updateValue']);
+  
+  const controller = ref("");
+
+  function uploadEmit() {
+    emit('updateValue', controller.value);
+  }
+  
+  onMounted(() => { 
+    if (props.controller) {
+      controller.value = props.controller;
+    }
+  });
+
+ const props= defineProps({
   id: {
     type: String,
     default: "message",
@@ -16,6 +32,7 @@ defineProps({
     type: String,
     default: "",
   },
+  controller: { type: String }
 });
 </script>
 <template>
@@ -27,6 +44,8 @@ defineProps({
       :id="id"
       :placeholder="placeholder"
       :rows="rows"
+      v-model="controller"
+      @change="uploadEmit"
     />
   </div>
 </template>

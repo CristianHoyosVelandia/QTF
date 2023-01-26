@@ -5,7 +5,7 @@
   import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
   import DefaultFooter from "@/examples/footers/FooterDefault.vue";
   import Empresa from "../../../../views/LandingPages/AboutUs/Sections/AboutEmpresa.vue"
-  import logonb from "@/assets/img/LogosQFT/icnbnd.png"
+  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
   //image
   import bg0 from "@/assets/img/chilop2.jpg";
 
@@ -41,7 +41,7 @@
 <template>
   <DefaultNavbar
     :action="{
-      route: 'https://api.whatsapp.com/send?phone=573176703596&text=Hola&source=&data=',
+      route: 'https://api.whatsapp.com/send?phone=573125600426&text=Hola&source=&data=',
       color: 'btn-white',
     }"
     transparent

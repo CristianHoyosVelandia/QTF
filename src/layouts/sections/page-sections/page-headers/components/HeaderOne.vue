@@ -47,24 +47,24 @@ const bgImage =
             <li class="nav-item">
               <a
                 class="nav-link text-white"
-                href="https://twitter.com/CreativeTim"
               >
+                <!-- href="https://twitter.com/CreativeTim" -->
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-white mx-2"
-                href="https://www.facebook.com/CreativeTim"
               >
+                <!-- href="https://www.facebook.com/CreativeTim" -->
                 <i class="fab fa-facebook"></i>
               </a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-white"
-                href="https://www.instagram.com/CreativeTimOfficial"
               >
+                <!-- href="https://www.instagram.com/CreativeTimOfficial" -->
                 <i class="fab fa-instagram"></i>
               </a>
             </li>

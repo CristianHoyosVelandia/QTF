@@ -43,7 +43,7 @@
 <template>
   <DefaultNavbar
     :action="{
-      route: 'https://api.whatsapp.com/send?phone=573176703596&text=Hola&source=&data=',
+      route: 'https://api.whatsapp.com/send?phone=573125600426&text=Hola&source=&data=',
       color: 'btn-white',
     }"
     transparent

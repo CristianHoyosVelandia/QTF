@@ -54,12 +54,26 @@ export default {
         :class="
           typeof title == 'string' ? 'font-weight-bolder mt-3' : title.class
         "
+        id="tittleColorFromDefault"
       >
         {{ typeof title == "string" ? title : title.text }}
       </h5>
-      <p :class="typeof description == 'string' ? 'pe-5' : description.class">
+      <p :class="typeof description == 'string' ? 'pe-5 mt-2' : description.class"
+        id="pColorFromDefault"
+      >
         {{ typeof description == "string" ? description : description.text }}
       </p>
     </div>
   </div>
 </template>
+
+<style>
+  #tittleColorFromDefault{
+    color: #55AE59;
+    margin-bottom: 30px;
+  }
+
+  #pColorFromDefault{
+    text-align: justify;
+  }
+</style>

@@ -15,7 +15,7 @@ const props = defineProps({
     color: String,
     label: String,
     default: () => ({
-      route: "https://api.whatsapp.com/send?phone=573176703596&text=Hola&source=&data=",
+      route: "https://api.whatsapp.com/send?phone=573125600426&text=Hola,Me encuentro interesado en tus productos.&source=&data=",
       color: "bg-gradient-success",
       label: "Free Download"
     })
@@ -222,38 +222,17 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'procesosFab' }"
+                        to="/nuestroProceso-QFT"
                       >
                         Proceso de Fabricacion
                       </RouterLink>
+                      <RouterLink
+                        class="dropdown-item ps-3 border-radius-md mb-1"
+                        to="/Noticias"
+                      >
+                        Noticias
+                      </RouterLink>
                     </div>
-                  </li>
-
-                  <!-- Noticias -->
-                  <li
-                    class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
-                  >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
-                      <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
-                          <div>
-                            <RouterLink
-                            :to="{ name: 'Noticias' }"
-                            >
-                            <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
-                            >
-                              Noticias
-                            </h6>
-                            </RouterLink>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
                   </li>
 
                   <!-- Centros de Distribución -->
@@ -270,7 +249,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'Ubicacion' }"
+                            to="/Ubicacion"
                             >
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -299,7 +278,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            :to="{ name: 'el-buttons' }"
+                            to="/Publicaciones"
                             >
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -343,7 +322,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'el-buttons' }"
+                        to="/HACPP"
                       >
                         HACCP
                       </RouterLink>

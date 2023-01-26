@@ -1,73 +1,92 @@
 <script setup>
-defineProps({
-  id: {
-    type: String,
-    default: "",
-  },
-  type: {
-    type: String,
-    default: "text",
-  },
-  label: {
-    type: [String, Object],
-    text: String,
-    class: String,
-    default: () => ({
-      class: "",
-    }),
-  },
-  value: {
-    type: String,
-    default: "",
-  },
-  placeholder: {
-    type: String,
-    default: "",
-  },
-  size: {
-    type: String,
-    default: "md",
-  },
-  error: {
-    type: Boolean,
-    default: false,
-  },
-  success: {
-    type: Boolean,
-    default: false,
-  },
-  isRequired: {
-    type: Boolean,
-    default: false,
-  },
-  isDisabled: {
-    type: Boolean,
-    default: false,
-  },
-  inputClass: {
-    type: String,
-    default: "",
-  },
-  icon: {
-    type: String,
-    default: "",
-  },
-});
-function getClasses(size, success, error) {
-  let sizeValue, isValidValue;
+  import { onMounted, ref } from 'vue';
 
-  sizeValue = size && `form-control-${size}`;
+  const emit = defineEmits(['updateValue']);
+  
+  const controller = ref("");
 
-  if (error) {
-    isValidValue = "is-invalid";
-  } else if (success) {
-    isValidValue = "is-valid";
-  } else {
-    isValidValue = "";
+  function uploadEmit() {
+    emit('updateValue', controller.value);
+  }
+  
+  onMounted(() => { 
+    if (props.controller) {
+      controller.value = props.controller;
+    }
+  });
+
+  const props = defineProps({
+    id: {
+      type: String,
+      default: "",
+    },
+    type: {
+      type: String,
+      default: "text",
+    },
+    label: {
+      type: [String, Object],
+      text: String,
+      class: String,
+      default: () => ({
+        class: "",
+      }),
+    },
+    placeholder: {
+      type: String,
+      default: "",
+    },
+    size: {
+      type: String,
+      default: "md",
+    },
+    error: {
+      type: Boolean,
+      default: false,
+    },
+    success: {
+      type: Boolean,
+      default: false,
+    },
+    isRequired: {
+      type: Boolean,
+      default: false,
+    },
+    isDisabled: {
+      type: Boolean,
+      default: false,
+    },
+    inputClass: {
+      type: String,
+      default: "",
+    },
+    icon: {
+      type: String,
+      default: "",
+    },
+    controller: { type: String }
+  });
+  
+  
+  function getClasses(size, success, error) {
+    let sizeValue, isValidValue;
+
+    sizeValue = size && `form-control-${size}`;
+
+    if (error) {
+      isValidValue = "is-invalid";
+    } else if (success) {
+      isValidValue = "is-valid";
+    } else {
+      isValidValue = "";
+    }
+
+    return `${sizeValue} ${isValidValue}`;
   }
 
-  return `${sizeValue} ${isValidValue}`;
-}
+  
+
+  
 </script>
 <template>
   <div class="input-group">
@@ -82,10 +101,11 @@ function getClasses(size, success, error) {
       :type="type"
       class="form-control"
       :class="[getClasses(size, success, error), inputClass]"
-      :value="value"
       :placeholder="placeholder"
       :isRequired="isRequired"
       :disabled="isDisabled"
+      v-model="controller"
+      @change="uploadEmit"
     />
   </div>
 </template>

@@ -93,6 +93,16 @@ const router = createRouter({
       component: Noticias,
     },
     {
+      path: "/Publicaciones",
+      name: "Publicaciones",
+      component: Noticias,
+    },
+    {
+      path: "/HACPP",
+      name: "Certificaciones-HACPP",
+      component: Noticias,
+    },
+    {
       path: "/Ubicacion",
       name: "Ubicacion",
       component: Ubicacion,

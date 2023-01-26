@@ -41,7 +41,7 @@
 <template>
   <DefaultNavbar
     :action="{
-      route: 'https://api.whatsapp.com/send?phone=573176703596&text=Hola&source=&data=',
+      route: 'https://api.whatsapp.com/send?phone=573125600426&text=Hola&source=&data=',
       color: 'btn-white',
     }"
     transparent
@@ -57,7 +57,7 @@
           <div class="col-lg-8 text-center mx-auto my-auto">
             <br>
             <h1 class="text-white">
-              Nuestro Proceso QFT
+              Nuestro Proceso QTF
             </h1>
             <p class="lead mb-4 text-white opacity-8">
               Conoce como obtenemos nuestros Ajis con la mejor Calidad.
