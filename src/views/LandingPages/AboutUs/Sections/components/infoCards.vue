@@ -50,21 +50,35 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
-  import logonb from "@/assets/img/LogosQFT/iconnb.png"
+  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
   import fire from "@/assets/img/fuego/fire.png"
   import fireoff from "@/assets/img/fuego/fireoff.png"
 
 
   // Images Assets
+  //AJIS NORMALES
   import PicanteRojo from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg"
   import rojoPicanteImg from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg";
-  import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
+  // import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
+  import habaneroRojo from "@/assets/img/AjiHabaneroRojo/Habanero.jpg";
   import CayeneMash from "@/assets/img/CayeneMash/c1.jpg";
   import NagaJolokiaMash from "@/assets/img/AjiJoloke.jpg";
   import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";
   import RojoMash from "@/assets/img/JalapenoRojo1.jpg";
   import dulceRojo from "@/assets/img/DulceRojo/AjiDulceRojo.jpg";
-  import AmarilloImg from '@/assets/img/AjiAmarillo/Amarillo.png'
+  import AmarilloImg from '@/assets/img/AjiAmarillo/Amarillo.png';
+
+
+  //AJIS DESPULPADO
+  // import PastaCayene from '@/assets/img/AjiJalapenoVerde.jpg';
+  import PastaCayene from '@/assets/img/Pulpa/cayene/1.jpg';
+  import HabaneroCayene from '@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg';
+  import PastaJoloke from '@/assets/img/Joloke/3.jpg';
+  import PastaJalapeno from '@/assets/img/ajimashJalapenoRojo/2.jpg';
+
+
+
+
 
   var ancho = window.innerWidth;
   var hancho = calcularHight(ancho);
@@ -104,7 +118,7 @@
   });
 
   onMounted(() => {
-    console.log('valores de los props:', props);
+    // console.log('valores de los props:', props);
     switch (props.srcimg) {
       case 'RojoMash':
         srcimg.value = RojoMash
@@ -136,10 +150,25 @@
       case 'PicanteRojo':
         srcimg.value =PicanteRojo
       break;
-      default:
+      // Pulpa
+      case 'CayeneDespulpado':
+        srcimg.value = PastaCayene
+      break;
+      case 'AmarilloDespulpado':
         srcimg.value = AmarilloImg
+      break;
+      case 'HabaneroRojoDespulpado':
+        srcimg.value = HabaneroCayene
+      break;
+      case 'JolikiaDespulpado':
+        srcimg.value = PastaJoloke
+      break;
+      case 'JalapeñoDespulpado':
+        srcimg.value = PastaJalapeno
+      break;
+      default:
+        srcimg.value = PicanteRojo
     }
-
     routerLink.value  = props.routerLink
     label.value      =  props.label
 

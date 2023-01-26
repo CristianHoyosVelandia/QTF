@@ -40,7 +40,7 @@
     });
 
   onMounted(() => {
-    console.log('valores de los props:', props);
+    // console.log('valores de los props:', props);
     mainImg.value   =   props.mainImg;
     Mimg1.value     =   props.Mimg1;
     Mimg2.value     =   props.Mimg2;
@@ -62,29 +62,29 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-12 col-12">
           <h3> Conoce: </h3>
           <br>
-          <p>
+          <p class="justify-text-justify">
             {{props.content}}
           </p>
           <section>
-            <div class="row justify-content-start">
+            <div class="row justify-content-center">
 
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-3 col-sm-12 col-12 mt-2">
                 
                 <div class="info">
                   <img :src="imageSrc(props.Mimg1)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <div class="info">
+              <div class="col-lg-4 col-md-3 col-sm-12 col-12 mt-2">
+                <div class="info ">
                   <img :src="imageSrc(props.Mimg2)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-3 col-sm-12 col-12 mt-2">
                 <div class="info">
                   <img :src="imageSrc(props.Mimg3)" class="img-fluid border-radius-lg" id="imgMash" />
                 </div>
@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <div class="col-lg-5 ms-auto mt-lg-0 mt-6">
+        <div class="col-lg-5 col-md-12 col-12 ms-auto mt-lg-0 mt-5">
           <section>
             <div class="card" id="card-position">
             <div class="card-header p-0 mt-n4 mx-3 z-index-2">
@@ -155,13 +155,21 @@
   }
 
   #imgMash{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
-    height: 200px;
+    height: 220px;
     width: 220px;
   }
   .FillHeight{
     width: 100%;
     height: 15px;
     margin-top:200px;
+  }
+
+  .justify-text-justify{
+    text-align: justify;
+    margin-bottom: 35px;
   }
 </style>

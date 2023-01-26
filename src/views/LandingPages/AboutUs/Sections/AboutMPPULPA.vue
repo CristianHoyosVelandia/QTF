@@ -1,10 +1,8 @@
 <script setup>
 // example components
-import pulpaImg from "@/assets/img/pulpa.jpg";
-import rojoPicanteImg from "@/assets/img/AjiRojoPicante.jpg";
-import AmarilloImg from "@/assets/img/AjiAmarillo/AjiAmarillo.jpg";
-import RojoMash from "@/assets/img/RojoMash.png";
-import dulceRojo from "@/assets/img/dulceRojo.png";
+// import pulpaImg from "@/assets/img/Pulpa/pulpa.jpg";
+import pulpaImg from "@/assets/img/Pulpa/pulpa1.jpg";
+
 
 import Carrousel from './Carrousel.vue'
 import InfoCards from '@/views/LandingPages/AboutUs/Sections/components/infoCards.vue'
@@ -18,47 +16,38 @@ const listCarrousel = ref([]);
 onMounted(() => {
   listCarrousel.value = [
     {
-      srcimg : "RojoMash",
-      routerLink : "/nuestrosAjisMash-QFT/1",
-      label : "Ají Jalapeño Rojo"
+      srcimg : "CayeneDespulpado",
+      routerLink : "/nuestrosAjisMash-QFT/101",
+      label : "Ají Cayenne Rojo Despulpado",
+      desc  : 2
     },
     {
-      srcimg : "AjijalapenoVerde",
-      routerLink : "/nuestrosAjisMash-QFT/2",
-      label : "Ají Jalapeño Verde Mash"
-    },
-    {
-      srcimg : "CayeneMash",
-      routerLink : "/nuestrosAjisMash-QFT/3",
-      label : "Ají Cayene Rojo Mash"
-    },
-    {
-      srcimg : "rojoPicanteImg",
-      routerLink : "/nuestrosAjisMash-QFT/4",
-      label : "Ají Picante Rojo"
-    },
-    {
-      srcimg : "AmarilloImg",
-      routerLink : "/nuestrosAjisMash-QFT/5",
-      label : "Ají Amarillo Mash"
-    },
-    {
-      srcimg : "habaneroRojo",
-      routerLink : "/nuestrosAjisMash-QFT/6",
-      label : "Ají Habanero Rojo Mash"
-    },
-    {
-      srcimg : "NagaJolokiaMash",
-      routerLink : "/nuestrosAjisMash-QFT/7",
-      label : "Ají Naga Jolokia Mash"
-    },
-    {
-      srcimg : "RojoDulce",
-      routerLink : "/nuestrosAjisMash-QFT/8",
-      label : "Ají Rojo Dulce Mash"
-    },
+      srcimg : "AmarilloDespulpado",
+      routerLink : "/nuestrosAjisMash-QFT/102",
+      label : "Ají Amarillo Peruano Despulpado",
+      desc  : 2
 
+    },
+    {
+      srcimg : "HabaneroRojoDespulpado",
+      routerLink : "/nuestrosAjisMash-QFT/103",
+      label : "Ají Habanero Rojo Despulpado",
+      desc  : 3
 
+    },
+    {
+      srcimg : "JolikiaDespulpado",
+      routerLink : "/nuestrosAjisMash-QFT/104",
+      label : "Ají Naga Jolikia Despulpado ",
+      desc  : 3
+
+    },
+    {
+      srcimg : "JalapeñoDespulpado",
+      routerLink : "/nuestrosAjisMash-QFT/105",
+      label : "Ají Jalapeño Despulpado (Rojo - Verde)",
+      desc  : 1
+    },
   ]
 })
 
@@ -66,7 +55,9 @@ onMounted(() => {
 <template>
   <!-- <section class="pb-5 position-relative bg-gradient-dark mx-n3"> -->
   <section class="pb-5 position-relative mx-n3">
+    
     <div class="container">
+      
       <div class="row align-items-center">
 
         <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 mt-2">

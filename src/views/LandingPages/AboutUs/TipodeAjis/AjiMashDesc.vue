@@ -146,12 +146,13 @@
           ingredientes.value = ["Mash ají picante rojo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg"
+          mainImg.value = "../../../../../assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
           Mimg1.value = "../../../../../assets/img/AjiHabaneroRojo/habanero.jpg"
           Mimg2.value = "../../../../../assets/img/AjiHabaneroRojo/3.jpg"
           Mimg3.value = "../../../../../assets/img/AjiHabaneroRojo/4.jpg"
 
         break;
+      
       case '7':
           tittle.value ='AJÍ PICANTE ROJO MASH',
           contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
@@ -183,7 +184,103 @@
           Mimg3.value = "../../../../../assets/img/Joloke/4.jpg"
 
         break;
+      
+      case '101':
+        tittle.value ='AJÍ CAYENNE ROJO DESPULPADO ',
+        contentido.value = `Producto obtenido a partir de la molienda y despulpado de ají cayenne sin presencia de semillas, mezclado con sal y ácido acético de origen natural. Libre de material, colores y sabores no característicos. Este producto está desarrollado a las necesidades del mercado. Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.`,
+        img.value = '',
+        especie.value = 'Capsicum annuum',
+        scoville.value = '30.000 – 50.000',
+        ingredientes.value = ["Mash ají Cayenne Rojo", "Ácido acético", "Sal"]
+        presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+        vidaUtil.value = '24 meses'
+        mainImg.value = "../../../../../assets/img/CayeneMash/c1.jpg"
+        Mimg1.value = "../../../../../assets/img/CayeneMash/c2.jpg"
+        Mimg2.value = "../../../../../assets/img/CayeneMash/c3.jpg"
+        Mimg3.value = "../../../../../assets/img/CayeneMash/c4.jpg"
 
+      break;
+      
+      case '102':
+          tittle.value ='AJÍ AMARILLO PERUANO DESPULPADO',
+          contentido.value = `Producto obtenido a partir de la molienda de ají peruano amarillo, despulpado, sin semilla, 
+                              mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
+                              Este producto está desarrollado a las necesidades del mercado.
+                              Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.
+                              `,
+          img.value = '',
+          especie.value = 'Capsicum baccatum.',
+          scoville.value = '40.000 – 50.000',
+          ingredientes.value = ["Mash ají Amarillo", "Ácido acético", "Sal"]
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          vidaUtil.value = '24 meses'
+          mainImg.value = "../../../../../assets/img/AjiAmarillo/Amarillo.png"
+          Mimg1.value = "../../../../../assets/img/AjiAmarillo/AjiAmarillo.jpg"
+          Mimg2.value = "../../../../../assets/img/AjiAmarillo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/AjiAmarillo/4.jpg"
+
+        break;
+      
+      case '103':
+          tittle.value ='AJÍ HABANERO ROJO DESPULPADO',
+          contentido.value = `Producto obtenido a partir de la molienda y despulpado de ají Habanero rojo 
+                              sin presencia de semillas, mezclado con sal y ácido acético de origen natural. 
+                              Libre de material, colores y sabores no característicos.
+                              Este producto está desarrollado a las necesidades del mercado.
+                              Este producto es utilizado como ingrediente en preparación de salsas picantes, 
+                              salsas y aderezos entre otras.`,          
+          img.value = '',
+          especie.value = 'Capsicum chinense.',
+          scoville.value = '150,000 - 325,000',
+          ingredientes.value = ["Mash ají picante rojo", "Ácido acético", "Sal"]
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          vidaUtil.value = '24 meses'
+          mainImg.value = "../../../../../assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
+          Mimg1.value = "../../../../../assets/img/AjiHabaneroRojo/habanero.jpg"
+          Mimg2.value = "../../../../../assets/img/AjiHabaneroRojo/3.jpg"
+          Mimg3.value = "../../../../../assets/img/AjiHabaneroRojo/4.jpg"
+
+        break;
+      
+      case '104':
+          tittle.value ='AJÍ NAGA JOLOKIA MASH',
+          contentido.value = `Producto obtenido a partir de la molienda de ají picante rojo, despulpado, sin presencia de semillas,
+                        mezclado con sal y ácido acético de origen natural. Libre de material, colores y sabores no característicos.
+                        Este producto está desarrollado a las necesidades del mercado. Este producto es utilizado como ingrediente en 
+                        preparación de salsas picantes, salsas y aderezos entre otras.
+                        `,
+          img.value = '',
+          especie.value = 'Capsicum chinense',
+          scoville.value = '800.000 - 1.001.300',
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          ingredientes.value = ["Mash ají Naga jolokia ", "Ácido acético", "Sal"]
+          vidaUtil.value = '24 meses '
+          mainImg.value = "../../../../../assets/img/Joloke/AjiJoloke.jpg"
+          Mimg1.value = "../../../../../assets/img/Joloke/2.jpg"
+          Mimg2.value = "../../../../../assets/img/Joloke/3.jpg"
+          Mimg3.value = "../../../../../assets/img/Joloke/4.jpg"
+
+        break;    
+
+      case '105':
+          tittle.value ='AJÍ JALAPEÑO DESPULPADO (ROJO - VERDE)',
+          contentido.value = `Producto obtenido a partir de la molienda de ají Jalapeño rojo y/o verde, despulpado, 
+                              mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
+                              Este producto está desarrollado a las necesidades del mercado.
+                              Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.
+                        `,
+          img.value = '',
+          especie.value = 'Capsicum Annuum'
+          scoville.value = '2.500 – 8.000'
+          ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
+          vidaUtil.value = '24 Meses'
+          mainImg.value = "../../../../../assets/img/Pulpa/pulpa1.jpg"
+          Mimg1.value = "../../../../../assets/img//Pulpa/pulpa.jpg"
+          Mimg2.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv1.jpg"
+          Mimg3.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv4.jpg"
+
+        break;
       default:
           tittle.value ='AJÍ PICANTE ROJO MASH',
           contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',

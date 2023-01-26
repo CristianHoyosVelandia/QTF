@@ -44,12 +44,12 @@ export default {
     listCarrousel: { default: 
     [
       {srcimg:'', routerLink:'/nuestrosAjisMash-QFT/7', label:"Ají Naga Jolokia Mash"},
-      {srcimg:'', routerLink:'/nuestrosAjisMash-QFT/7', label:"Ají ROjo"}
+      // {srcimg:'', routerLink:'/nuestrosAjisMash-QFT/7', label:"Ají ROjo"}
     ],         type: Array },
   });
 
   onMounted(() => {
-    console.log('valores de los props Carrosel:', props);
+    // console.log('valores de los props Carrosel:', props);
   })
 
 </script>

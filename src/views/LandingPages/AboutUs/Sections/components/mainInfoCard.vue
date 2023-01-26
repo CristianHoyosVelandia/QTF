@@ -54,7 +54,7 @@
   });
 
   onMounted(() => {
-    console.log('valores de los props:', props);
+    // console.log('valores de los props:', props);
     srcimg.value      = props.srcimg
     routerLink.value  = props.routerLink
     label.value      =  props.label

@@ -116,9 +116,9 @@
 
             <div class="row">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
-                <center v-if="hancho>80">
+                <div id="divCenteredforAll" v-if="hancho>80">
                   <img :src="logonb" alt="QFT" class='brandQFT'>  
-                </center>
+                </div>
               </div>
               <div v-if="hancho>80" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2 mt-4">
                 <h1
@@ -192,6 +192,12 @@
     #imgBgMainQFT{
       background-size: 100% 100%;
       background-repeat: no-repeat;
+    }
+
+    #divCenteredforAll{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 </style>
