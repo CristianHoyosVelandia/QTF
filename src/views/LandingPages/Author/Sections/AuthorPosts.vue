@@ -4,10 +4,10 @@ import TransparentBlogCard from "../../../../examples/cards/blogCards/Transparen
 import BackgroundBlogCard from "../../../../examples/cards/blogCards/BackgroundBlogCard.vue";
 
 //Vue Material Kit 2 components
-import post1 from "@/assets/img/iconb.png";
-import post2 from "@/assets/img/iconb.png";
-import post3 from "@/assets/img/iconb.png";
-import post4 from "@/assets/img/iconb.png";
+import post1 from "@/assets/img/LogosQFT/iconnbw.png";
+import post2 from "@/assets/img/LogosQFT/iconnbw.png";
+import post3 from "@/assets/img/LogosQFT/iconnbw.png";
+import post4 from "@/assets/img/LogosQFT/iconnbw.png";
 
 </script>
 <template>

@@ -6,7 +6,7 @@ import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
-import image from "@/assets/img/iconb.png";
+import image from "@/assets/img/LogosQFT/iconnbw.png";
 
 //material components
 import MaterialInput from "@/components/MaterialInput.vue";
