@@ -74,6 +74,6 @@ export default {
   }
 
   #pColorFromDefault{
-    text-align: justify;
+    text-align: left;
   }
 </style>

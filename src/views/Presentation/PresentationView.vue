@@ -129,8 +129,10 @@
                 </h1>
               </div>
             </div>
-            
-            <h2 v-if="hancho<=80" class="lead text-white px-5 mt-10" :style="{ fontWeight: '300' }">
+            <div v-if="hancho<=80" id="divCenteredforAll">
+              <img :src="logonb" alt="QFT" class='brandQFTpeque'>  
+            </div>
+            <h2 v-if="hancho<=80" class="lead text-white px-5 mt-2" :style="{ fontWeight: '300' }">
               Un producto 100% Colombiano, somos expertos en ají.
             </h2>
             <p v-else class="lead text-white px-5 mt-2" :style="{ fontWeight: '300' }">
@@ -163,7 +165,20 @@
 
 <style>
 
+  .brandQFTpeque {
+      min-height: 25px;
+      min-width: 25px;
+      max-width: 150px;
+      max-height: 150px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
 
+    #imgBgMainQFT{
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    
   @media only screen and (max-width: 450px) {
     .brandQFT {
       min-height: 25px;

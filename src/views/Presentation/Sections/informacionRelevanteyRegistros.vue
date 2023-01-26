@@ -48,22 +48,19 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             />
               <!-- icon="flip_to_front" -->
             <DefaultInfoCard
-              title="Capacitaciones"
-              description="Construyendo y Formando Tejido Social."
-            />
-          </div>
-          <div class="row justify-content-start mt-5">
-            <DefaultInfoCard
-              class="mt-3"
-              icon="point"
               title="Mision"
               description="Somos especialistas en el procesamiento de materias primas agrícolas, reconocidos por sus exigentes estándares de calidad e inocuidad, que garantizan la satisfacción de nuestros clientes. "
             />
+          </div>
+          <div class="row justify-content-start mt-2">
+            
             <DefaultInfoCard
-              class="mt-3"
-              icon="point"
               title="Vision"
               description="Para el año 2027, seremos el proveedor de materias primas agrícolas,  reconocidos por nuestros clientes, por la calidad, innovación, servicio y competitividad, mediante el uso de tecnologias de alto impacto, implementación de sistemas de gestión,  beneficiando a empleados, proveedores y clientes."
+            />
+            <DefaultInfoCard
+              title="Capacitaciones"
+              description="Construyendo y Formando Tejido Social. Comprometidos con la formación de Personas para el desarrollo de la región. "
             />
           </div>
         </div>

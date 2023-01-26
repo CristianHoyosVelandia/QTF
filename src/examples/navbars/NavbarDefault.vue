@@ -3,6 +3,32 @@ import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
 
+var ancho = window.innerWidth;
+var hancho = calcularHight(ancho);
+
+function calcularHight(ancho) {
+  
+  var au;
+  if(  0 <= ancho  && ancho <= 350 ) {
+    au = 80
+  }
+  
+  else if ( 351 <= ancho  && ancho <= 450  ){ 
+    au = 80
+  }
+
+  else if ( 451 <= ancho  && ancho <= 781  ){ 
+    au = 80
+  }
+  
+  else {
+    au = 85
+  }
+
+  return au;
+}
+
+
 // images
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import downArrow from "@/assets/img/down-arrow.svg";
@@ -65,7 +91,7 @@ let textDark = ref(props.darkText);
 console.log('TextDark:' ,textDark.value)
 const { type } = useWindowsWidth();
 console.log('type:', type.value);
-
+console.log('props from access->', props)
 if (type.value === "mobile") {
   textDark.value = true;
 } else if (type.value === "desktop" && textDark.value == false) {
@@ -164,14 +190,44 @@ watch(
 
           <!-- Nuestra Compañia -->
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
+            <a v-if="hancho>80"
               role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center" 
+              :class="[
+                (props.transparent && textDark.value) || !props.transparent
+                  ? 'text-dark font-weight-bolder'
+                  : 'text-white font-weight-bolder'
+              ]"
               id="dropdownMenuBlocks"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i class="material-icons opacity-6 me-2 text-md text-dark"> view_day </i>
+              <i class="material-icons opacity-6 me-2 text-md"
+                :class="[
+                  (props.transparent && textDark.value) || !props.transparent
+                    ? 'text-dark font-weight-bolder ms-sm-3'
+                    : 'text-white font-weight-bolder ms-sm-3'
+                ]"> view_day </i>
+                Nuestra Compañía
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-2 d-lg-block d-none"
+              />
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-1 d-lg-none d-block ms-auto"
+              />
+            </a>
+            <a v-else
+              role="button"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark font-weight-bolder"
+              id="dropdownMenuBlocks"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="material-icons opacity-6 me-2 text-md text-dark font-weight-bolder ms-sm-3"> view_day </i>
                 Nuestra Compañía
               <img
                 :src="getArrowColor()"
@@ -335,7 +391,7 @@ watch(
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mt-3 mb-1"
-                    :to="{ name: 'page-headers' }"
+                    :to="{ name: 'presentation' }"
                   >
                     Información General
                   </RouterLink>
@@ -349,21 +405,21 @@ watch(
                   
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'page-features' }"
+                    :to="{ name: 'Ubicacion' }"
                   >
                     Centros de Distribución
                   </RouterLink>
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'navigation-navbars' }"
+                    :to="{ name: 'Noticias' }"
                   >
                     Publicaciones
                   </RouterLink>
                   
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'navigation-pagination' }"
+                    :to="{ name: 'presentation' }"
                   >
                     Certificaciones
                   </RouterLink>
@@ -374,14 +430,46 @@ watch(
           
           <!--Productos-->
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
+            <a v-if="hancho>80"
               role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+              :class="[
+                (props.transparent && textDark.value) || !props.transparent
+                  ? 'text-dark font-weight-bolder'
+                  : 'text-white font-weight-bolder'
+              ]"
               id="dropdownMenuPages"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <i class="material-icons opacity-6 me-2 text-md text-dark">
+              <i class="material-icons opacity-6 me-2 text-md"
+                :class="[
+                  (props.transparent && textDark.value) || !props.transparent
+                    ? 'text-dark font-weight-bolder'
+                    : 'text-white font-weight-bolder'
+                ]">
+                search
+              </i>
+              Productos
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-2 d-lg-block d-none"
+              />
+              <img
+                :src="getArrowColor()"
+                alt="down-arrow"
+                class="arrow ms-1 d-lg-none d-block ms-auto"
+              />
+            </a>
+            <a v-else
+              role="button"
+              class="nav-link ps-2 d-flex cursor-pointer align-items-center text-dark font-weight-bolder"
+              id="dropdownMenuPages"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="material-icons opacity-6 me-2 text-md text-dark font-weight-bolder ms-sm-3">
                 search
               </i>
               Productos
@@ -401,7 +489,7 @@ watch(
               aria-labelledby="dropdownMenuPages"
             >
               <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
+                <div class="col-12 px-4 py-1">
                   <div class="row">
                     <div class="position-relative">
                       
@@ -446,7 +534,7 @@ watch(
                   Nuestros Productos y Sabores
                 </div>
                 <RouterLink
-                  :to="{ name: 'about' }"
+                  :to="{ name: 'Materias' }"
                   class="dropdown-item border-radius-md"
                 >
                   <span>Productos Terminados</span>
