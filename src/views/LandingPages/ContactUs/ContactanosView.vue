@@ -176,7 +176,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
                       >
                     </div>  
 
-                    <a href="mailto:cristiannhoyoss@gmail.com" id="trucazo">Hola</a>
+                    <a href="mailto:gerencia@qtfcolombia.com.co" id="trucazo">Hola</a>
 
 
                     <div v-bind="msjBox2" v-if="msjBox2.visible === true">
