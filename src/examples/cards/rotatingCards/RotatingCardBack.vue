@@ -35,15 +35,19 @@ defineProps({
         {{ description }}
       </p>
       <div class="buttons-group">
-        <a
-          v-for="({ route, color, label }, index) of action"
-          :key="index"
-          :href="route"
-          target="_blank"
-          class="btn btn-sm mt-3 inline-block ms-1"
-          :class="`${color ? `btn-${color}` : 'btn-white'}`"
-          >{{ label }}</a
+        <RouterLink
+          :to="{ name: 'contactanos' }"
         >
+          <a
+            v-for="({ color, label }, index) of action"
+            :key="index"
+            target="_blank"
+            class="btn btn-sm mt-3 inline-block ms-1"
+            :class="`${color ? `btn-${color}` : 'btn-white'}`"
+            >{{ label }}</a
+          >
+        </RouterLink>
+        
       </div>
     </div>
   </div>
