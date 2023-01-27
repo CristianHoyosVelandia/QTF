@@ -72,7 +72,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
           const $buttonMailTo = document.querySelector('#trucazo');
           // console.log("click en trucazo")
           setTimeout(() => {
-            $buttonMailTo.setAttribute('href', `mailTo: cristiannhoyoss@gmail.com?subject=Nombre: ${correo.value.nombre} - Correo: ${correo.value.correo}&body=${correo.value.mensaje}`)
+            $buttonMailTo.setAttribute('href', `mailTo: gerencia@qtfcolombia.com.co?subject=Nombre: ${correo.value.nombre} - Correo: ${correo.value.correo}&body=${correo.value.mensaje}`)
             $buttonMailTo.click()
           }, 500);
         }

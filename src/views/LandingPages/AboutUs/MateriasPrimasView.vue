@@ -81,7 +81,7 @@
             </div>
             <br>
             <p class="lead mb-4 text-white opacity-8">
-              Ya sea en pulpa o en mash, contamos con todo en Aji en el Valle del Cauca.
+              Ya sea en pulpa o en mash, contamos con todo en Aji en Colombia.
             </p>
             <!-- <button type="submit" class="btn bg-white text-dark">
               Vive la Experiencia

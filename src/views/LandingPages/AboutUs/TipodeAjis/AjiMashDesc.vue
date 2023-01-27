@@ -24,10 +24,7 @@
   const scoville = ref('')
   const presentation = ref('')
   const vidaUtil = ref('')
-  const mainImg = ref('');
-  const Mimg1 = ref('');
-  const Mimg2 = ref('');
-  const Mimg3 = ref('');
+  const caso = ref(0);
 
   const body = document.getElementsByTagName("body")[0];
   //hooks
@@ -64,11 +61,7 @@
         ingredientes.value = ["Mash ají jalapeño Rojo", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
         vidaUtil.value = '24 meses.'
-        mainImg.value = "../../../../../assets/img/ajimashJalapenoRojo/3.jpg"
-        Mimg1.value = "../../../../../assets/img/ajimashJalapenoRojo/2.jpg"
-        Mimg2.value = "../../../../../assets/img/ajimashJalapenoRojo/jr1.jpg"
-        Mimg3.value = "../../../../../assets/img/ajimashJalapenoRojo/jr2.jpg"
-
+        caso.value = 1
         break;
       case '2':
         tittle.value = 'AJÍ JALAPEÑO VERDE MASH'
@@ -79,11 +72,7 @@
         ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
         vidaUtil.value = '24 Meses'
-        mainImg.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv3.jpg"
-        Mimg1.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv2.jpg"
-        Mimg2.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv1.jpg"
-        Mimg3.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv4.jpg"
-
+        caso.value = 2
         break;
 
       case '3':
@@ -96,11 +85,7 @@
         ingredientes.value = ["Mash ají Cayenne Rojo", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
         vidaUtil.value = '24 meses'
-        mainImg.value = "../../../../../assets/img/CayeneMash/c1.jpg"
-        Mimg1.value = "../../../../../assets/img/CayeneMash/c2.jpg"
-        Mimg2.value = "../../../../../assets/img/CayeneMash/c3.jpg"
-        Mimg3.value = "../../../../../assets/img/CayeneMash/c4.jpg"
-
+        caso.value = 3
         break;
 
       case '4':
@@ -112,11 +97,7 @@
         scoville.value = '30.000 - 70.000',
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
         vidaUtil.value = '24 meses '
-        mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
-        Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
-        Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
-        Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
-
+        caso.value = 4
         break;
 
       case '5':
@@ -129,11 +110,7 @@
           ingredientes.value = ["Mash ají Amarillo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/AjiAmarillo/Amarillo.png"
-          Mimg1.value = "../../../../../assets/img/AjiAmarillo/AjiAmarillo.jpg"
-          Mimg2.value = "../../../../../assets/img/AjiAmarillo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/AjiAmarillo/4.jpg"
-
+          caso.value = 5
         break;
 
       case '6':
@@ -146,11 +123,7 @@
           ingredientes.value = ["Mash ají picante rojo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
-          Mimg1.value = "../../../../../assets/img/AjiHabaneroRojo/habanero.jpg"
-          Mimg2.value = "../../../../../assets/img/AjiHabaneroRojo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/AjiHabaneroRojo/4.jpg"
-
+          caso.value = 6
         break;
       
       case '7':
@@ -162,11 +135,7 @@
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
           vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
-          Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
-          Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
-
+          caso.value = 7
         break;
       
       case '9':
@@ -178,11 +147,7 @@
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           ingredientes.value = ["Mash ají Naga jolokia ", "Ácido acético", "Sal"]
           vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/Joloke/AjiJoloke.jpg"
-          Mimg1.value = "../../../../../assets/img/Joloke/2.jpg"
-          Mimg2.value = "../../../../../assets/img/Joloke/3.jpg"
-          Mimg3.value = "../../../../../assets/img/Joloke/4.jpg"
-
+          caso.value = 9
         break;
       
       case '101':
@@ -194,11 +159,7 @@
         ingredientes.value = ["Mash ají Cayenne Rojo", "Ácido acético", "Sal"]
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
         vidaUtil.value = '24 meses'
-        mainImg.value = "../../../../../assets/img/CayeneMash/c1.jpg"
-        Mimg1.value = "../../../../../assets/img/CayeneMash/c2.jpg"
-        Mimg2.value = "../../../../../assets/img/CayeneMash/c3.jpg"
-        Mimg3.value = "../../../../../assets/img/CayeneMash/c4.jpg"
-
+        caso.value = 101
       break;
       
       case '102':
@@ -214,11 +175,7 @@
           ingredientes.value = ["Mash ají Amarillo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/AjiAmarillo/Amarillo.png"
-          Mimg1.value = "../../../../../assets/img/AjiAmarillo/AjiAmarillo.jpg"
-          Mimg2.value = "../../../../../assets/img/AjiAmarillo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/AjiAmarillo/4.jpg"
-
+          caso.value = 102
         break;
       
       case '103':
@@ -235,11 +192,7 @@
           ingredientes.value = ["Mash ají picante rojo", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
-          mainImg.value = "../../../../../assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
-          Mimg1.value = "../../../../../assets/img/AjiHabaneroRojo/habanero.jpg"
-          Mimg2.value = "../../../../../assets/img/AjiHabaneroRojo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/AjiHabaneroRojo/4.jpg"
-
+          caso.value = 103
         break;
       
       case '104':
@@ -255,11 +208,7 @@
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           ingredientes.value = ["Mash ají Naga jolokia ", "Ácido acético", "Sal"]
           vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/Joloke/AjiJoloke.jpg"
-          Mimg1.value = "../../../../../assets/img/Joloke/2.jpg"
-          Mimg2.value = "../../../../../assets/img/Joloke/3.jpg"
-          Mimg3.value = "../../../../../assets/img/Joloke/4.jpg"
-
+          caso.value = 104
         break;    
 
       case '105':
@@ -275,11 +224,7 @@
           ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
           vidaUtil.value = '24 Meses'
-          mainImg.value = "../../../../../assets/img/Pulpa/pulpa1.jpg"
-          Mimg1.value = "../../../../../assets/img//Pulpa/pulpa.jpg"
-          Mimg2.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv1.jpg"
-          Mimg3.value = "../../../../../assets/img/ajimashJalapenoVerde/ajv4.jpg"
-
+          caso.value = 105
         break;
       default:
           tittle.value ='AJÍ PICANTE ROJO MASH',
@@ -290,11 +235,7 @@
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
           vidaUtil.value = '24 meses '
-          mainImg.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo.jpg"
-          Mimg1.value = "../../../../../assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
-          Mimg2.value = "../../../../../assets/img/PicanteRojo/3.jpg"
-          Mimg3.value = "../../../../../assets/img/PicanteRojo/4.jpg"
-
+          caso.value = 106
         break;
     }
   }
@@ -331,10 +272,7 @@
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <Contenido 
       :tittle="tittle"
-      :mainImg="mainImg"
-      :Mimg1 ="Mimg1"
-      :Mimg2 ="Mimg2"
-      :Mimg3 ="Mimg3"
+      :caso="caso"
       :content="contentido"
       :especie="especie"
       :scoville="scoville"
