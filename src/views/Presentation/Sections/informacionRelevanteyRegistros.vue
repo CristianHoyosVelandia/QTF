@@ -31,7 +31,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               description="Creada en el valle del cauca con el objetivo de procesar hortalizas (ají principalmente) cultivado y cosechado por agricultores de la región. "
               :action="[
                 {
-                  route: '/contacto-QFT',
+                  route: '/QTF/contacto-QFT',
                   label: 'Descubre Mas',
                 },
               ]"
