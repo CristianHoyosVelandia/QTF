@@ -22,9 +22,14 @@
         <p class="mb-0" id="justifycontent">
           {{desc2}} 
         </p>
-        <a :href="routerLink" type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">
-          Conoce Mas
-        </a>
+        <RouterLink
+          :to="{ name: 'contactanos' }"
+        >
+          <a  type="button" class="btn btn-sm mb-0 mt-3 bg-gradient-success">
+            Conoce Mas
+          </a>
+          
+        </RouterLink>
       </div>
 
     </div>
