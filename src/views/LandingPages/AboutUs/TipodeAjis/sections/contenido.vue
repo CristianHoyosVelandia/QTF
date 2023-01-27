@@ -27,7 +27,7 @@
   import Mimg3_5   from "@/assets/img/AjiAmarillo/4.jpg"
   
   import mainImg_6 from "@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
-  import Mimg1_6   from "@/assets/img/AjiHabaneroRojo/habanero.jpg"
+  import Mimg1_6   from "@/assets/img/Pulpa/PastaHabanero.jpg"
   import Mimg2_6   from "@/assets/img/AjiHabaneroRojo/3.jpg"
   import Mimg3_6   from "@/assets/img/AjiHabaneroRojo/4.jpg"
   
@@ -52,9 +52,9 @@
   import Mimg3_102   from "@/assets/img/AjiAmarillo/4.jpg"
   
   import mainImg_103 from "@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
-  import Mimg1_103   from "@/assets/img/Pulpa/habanero/habanero.jpg"
-  import Mimg2_103   from "@/assets/img/Pulpa/habanero/3.jpg"
-  import Mimg3_103   from "@/assets/img/Pulpa/habanero/4.jpg"
+  import Mimg1_103   from "@/assets/img/Pulpa/PastaHabanero.jpg"
+  import Mimg2_103   from "@/assets/img/AjiHabaneroRojo/3.jpg"
+  import Mimg3_103   from "@/assets/img/AjiHabaneroRojo/4.jpg"
   
   import mainImg_104 from "@/assets/img/Joloke/AjiJoloke.jpg"
   import Mimg1_104   from "@/assets/img/Joloke/2.jpg"
