@@ -24,7 +24,7 @@
   const scoville = ref('')
   const presentation = ref('')
   const vidaUtil = ref('')
-  const caso = ref(0);
+  const caso = ref(id);
 
   const body = document.getElementsByTagName("body")[0];
   //hooks
@@ -51,8 +51,8 @@
   });
 
   function routeParams(id)  {
-    switch (id) {
-      case '1':
+    switch (parseInt(id)) {
+      case 1:
         tittle.value = 'AJÍ JALAPEÑO ROJO MASH',
         contentido.value = 'El jalapeño es uno de los ajís más famosos, tiene presentación rojo o verde. La mayoría de los jalapeños son suaves, pero hay especies mucho más calientes. Este ají lleva el nombre de la ciudad mexicana de Jalapa. La gruesa pared frutal es difícil de secar y, por lo tanto, cuando están maduras, a menudo se secan y se ahúman sobre madera dura. Este producto se llama chipotle. El jalapeño tiene un sabor único. Los jalapeños se pueden usar frescos en salsas o cortados en aros para nachos y también son deliciosos en sopas, guisos y pizzas. A menudo se rellenan con carne o queso. Cuando está en estado verde, el jalapeño es bueno para comer y será un poco más dulce cuando esté rojo.',
         img.value = '',
@@ -63,7 +63,7 @@
         vidaUtil.value = '24 meses.'
         caso.value = 1
         break;
-      case '2':
+      case 2:
         tittle.value = 'AJÍ JALAPEÑO VERDE MASH'
         contentido.value = 'El jalapeño es uno de los ajís más famosos, tiene presentación rojo o verde. La mayoría de los jalapeños son suaves, pero hay especies mucho más calientes. Este ají lleva el nombre de la ciudad mexicana de Jalapa. La gruesa pared frutal es difícil de secar y, por lo tanto, cuando están maduras, a menudo se secan y se ahúman sobre madera dura. Este producto se llama chipotle. El jalapeño tiene un sabor único. Los jalapeños se pueden usar frescos en salsas o cortados en aros para nachos y también son deliciosos en sopas, guisos y pizzas. A menudo se rellenan con carne o queso. Cuando está en estado verde, el jalapeño es bueno para comer y será un poco más dulce cuando esté rojo.'
         img.value = ''
@@ -75,7 +75,7 @@
         caso.value = 2
         break;
 
-      case '3':
+      case 3:
         
         tittle.value ='AJÍ CAYENNE ROJO MASH ',
         contentido.value = 'Los pimientos de cayena son un grupo de pimientos ahusados, de 10 a 25 cm de largo, generalmente delgados, mayoritariamente de color rojo, Normalmente es un ají moderadamente picante, a menudo con una punta curvada y una piel un poco ondulada, que cuelga del arbusto, los chiles se originaron en América del Sur, donde han estado bajo cultivo desde tiempos prehistóricos. La larga viabilidad de la semilla facilitó la rápida propagación de la planta a través de los trópicos y subtrópicos por los españoles y portugueses, el Cayenne es usado para fabricación de salsas, especia en la cocina, condimento en mesa, encurtidos, kétchups y alimentos ahumados.',
@@ -88,7 +88,7 @@
         caso.value = 3
         break;
 
-      case '4':
+      case 4:
         
         tittle.value ='AJÍ PICANTE ROJO MASH',
         contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
@@ -100,7 +100,7 @@
         caso.value = 4
         break;
 
-      case '5':
+      case 5:
         
           tittle.value ='AJI AMARILLO',
           contentido.value = 'Ají amarillo es una variedad de Capsicum nativo del Sur y Centro América donde se ha cultivado durante más de 7.000 años. Es considerado el ají más consumido en Perú y un insumo irremplazable de la cocina nacional. Este ají es cultivado en la costa, sierra y selva peruana hasta unos 1500 msnm en climas cálidos con temperaturas de entre 16 y 24ºC. Tiene un tamaño promedio de 10 a 15 centímetros de largo, 2 a 3,5 cm de ancho y forma cónica alargada, aunque uno de sus subtipos, el ají pacae o ají inca  puede llegar hasta los 22 o 25 centímetros y tener un mayor grosor.',
@@ -113,7 +113,7 @@
           caso.value = 5
         break;
 
-      case '6':
+      case 6:
         
           tittle.value ='AJÍ HABAERO ROJO MASH',
           contentido.value = 'El ají habanero es el ají más famoso del mundo. Este pimiento es extremadamente picante, 40 veces más picante que un jalapeño, y muy popular en México, América del Sur y el Caribe. El Habanero tiene una temporada de crecimiento de 90-100 días y ama las condiciones ambientales cálidas. Las vainas son arrugadas, de 5 cm de largo y 2,5 cm de diámetro y de color verde a rojo.',
@@ -126,7 +126,7 @@
           caso.value = 6
         break;
       
-      case '7':
+      case 7:
           tittle.value ='AJÍ PICANTE ROJO MASH',
           contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
           img.value = '',
@@ -138,7 +138,7 @@
           caso.value = 7
         break;
       
-      case '9':
+      case 9:
           tittle.value ='AJÍ NAGA JOLOKIA MASH',
           contentido.value = 'El Naga Jolokia es uno de los pimientos más picantes del mundo, Una gota de extracto de este pimiento necesita un millón de gotas de agua para que ya no se perciba como fuerte. ¡Este ají es 125 veces más picante que un jalapeño! Esta pimienta proviene del noreste de la India, particularmente de Assam, Nagaland y Manipur. Bhut Jolokia (o Naga Jolokia, Pimienta Fantasma) es dos veces más picante que el campeón anterior, la Savina Roja, y fue registrado en el Libro Guinness de los Récords como el pimiento más picante del mundo. Las plantas pueden crecer hasta 45-120 cm. Las vainas miden de 5 a 8,5 cm de largo y de 2,5 a 3 cm de ancho. El Bhut Jolokia ama el calor y la humedad, pero con un poco más de cuidado y amor crecerá bien en un clima más fresco. El tiempo de germinación es similar al de los chiles habaneros, por lo que tardará más que otros.',
           img.value = '',
@@ -150,7 +150,7 @@
           caso.value = 9
         break;
       
-      case '101':
+      case 101:
         tittle.value ='AJÍ CAYENNE ROJO DESPULPADO ',
         contentido.value = `Producto obtenido a partir de la molienda y despulpado de ají cayenne sin presencia de semillas, mezclado con sal y ácido acético de origen natural. Libre de material, colores y sabores no característicos. Este producto está desarrollado a las necesidades del mercado. Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.`,
         img.value = '',
@@ -162,7 +162,7 @@
         caso.value = 101
       break;
       
-      case '102':
+      case 102:
           tittle.value ='AJÍ AMARILLO PERUANO DESPULPADO',
           contentido.value = `Producto obtenido a partir de la molienda de ají peruano amarillo, despulpado, sin semilla, 
                               mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
@@ -178,7 +178,7 @@
           caso.value = 102
         break;
       
-      case '103':
+      case 103:
           tittle.value ='AJÍ HABANERO ROJO DESPULPADO',
           contentido.value = `Producto obtenido a partir de la molienda y despulpado de ají Habanero rojo 
                               sin presencia de semillas, mezclado con sal y ácido acético de origen natural. 
@@ -195,7 +195,7 @@
           caso.value = 103
         break;
       
-      case '104':
+      case 104:
           tittle.value ='AJÍ NAGA JOLOKIA MASH',
           contentido.value = `Producto obtenido a partir de la molienda de ají picante rojo, despulpado, sin presencia de semillas,
                         mezclado con sal y ácido acético de origen natural. Libre de material, colores y sabores no característicos.
@@ -211,32 +211,33 @@
           caso.value = 104
         break;    
 
-      case '105':
-          tittle.value ='AJÍ JALAPEÑO DESPULPADO (ROJO - VERDE)',
-          contentido.value = `Producto obtenido a partir de la molienda de ají Jalapeño rojo y/o verde, despulpado, 
-                              mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
-                              Este producto está desarrollado a las necesidades del mercado.
-                              Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.
-                        `,
-          img.value = '',
-          especie.value = 'Capsicum Annuum'
-          scoville.value = '2.500 – 8.000'
-          ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
-          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
-          vidaUtil.value = '24 Meses'
-          caso.value = 105
-        break;
+      case 105:
+        tittle.value ='AJÍ JALAPEÑO DESPULPADO (ROJO - VERDE)',
+        contentido.value = `Producto obtenido a partir de la molienda de ají Jalapeño rojo y/o verde, despulpado, 
+                            mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos.
+                            Este producto está desarrollado a las necesidades del mercado.
+                            Este producto es utilizado como ingrediente en preparación de salsas picantes, salsas y aderezos entre otras.
+                      `,
+        img.value = '',
+        especie.value = 'Capsicum Annuum'
+        scoville.value = '2.500 – 8.000'
+        ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
+        presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg'
+        vidaUtil.value = '24 Meses'
+        caso.value = 105
+      break;
+
       default:
-          tittle.value ='AJÍ PICANTE ROJO MASH',
-          contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
-          img.value = '',
-          especie.value = 'Capsicum frutescens',
-          scoville.value = '30.000 - 70.000',
-          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
-          ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
-          vidaUtil.value = '24 meses '
-          caso.value = 106
-        break;
+        tittle.value ='AJÍ PICANTE ROJO MASH',
+        contentido.value = 'Como todas las variedades de Capsicum Frutescens, la planta tiene un aspecto espeso. La planta puede crecer hasta 150 cm. Las vainas miden unos 4 cm. de largo y tienen un hábito erguido. Colorean de amarillo-verde o amarillo a rojo cuando están completamente maduros. Eso es después de unos 90 días después de trasplantar, este ají es originario del estado mexicano de Tabasco.',
+        img.value = '',
+        especie.value = 'Capsicum frutescens',
+        scoville.value = '30.000 - 70.000',
+        presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+        ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
+        vidaUtil.value = '24 meses '
+        caso.value = 106
+      break;
     }
   }
 </script>

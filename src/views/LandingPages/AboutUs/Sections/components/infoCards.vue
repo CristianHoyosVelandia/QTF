@@ -75,6 +75,8 @@
   import HabaneroCayene from '@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg';
   import PastaJoloke from '@/assets/img/Joloke/3.jpg';
   import PastaJalapeno from '@/assets/img/ajimashJalapenoRojo/2.jpg';
+  import dulceRojoPasta from "@/assets/img/DulceRojo/dulceRojo.png";
+
 
 
 
@@ -142,7 +144,7 @@
         srcimg.value = NagaJolokiaMash
       break;
       case 'RojoDulce':
-        srcimg.value = dulceRojo
+        srcimg.value = dulceRojoPasta
       break;
       case 'CayeneMash':
         srcimg.value = CayeneMash
