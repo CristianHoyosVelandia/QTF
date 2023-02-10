@@ -269,16 +269,17 @@
 
   import Router from "@/router/index.js"
 
+  const antURL = (parseInt(props.caso)-1)
+  const NextURL = (parseInt(props.caso)+1)
+
   function Anterior() {
 
-    Router.push(`/nuestrosAjisMash-QFT/${(parseInt(props.caso)-1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);    
   }
 
   function Siguiente() {
-    Router.push(`/nuestrosAjisMash-QFT/${(parseInt(props.caso)+1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);
@@ -362,25 +363,35 @@ export default {
           </section>  
             <div v-if="hancho>80" class="row align-items-center mt-5">
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
-                <img v-if="parseInt(props.caso)!=1 && parseInt(props.caso)!=101" @key="arrowI" :src="arrowI" class="img-fluid border-radius-lg" id="imgArrow" @click="Anterior"/>
+                <RouterLink :to="`/nuestrosAjisMash-QFT/${antURL}`"
+                >
+                  <img v-if="parseInt(props.caso)!=1 && parseInt(props.caso)!=101" @key="arrowI" :src="arrowI" class="img-fluid border-radius-lg" id="imgArrow"/>
+                </RouterLink>
               </div>
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
                 <img @key="brand" :src="brand" class="img-fluid border-radius-lg" id="imgIcon" />
               </div>
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
-                <img v-if="parseInt(props.caso)!=9 && parseInt(props.caso)!=105" @key="arrowD" :src="arrowD" class="img-fluid border-radius-lg" id="imgArrow" @click="Siguiente" />
+              <RouterLink :to="`/nuestrosAjisMash-QFT/${NextURL}`">
+                <img v-if="parseInt(props.caso)!=9 && parseInt(props.caso)!=105" @key="arrowD" :src="arrowD" class="img-fluid border-radius-lg" id="imgArrow"/>
+              </RouterLink>
               </div>
             </div>
 
             <div v-if="hancho<=80" class="row align-items-center mt-5">
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
-                <img v-if="parseInt(props.caso)!=1 && parseInt(props.caso)!=101" @key="arrowI" :src="arrowI" class="img-fluid border-radius-lg" id="imgArrowP" @click="Anterior"/>
+                <RouterLink :to="`/nuestrosAjisMash-QFT/${antURL}`"
+                >
+                  <img v-if="parseInt(props.caso)!=1 && parseInt(props.caso)!=101" @key="arrowI" :src="arrowI" class="img-fluid border-radius-lg" id="imgArrowP"/>
+                </RouterLink>
               </div>
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
                 <img @key="brand" :src="brand" class="img-fluid border-radius-lg" id="imgIconP" />
               </div>
               <div class="col-lg-4 col-md-4 col-4 ms-auto mt-lg-0">
-                <img v-if="parseInt(props.caso)!=9 && parseInt(props.caso)!=105" @key="arrowD" :src="arrowD" class="img-fluid border-radius-lg" id="imgArrowP" @click="Siguiente" />
+                <RouterLink :to="`/nuestrosAjisMash-QFT/${NextURL}`"> 
+                  <img v-if="parseInt(props.caso)!=9 && parseInt(props.caso)!=105" @key="arrowD" :src="arrowD" class="img-fluid border-radius-lg" id="imgArrowP" />
+                </RouterLink>
               </div>
             </div>
         </div>
