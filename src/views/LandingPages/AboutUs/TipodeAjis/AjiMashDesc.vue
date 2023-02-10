@@ -137,6 +137,28 @@
           vidaUtil.value = '24 meses '
           caso.value = 7
         break;
+
+      case 8:
+          tittle.value ='AJÍ ROJO DULCE',
+          contentido.value = `Es una variedad llamada Grossum  de los pimientos de la familia Capsicum frutescens. 
+          A diferencia de otras variedades de la especie, esta carece del característico sabor picante y en cambio 
+          tiene un sabor más dulce.  
+          
+          Otras diferencias son que su cuerpo es más carnoso y que su forma no es similar a una vaina como otras variedades
+          sino más cuadrada.  
+
+          Es común que tengan colores Verde, Amarillos, Naranjas y Rojos. Esta coloración cambia en base a la maduración de 
+          los pimientos, a través de la cual se incrementa su dulzor, así como la cantidad de Vitamina C y de Beta carotenos. 
+          Por esta razón, cuanto más verde, menos dulce será su sabor. Este pimiento en estado seco se lo suele utilizar en 
+          la elaboración de algunas variedades de pimentón.`,
+          img.value = '',
+          especie.value = 'Grossum Capsicum frutescens',
+          scoville.value = '2.500 - 9.000',
+          presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
+          ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
+          vidaUtil.value = '24 meses '
+          caso.value = 8
+        break;
       
       case 9:
           tittle.value ='AJÍ NAGA JOLOKIA MASH',
@@ -263,7 +285,7 @@
             <br>  
             <h1 class="text-white">
               {{tittle}}
-              {{content}}
+              <!-- {{content}} -->
             </h1>
           </div>
         </div>

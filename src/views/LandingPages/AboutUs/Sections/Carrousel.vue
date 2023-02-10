@@ -1,4 +1,7 @@
 <template>
+  <div id="colorCar">
+
+  </div>
   <carousel :items-to-show="1" class="mt-lg-2">
     <slide v-for="item in props.listCarrousel" :key="item">
       <InfoCards
@@ -53,3 +56,24 @@ export default {
   })
 
 </script>
+
+<style>
+
+  .carousel__prev, .carousel__next {
+    width: 50px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    padding: 0;
+    color: grey;
+  }
+
+  .carousel__pagination-item {
+    display: block;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    padding: var(--vc-pgn-margin);
+    color: grey;
+  }
+</style>

@@ -55,19 +55,18 @@ onMounted(() => {
       desc  : 3
 
     },
-    {
-      srcimg : "PicanteRojo",
-      routerLink : "/nuestrosAjisMash-QFT/7",
-      label : "Ají Picante Rojo",
-      desc  : 2
+    // {
+    //   srcimg : "PicanteRojo",
+    //   routerLink : "/nuestrosAjisMash-QFT/7",
+    //   label : "Ají Picante Rojo",
+    //   desc  : 2
 
-    },
+    // },
     {
       srcimg : "RojoDulce",
       routerLink : "/nuestrosAjisMash-QFT/8",
       label : "Ají Rojo Dulce Mash",
-      desc  : 2
-
+      desc  : 1
     },
     {
       srcimg : "NagaJolokiaMash",
