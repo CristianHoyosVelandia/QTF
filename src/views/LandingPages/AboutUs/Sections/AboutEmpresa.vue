@@ -32,7 +32,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history1"
             :profile="{ name: 'QUALITY TROPICAL FOODS S.A.S. ZOMAC', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Se creó el 02 de febrero de 2021 mediante matrícula mercantil No. 103835 de la Cámara de Comercio de Tuluá. Su planta de producción se ubica en el callejón san Fernando, finca Ana C (en arriendo), con el objetivo de procesar hortalizas (ají principalmente) cultivado y cosechado por agricultores de la región. "
+            description="Se crea el 2 de febrero del 2021 mediante matrícula mercantil No. 103835 de la Cámara de Comercio de Tuluá. Su planta de producción se ubica en el callejón san Fernando, finca Ana C, con el objetivo de procesar hortalizas, principalmente ají, el cual es cultivado y cosechado por agricultores de la región. "
           />
         </div>
         <div class="col-lg-12 col-12">
@@ -41,7 +41,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history2"
             :profile="{ name: 'Creciendo Juntos', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Durante el periodo de febrero a mayo de 2021 se realizan las adecuaciones locativas para su operación, para el cumplimiento de buenas prácticas de manufactura, adecuación de pisos y espacios de almacenamiento y adquisición de materias primas."
+            description="Durante el periodo de febrero a mayo del 2021, se realizaron las adecuaciones locativas necesarias para su operación y el cumplimiento de las buenas prácticas de manufactura, como adecuación de pisos, espacios de almacenamiento de producto terminado y materias primas."
           />
         </div>
         <div class="col-lg-12 col-12">
@@ -50,7 +50,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history3"
             :profile="{ name: 'Misión', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="En Quality Tropical Foods SAS somos especialistas en el procesamiento de materias primas agrícolas, reconocidos por sus exigentes estándares de calidad e inocuidad, que garantizan la satisfacción de nuestros clientes, apertura de nuevos mercados, generando rentabilidad del negocio y el mínimo impacto al medio ambiente. Ofrecemos materias primas, utilizadas en procesos industriales, para las compañías productoras de alimentos en el mundo. Contribuimos a impulsar el desarrollo de la región en el sector productivo y social. "
+            description="Nuestro propósito es realizar procesos guiados por la innovación, el desarrollo, formación de recursos humanos y mejoramiento continuo con criterios de excelencia en el área de materias primas, energía y medio ambiente, para contribuir a impulsar el desarrollo sustentable de la región en el sector productivo y social, y buscando cumplir los requerimientos y expectativas del cliente."
           />
         </div>
         <div class="col-lg-12 col-12">
@@ -59,7 +59,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history4"
             :profile="{ name: 'Visión', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Para el año 2027, seremos el proveedor de materias primas agrícolas,  reconocidos por nuestros clientes, por la calidad, innovación, servicio y competitividad, mediante el uso de tecnologias de alto impacto, implementación de sistemas de gestión,  beneficiando a empleados, proveedores y clientes. "
+            description="Para el 2027 ser el proveedor de productos alimenticios valorado por los clientes y consumidores por su calidad e innovación tecnológica. Apuntamos a ser una compañía rentable, líder en el mercado nacional y participando estratégicamente en los mercados externos. "
           />
         </div>
         <div class="col-lg-12 col-12">
@@ -68,7 +68,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history5"
             :profile="{ name: 'Operación', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="La planta comienza sus operaciones productivas en mayo de 2021 y a partir del 01 de junio del mismo año comienza la contratación de personal directamente por la compañía, garantizando a sus trabajadores el pago de salarios, prestaciones sociales y seguridad social."
+            description="La planta comienza sus operaciones productivas en mayo del 2021 y a partir del 01 de junio del mismo año comienza la contratación de personal directamente por la compañía, garantizando a sus trabajadores el pago de salarios, prestaciones y seguridad social."
           />
         </div>
         <div class="col-lg-12 col-12">
@@ -77,7 +77,7 @@ import history6 from "@/assets/img/history/7.jpg";
             :image="history6"
             :profile="{ name: 'Posicionamiento', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description= "La mejora continua es parte de nuestra filosofía, por ello tenemos concepto favorable INVIMA y certificación de análisis de peligros y puntos críticos de control, o HACCP. El cual es: el enfoque preventivo sistemático para la seguridad alimentaria de los peligros biológicos, químicos y físicos en los procesos. ¡Mejoramos por ti!. "
+            description= "La mejora continua es parte de nuestra filosofía, gracias a esto tenemos concepto favorable INVIMA, certificación HACCP y GMP, y registro FDA. ¡Seguimos mejorando por ti! "
 
           />
         </div>

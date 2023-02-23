@@ -102,12 +102,12 @@
 
       case 5:
         
-          tittle.value ='AJI AMARILLO',
+          tittle.value ='AJI AMARILLO PERUANO',
           contentido.value = 'Ají amarillo es una variedad de Capsicum nativo del Sur y Centro América donde se ha cultivado durante más de 7.000 años. Es considerado el ají más consumido en Perú y un insumo irremplazable de la cocina nacional. Este ají es cultivado en la costa, sierra y selva peruana hasta unos 1500 msnm en climas cálidos con temperaturas de entre 16 y 24ºC. Tiene un tamaño promedio de 10 a 15 centímetros de largo, 2 a 3,5 cm de ancho y forma cónica alargada, aunque uno de sus subtipos, el ají pacae o ají inca  puede llegar hasta los 22 o 25 centímetros y tener un mayor grosor.',
           img.value = '',
           especie.value = 'Capsicum baccatum.',
           scoville.value = '40.000 – 50.000',
-          ingredientes.value = ["Mash ají Amarillo", "Ácido acético", "Sal"]
+          ingredientes.value = ["Mash ají Amarillo Peruano", "Ácido acético", "Sal"]
           presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
           vidaUtil.value = '24 meses'
           caso.value = 5

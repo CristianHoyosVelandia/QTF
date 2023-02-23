@@ -38,18 +38,18 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
           <HorizontalTeamCard
             class="mt-4"
             :image="semilla"
-            :profile="{ name: 'OBTENCION DE SEMILLA', link: 'javascript:;' }"
+            :profile="{ name: 'OBTENCIÓN DE LA SEMILLA', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Nuestras semillas provienen de frutos sanos y con gran poder germinativo las cuales son obtenidas de forma natural."
+            description="Nuestras semillas son obtenidas de forma natural, provienen de frutos sanos y con gran poder germinativo."
           />
         </div>
         <div class="col-lg-6 col-12">
           <HorizontalTeamCard
             class="mt-lg-4 mt-5"
             :image="plantulacion"
-            :profile="{ name: 'PLANTULACION', link: 'javascript:;' }"
+            :profile="{ name: 'PLANTULACIÓN', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Las semillas son plantadas en viveros de la región, controlando y garantizando su correcto crecimiento, entregándolas listas para ser trasplantadas."
+            description="Las semillas son plantuladas en viveros de la región, los cuales controlan y garantizan su correcto crecimiento, entregándolas listas para ser trasplantadas."
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="cultivos"
             :profile="{ name: 'CULTIVOS ', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Monitoreados por personal experto, dando un manejo integral y control fitosanitario para optimizar el crecimiento, capacidad para combatir cualquier plaga o enfermedad, gestión del agua, fertilización y la salud del suelo."
+            description="Son monitoreados por personal experto, quienes se encargan del manejo integral, gestión del agua, fertilización y salud del suelo, así como del control fitosanitario para optimizar el crecimiento y la capacidad para combatir cualquier tipo de plaga."
           />
         </div>
         <div class="col-lg-6 col-12">
@@ -70,7 +70,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="cosecha"
             :profile="{ name: 'COSECHA', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Estamos comprometidos con el desarrollo de la región, por esos nuestras cosechas son recolectadas de forma Manuel, garantizando la integridad del fruto."
+            description="Estamos comprometidos con el desarrollo de la región, por eso nuestras cosechas son recolectadas de forma manual, garantizando la integridad del fruto."
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="recepcion"
             :profile="{ name: 'RECEPCIÓN', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="El ají llega del campo a planta QTF en sacos de lona para luego ser depositada en canastillas plásticas para su posterior proceso."
+            description="El ají llega directamente del campo a la planta QTF en sacos de lona, para luego ser depositado en canastillas plásticas y posteriormente, procesarse."
           />
         </div>
         <div class="col-lg-6 col-12">
@@ -91,7 +91,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="seleccion"
             :profile="{ name: 'SELECCIÓN Y LAVADO', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="El ají es seleccionado y clasificado de acuerdo con el color, maduración, frutos que se encuentren en óptimas condiciones, se elimina todo tipo de material extraño proveniente del cultivo. El lavado se realiza con aspersión de agua potable con la finalidad de eliminar tierra presente en el fruto."
+            description="El ají es seleccionado cuidadosamente y clasificado de acuerdo con el color, la maduración y el estado del fruto, este se debe encontrar en óptimas condiciones. En esta etapa se descarta todo tipo de material extraño proveniente del cultivo y el lavado realizado mediante aspersión con agua potable, permite la eliminación de impurezas como la tierra presente en el fruto."
           />
         </div>
       </div>
@@ -103,7 +103,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="molienda"
             :profile="{ name: 'MOLIENDA', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="En el proceso de molienda el ají pasa por un molino el cual tritura el ají en partículas más pequeñas, de acuerdo con los requerimientos del cliente se adiciona ácido acético y sal."
+            description="Durante el proceso de molienda el ají pasa por un molino, el cual tritura el ají en partículas más pequeñas y de acuerdo con los requerimientos del cliente, se adiciona ácido acético y sal."
           />
         </div>
         <div class="col-lg-6 col-12">
@@ -112,7 +112,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="estabalidiad1"
             :profile="{ name: 'ESTABILIDAD', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="El ají mezclado con ácido acético y sal es monitoreado para garantizar una correcta fermentación y cumplimiento de parámetros fisicoquímicos. En esta etapa controláramos que antes de ser cerrado herméticamente el producto final cumpla con todas las condiciones de inocuidad."
+            description="El ají mezclado con ácido acético y sal es monitoreado para garantizar una correcta fermentación y cumplimiento de parámetros fisicoquímicos. En esta etapa, controláramos que antes de ser cerrado herméticamente el producto final cumpla con todas las condiciones de calidad e inocuidad."
           />
         </div>
       </div>
@@ -125,7 +125,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
             :image="almacenamiento"
             :profile="{ name: 'ALMACENAMIETO', link: 'javascript:;' }"
             :position="{ label: ' ', color: 'success' }"
-            description="El almacenamiento se realiza a temperatura ambiente, en un ambiente fresco y seco protegido de cualquier tipo de placa que pueda afectar la integridad del producto."
+            description="El almacenamiento se realiza en espacios frescos, secos y bien ventilados, protegido de cualquier tipo de plaga que pueda afectar la integridad del producto. La temperatura debe mantenerse a menos de 35°C y humedad relativa menor del 80%."
           />
         </div>
       </div>

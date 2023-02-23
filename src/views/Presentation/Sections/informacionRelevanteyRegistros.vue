@@ -43,8 +43,9 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               <!-- icon="content_copy" -->
             <DefaultInfoCard
               title="100% Colombianos"
-              description="Agricultores de y para Colombia; especialistas en el procesamiento de materias primas,buenas prácticas en sostenibilidad, 
-              tecnificación de la agricultura y calidad de sus cultivos. que garantizan la satisfacción de nuestros clientes y generen el mínimo impacto al medio ambiente. "
+              description="Nuestra principal materia prima proviene de agricultores de origen colombiano que comercializan sus productos en el mercado local,
+               estos son especialistas en el procesamiento de materias primas, implementando buenas prácticas en sostenibilidad, tecnificación de la agricultura 
+               y calidad de sus cultivos, lo que nos permite garantizar la satisfacción de nuestros clientes y un mínimo impacto al medio ambiente.  "
             />
               <!-- icon="flip_to_front" -->
            
@@ -58,16 +59,18 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
             
              <DefaultInfoCard
               title="Misión"
-              description="Somos especialistas en el procesamiento de materias primas agrícolas, 
+              description="Nuestro propósito es realizar procesos guiados por la innovación, el desarrollo, formación de recursos humanos y mejoramiento continuo con criterios de excelencia en el área de materias primas, energía y medio ambiente, para contribuir a impulsar el desarrollo sustentable de la región en el sector productivo y social, y buscando cumplir los requerimientos y expectativas del cliente."
+            />
+              <!-- description="Somos especialistas en el procesamiento de materias primas agrícolas, 
               reconocidos por sus exigentes estándares de calidad e inocuidad, que garantizan la satisfacción de nuestros clientes, 
               apertura de nuevos mercados, generando rentabilidad del negocio y el mínimo impacto al medio ambiente. 
-              Ofrecemos materias primas, utilizadas en procesos industriales, para las compañías productoras de alimentos en el mundo. Contribuimos a impulsar el desarrollo de la región en el sector productivo y social. "
-            />
+              Ofrecemos materias primas, utilizadas en procesos industriales, para las compañías productoras de alimentos en el mundo. Contribuimos a impulsar el desarrollo de la región en el sector productivo y social. " -->
 
             <DefaultInfoCard
               title="Visión"
-              description="Para el año 2027, seremos el proveedor de materias primas agrícolas,  reconocidos por nuestros clientes, por la calidad, innovación, servicio y competitividad, mediante el uso de tecnologias de alto impacto, implementación de sistemas de gestión,  beneficiando a empleados, proveedores y clientes."
+              description="Para el 2027 ser el proveedor de productos alimenticios valorado por los clientes y consumidores por su calidad e innovación tecnológica. Apuntamos a ser una compañía rentable, líder en el mercado nacional y participando estratégicamente en los mercados externos."
             />
+              <!-- description="Para el año 2027, seremos el proveedor de materias primas agrícolas,  reconocidos por nuestros clientes, por la calidad, innovación, servicio y competitividad, mediante el uso de tecnologias de alto impacto, implementación de sistemas de gestión,  beneficiando a empleados, proveedores y clientes." -->
           </div>
         </div>
       </div>

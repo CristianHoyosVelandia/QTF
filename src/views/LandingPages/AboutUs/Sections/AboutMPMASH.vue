@@ -44,7 +44,7 @@ onMounted(() => {
     {
       srcimg : "AmarilloImg",
       routerLink : "/nuestrosAjisMash-QFT/5",
-      label : "Ají Amarillo Mash",
+      label : "Ají Amarillo Peruano Mash",
       desc  : 2
 
     },    
