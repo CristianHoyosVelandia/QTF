@@ -48,24 +48,24 @@ const router = createRouter({
       component: RecetasView,
     },
     {
-      path: "/nuestroProceso-QFT",
+      path: "/nuestroProceso-QTF",
       name: "procesosFab",
       component: ProcesosFab,
     },
 
     {
-      path: "/materias-primas-QFT",
+      path: "/materias-primas-QTF",
       name: "Materias",
       component: MateriasPrimasView,
     },
     {
-      path: "/nuestrosAjisJRM-QFT",
+      path: "/nuestrosAjisJRM-QTF",
       name: "ajimashJalaPeñoRojoMash",
       component: ajimashJalaPeñoRojoMash,
     },
 
     {
-      path: "/nuestrosAjisMash-QFT/:id",
+      path: "/nuestrosAjisMash-QTF/:id",
       name: "NuestrosAjis",
       component: AjiMashDesc,
     },
@@ -83,7 +83,7 @@ const router = createRouter({
     },
 
     {
-      path: "/contacto-QFT",
+      path: "/contacto-QTF",
       name: "contactanos",
       component: ContatanosView,
     },

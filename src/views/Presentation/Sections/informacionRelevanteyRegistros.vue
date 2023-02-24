@@ -15,7 +15,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Capsicum_baccatum_in_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg/1200px-Capsicum_baccatum_in_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg"
               icon="touch_app"
               title="Nuestro Proceso <br /> La mejora Continua"
-              description="CERTIFICACIÓN HACCP HAZARD ANYLISIS CRITICAL CONTROL POINT y Vamos Por más."
+              description="CERTIFICACIÓN HACCP HAZARD ANALYSIS AND CRITICAL CONTROL POINTS y Vamos Por más."
             />
             <!-- <RotatingCardFront
               image="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Capsicum_baccatum_in_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg/1200px-Capsicum_baccatum_in_Sa%C3%BAde_flea_market%2C_S%C3%A3o_Paulo%2C_Brazil.jpg"
@@ -31,7 +31,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               description="Creada en el valle del cauca con el objetivo de procesar hortalizas (ají principalmente) cultivado y cosechado por agricultores de la región. "
               :action="[
                 {
-                  route: '/QTF/contacto-QFT',
+                  route: '/QTF/contacto-QTF',
                   label: 'Descubre Mas',
                 },
               ]"
@@ -50,9 +50,9 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               <!-- icon="flip_to_front" -->
            
             <DefaultInfoCard
-              title="Capacitaciones"
-              description="Construyendo y Formando Tejido Social. Comprometidos con la formación de Personas 
-              para el desarrollo de la región. "
+              title="Apoyo técnico."
+              description=" Brindamos apoyo y acompañamiento técnico al agricultor, así como también capacitación permanente a nuestros colaboradores. 
+              Comprometidos con el desarrollo de la región "
             />
           </div>
           <div class="row justify-content-start mt-2">

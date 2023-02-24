@@ -5,7 +5,7 @@
   import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
   import DefaultFooter from "@/examples/footers/FooterDefault.vue";
   import Ubicacion from "../../../../views/LandingPages/AboutUs/Sections/AboutUbicacion.vue"
-  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
+  import logonb from "@/assets/img/LogosQTF/iconnbw.png"
   //image
   import bg0 from "@/assets/img/chilop2.jpg";
 
@@ -16,6 +16,11 @@
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     body.classList.add("about-us");
     body.classList.add("bg-gray-200");
 
@@ -56,7 +61,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
 
-            <img :src="logonb" alt="QFT" class='brandQFT mb-3'>  
+            <img :src="logonb" alt="QTF" class='brandQTF mb-3'>  
 
             <h2 class="mb-4 text-white opacity-8">
               Centros de Distribución
@@ -73,7 +78,7 @@
 </template>
 
 <style>
-  .brandQFT {
+  .brandQTF {
     min-height: 25px;
     min-width: 25px;
     max-width: 200px;

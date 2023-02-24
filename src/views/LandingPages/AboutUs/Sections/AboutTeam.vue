@@ -26,7 +26,7 @@ import almacenamiento from "@/assets/img/TOR_7073.jpg";
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
           <h3 class="text-white z-index-1 position-relative">
-            Nuesto Proceso QFT
+            Nuesto Proceso QTF
           </h3>
           <p class="text-white opacity-8 mb-0">
             Conoce como transformamos el mundo por ti. 

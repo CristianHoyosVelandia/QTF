@@ -15,7 +15,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
               <DefaultCounterCard
                 color="success"
                 title="Toneladas Producidas"
-                :count="400"
+                :count="1000"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
@@ -25,7 +25,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
               <DefaultCounterCard
                 color="success"
                 title="Toneladas Vendidas"
-                :count="284"
+                :count="1000"
                 suffix="+"
                 :duration="3000"
                 divider="vertical"
@@ -35,7 +35,7 @@ import DefaultCounterCard from "../../../components/counterCards/DefaultCounterC
               <DefaultCounterCard
                 color="success"
                 title="Clientes Nacionales"
-                :count="6"
+                :count="10"
                 :duration="3000"
               />
             </div>

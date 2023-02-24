@@ -49,7 +49,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="card card-profile">
+  <div v-if="hancho>80" class="card card-profile mt-4 mb-4">
     <div class="row">
       <div class="col-lg-3 col-md-4 col-6 mt-n4">
         <a :href="profile.link">
@@ -65,16 +65,32 @@ defineProps({
       <div class="col-lg-9 col-md-8 col-6 my-auto">
         <div class="card-body ps-lg-0">
           <h5 class="mb-0">{{ profile.name }}</h5>
+
           <h6 :class="`text-${position.color}`">{{ position.name }}</h6>
-          <p v-if="hancho>80" class="mb-0 textHistoryComponentc">
+          <p  class="p-2 mb-0 textHistoryComponentc">
             {{ description }}
           </p>
         </div>
       </div>
-      <div v-if="hancho<=80" class="col-lg-12 col-md-12 col-12 my-auto">
+    </div>
+  </div>
+
+  <div v-if="hancho<=80" class="card card-profile mt-4 mb-4">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-12">
+        <center class="p-2 pe-md-0">
+          <img
+            class="w-100 mb-2 border-radius-md shadow-lg HistoryCardComponentImg"
+            :src="image"
+            :alt="profile.name"
+          />
+          <h5 class="mb-0 fontsizeprofilename">{{ profile.name }}</h5>
+        </center>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12 my-auto">
         <div class="card-body ps-lg-0">
           
-          <p class="mb-0 textHistoryComponent">
+          <p class="p-2 mb-0 textHistoryComponent">
             {{ description }}
           </p>
         </div>
@@ -85,6 +101,10 @@ defineProps({
 
 <style>
 
+  .fontsizeprofilename {
+    margin-top: 20px;
+    fontsize: 10px
+  }
   .textHistoryComponent {
     text-align: justify;
   }

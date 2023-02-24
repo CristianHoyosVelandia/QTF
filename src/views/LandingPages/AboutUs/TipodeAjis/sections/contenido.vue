@@ -271,14 +271,14 @@
 
   function Anterior() {
 
-    Router.push(`/nuestrosAjisMash-QFT/${(parseInt(props.caso)-1)}`)
+    Router.push(`/nuestrosAjisMash-QTF/${(parseInt(props.caso)-1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);    
   }
 
   function Siguiente() {
-    Router.push(`/nuestrosAjisMash-QFT/${(parseInt(props.caso)+1)}`)
+    Router.push(`/nuestrosAjisMash-QTF/${(parseInt(props.caso)+1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);

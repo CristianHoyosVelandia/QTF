@@ -140,7 +140,7 @@ watch(
         ]"
         :to="{ name: 'presentation' }"
         rel="tooltip"
-        title="QFT Quality Tropical Foods SAS, expertos en Ají"
+        title="QTF Quality Tropical Foods SAS, expertos en Ají"
         data-placement="bottom"
       >
         QTF Quality Tropical Foods SAS
@@ -156,7 +156,7 @@ watch(
         "
         to="/"
         rel="tooltip"
-        title="QFT Quality Tropical Foods SAS, expertos en Ají"
+        title="QTF Quality Tropical Foods SAS, expertos en Ají"
         data-placement="bottom"
       >
         QTF SAS
@@ -278,7 +278,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        to="/nuestroProceso-QFT"
+                        to="/nuestroProceso-QTF"
                       >
                         Proceso de Fabricacion
                       </RouterLink>

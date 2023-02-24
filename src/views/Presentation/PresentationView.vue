@@ -16,7 +16,7 @@
   import vueMkAjiHeaderMobile from "@/assets/img/backgrounds/bgt1.png";
 
 
-  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
+  import logonb from "@/assets/img/LogosQTF/iconnbw.png"
   
   //hooks
   const body = document.getElementsByTagName("body")[0];
@@ -79,6 +79,11 @@
 
   console.log(hancho)
   onMounted(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     body.classList.add("presentation-page");
     body.classList.add("bg-gray-200");
   });
@@ -105,7 +110,7 @@
     <div
       :class="`page-header min-vh-${hancho ?? '85'}`"
       :style="`background-image: url(${imgbg})`"
-      id= "imgBgMainQFT"
+      id= "imgBgMainQTF"
       loading="lazy"
     >
       <span class="mask bg-gradient-dark opacity-8"></span>
@@ -117,7 +122,7 @@
             <div class="row">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-3">
                 <div id="divCenteredforAll" v-if="hancho>80">
-                  <img :src="logonb" alt="QFT" class='brandQFT'>  
+                  <img :src="logonb" alt="QTF" class='brandQTF'>  
                 </div>
               </div>
               <div v-if="hancho>80" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2 mt-4">
@@ -130,7 +135,7 @@
               </div>
             </div>
             <div v-if="hancho<=80" id="divCenteredforAll">
-              <img :src="logonb" alt="QFT" class='brandQFTpeque'>  
+              <img :src="logonb" alt="QTF" class='brandQTFpeque'>  
             </div>
             <h2 v-if="hancho<=80" class="lead text-white px-5 mt-2" :style="{ fontWeight: '300' }">
               Un producto 100% Colombiano, somos expertos en ají.
@@ -165,7 +170,7 @@
 
 <style>
 
-  .brandQFTpeque {
+  .brandQTFpeque {
       min-height: 25px;
       min-width: 25px;
       max-width: 150px;
@@ -174,13 +179,13 @@
       margin-bottom: 15px;
     }
 
-    #imgBgMainQFT{
+    #imgBgMainQTF{
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
     
   @media only screen and (max-width: 450px) {
-    .brandQFT {
+    .brandQTF {
       min-height: 25px;
       min-width: 25px;
       max-width: 80px;
@@ -189,14 +194,14 @@
       margin-bottom: 15px;
     }
 
-    #imgBgMainQFT{
+    #imgBgMainQTF{
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
   }
 
   @media only screen and (min-width: 451px) {
-    .brandQFT {
+    .brandQTF {
       color: white;
       min-height: 80px;
       min-width: 80px;
@@ -204,7 +209,7 @@
       height: 150px;
     }
 
-    #imgBgMainQFT{
+    #imgBgMainQTF{
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }

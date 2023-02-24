@@ -67,7 +67,7 @@ defineProps({
       {
         name: "Productos",
         items: [
-          { name: "Nuestros Ajis", href: "Materias" },
+          { name: "Nuestros Ajíes", href: "Materias" },
           {
             name: "Contactanos",
             href: "contactanos"
@@ -99,13 +99,13 @@ defineProps({
       <div class="row">
         <div class="col-md-6 mb-2 ms-auto">
           <center>
-            <a :href="brand.route">
+            <RouterLink :to="{ name: 'presentation' }">
               <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
-            </a>
+            </RouterLink>
             <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
           </center>
           
-          <div >
+          <!-- <div >
             <ul class="d-flex flex-row ms-n3 nav" id="centerLinks">
               <li
                 class="nav-item"
@@ -121,7 +121,7 @@ defineProps({
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
         <div
           class="col-md-2 col-sm-5 col-4 mb-4"
@@ -141,7 +141,7 @@ defineProps({
         <div class="col-12">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
-              Todos los derechos Reservados QFT SAS ©
+              Todos los derechos Reservados QTF SAS ©
               {{ new Date().getFullYear() }}
             </p>
           </div>

@@ -29,6 +29,11 @@
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     body.classList.add("about-us");
     body.classList.add("bg-gray-200");
 
@@ -81,13 +86,13 @@
             </div>
             <br>
             <p class="lead mb-4 text-white opacity-8">
-              Ya sea en pulpa o en mash, contamos con todo en Aji en Colombia.
+              Ya sea fresco, mash o en pulpa, contamos con el Ají que tú necesitas.
             </p>
             <!-- <button type="submit" class="btn bg-white text-dark">
               Vive la Experiencia
             </button> -->
-            <h6 class="text-white mb-2 mt-5">Encuéntranos en nuestras plataformas:</h6>
-            <div class="d-flex justify-content-center">
+            <!-- <h6 class="text-white mb-2 mt-5">Encuéntranos en nuestras plataformas:</h6> -->
+            <!-- <div class="d-flex justify-content-center">
               <a href="javascript:;"
                 ><i class="fab fa-facebook text-lg text-white me-4"></i
               ></a>
@@ -100,7 +105,7 @@
               <a href="javascript:;"
                 ><i class="fab fa-google-plus text-lg text-white"></i
               ></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

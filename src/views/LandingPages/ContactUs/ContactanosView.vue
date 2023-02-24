@@ -13,7 +13,7 @@ import DefaultFooter from "@/examples/footers/FooterDefault.vue";
 
 //image
 import image from "@/assets/img/aji.jpg";
-import iconimg from "@/assets/img/LogosQFT/iconnbw.png"
+import iconimg from "@/assets/img/LogosQTF/iconnbw.png"
 
 //material components
 import MaterialInput from "@/components/MaterialInput.vue";
@@ -23,6 +23,11 @@ import MaterialButton from "@/components/MaterialButton.vue";
   // material-input
   import setMaterialInput from "@/assets/js/material-input";
   onMounted(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     setMaterialInput();
   });
 

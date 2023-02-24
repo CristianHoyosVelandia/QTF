@@ -17,34 +17,34 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "CayeneDespulpado",
-      routerLink : "/nuestrosAjisMash-QFT/101",
+      routerLink : "/nuestrosAjisMash-QTF/101",
       label : "Ají Cayenne Rojo Despulpado",
       desc  : 2
     },
     {
       srcimg : "AmarilloDespulpado",
-      routerLink : "/nuestrosAjisMash-QFT/102",
+      routerLink : "/nuestrosAjisMash-QTF/102",
       label : "Ají Amarillo Peruano Despulpado",
       desc  : 2
 
     },
     {
       srcimg : "HabaneroRojoDespulpado",
-      routerLink : "/nuestrosAjisMash-QFT/103",
+      routerLink : "/nuestrosAjisMash-QTF/103",
       label : "Ají Habanero Rojo Despulpado",
       desc  : 3
 
     },
     {
       srcimg : "JolikiaDespulpado",
-      routerLink : "/nuestrosAjisMash-QFT/104",
+      routerLink : "/nuestrosAjisMash-QTF/104",
       label : "Ají Naga Jolikia Despulpado ",
       desc  : 3
 
     },
     {
       srcimg : "JalapeñoDespulpado",
-      routerLink : "/nuestrosAjisMash-QFT/105",
+      routerLink : "/nuestrosAjisMash-QTF/105",
       label : "Ají Jalapeño Despulpado (Rojo - Verde)",
       desc  : 1
     },
@@ -64,7 +64,7 @@ onMounted(() => {
           <MainInfoCard
             :srcimg="pulpaImg"
             label = "PULPA DE AJI"
-            routerLink = "/contacto-QFT"
+            routerLink = "/contacto-QTF"
             desc1 ="Producto obtenido a partir de la molienda y despulpado de ají sin presencia de semillas, mezclado con sal y ácido acético de origen natural."
             desc2 = "Este producto está desarrollado a las necesidades del mercado."
           />
@@ -85,37 +85,37 @@ onMounted(() => {
             />
             <!-- <InfoCards
               :srcimg = "RojoMash"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Ají Cayenne Rojo Despulpado "
             />
 
             <InfoCards
               :srcimg = "dulceRojo"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Ají Amarillo Peruano Despulpado"
             />
 
             <InfoCards
               :srcimg = "AmarilloImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Ají Habanero Rojo Despulpado"
             />
 
             <InfoCards
               :srcimg = "rojoPicanteImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Ají Picante Rojo Despulpado"
             />
 
             <InfoCards
               :srcimg = "AmarilloImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Ají Naga Jolikia Despulpado "
             />
 
             <InfoCards
               :srcimg = "rojoPicanteImg"
-              routerLink = "/nuestrosAjisJRM-QFT"
+              routerLink = "/nuestrosAjisJRM-QTF"
               label = "Aji Jalapeño Despulpado (Rojo - Verde)"
             /> -->
 

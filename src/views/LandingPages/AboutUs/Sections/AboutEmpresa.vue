@@ -18,7 +18,7 @@ import history6 from "@/assets/img/history/7.jpg";
       <div class="row">
         <div class="col-md-8 text-start mb-5 mt-5">
           <h3 class="text-white z-index-1 position-relative">
-            QFT Quality Tropical Food S.A.S. ZOMAC
+            QTF Quality Tropical Food S.A.S. ZOMAC
           </h3>
           <h4 class="text-white opacity-8 mb-0">
             Expertos en Ají

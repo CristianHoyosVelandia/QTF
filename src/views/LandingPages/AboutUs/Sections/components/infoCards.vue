@@ -6,7 +6,7 @@
           <figure>
             <img :src="srcimg" :alt="label" class="img-fluid border-radius-lg" id="imgMash" />
             <div class="capa">
-              <img :src="logonb" alt="QFT"> 
+              <img :src="logonb" alt="QTF"> 
               <p>Conoce todo sobre nuestros ajís</p>
             </div>
           </figure>
@@ -50,13 +50,13 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
-  import logonb from "@/assets/img/LogosQFT/iconnbw.png"
+  import logonb from "@/assets/img/LogosQTF/iconnbw.png"
   import fire from "@/assets/img/fuego/fire.png"
   import fireoff from "@/assets/img/fuego/fireoff.png"
 
 
   // Images Assets
-  //AJIS NORMALES
+  //Ajíes NORMALES
   import PicanteRojo from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg"
   import rojoPicanteImg from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg";
   // import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
@@ -69,7 +69,7 @@
   import AmarilloImg from '@/assets/img/AjiAmarillo/Amarillo.png';
 
 
-  //AJIS DESPULPADO
+  //Ajíes DESPULPADO
   // import PastaCayene from '@/assets/img/AjiJalapenoVerde.jpg';
   import PastaCayene from '@/assets/img/Pulpa/cayene/1.jpg';
   import HabaneroCayene from '@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg';

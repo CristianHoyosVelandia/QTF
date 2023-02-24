@@ -16,6 +16,11 @@
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
     body.classList.add("about-us");
     body.classList.add("bg-gray-200");
 
@@ -33,6 +38,7 @@
   });
 
   onUnmounted(() => {
+    
     body.classList.remove("about-us");
     body.classList.remove("bg-gray-200");
   });
@@ -60,7 +66,7 @@
               Nuestro Proceso QTF
             </h1>
             <p class="lead mb-4 text-white opacity-8">
-              Conoce como obtenemos nuestros Ajis con la mejor Calidad.
+              Conoce como obtenemos nuestros Ajíes con la mejor Calidad.
             </p>
           </div>
         </div>

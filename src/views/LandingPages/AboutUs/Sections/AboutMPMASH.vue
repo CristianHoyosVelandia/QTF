@@ -16,61 +16,61 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "RojoMash",
-      routerLink : "/nuestrosAjisMash-QFT/1",
+      routerLink : "/nuestrosAjisMash-QTF/1",
       label : "Ají Jalapeño Rojo",
       desc  : 1
     },
     {
       srcimg : "AjijalapenoVerde",
-      routerLink : "/nuestrosAjisMash-QFT/2",
+      routerLink : "/nuestrosAjisMash-QTF/2",
       label : "Ají Jalapeño Verde Mash",
       desc  : 1
 
     },
     {
       srcimg : "CayeneMash",
-      routerLink : "/nuestrosAjisMash-QFT/3",
+      routerLink : "/nuestrosAjisMash-QTF/3",
       label : "Ají Cayene Rojo Mash",
       desc  : 2
 
     },
     {
       srcimg : "rojoPicanteImg",
-      routerLink : "/nuestrosAjisMash-QFT/4",
+      routerLink : "/nuestrosAjisMash-QTF/4",
       label : "Ají Picante Rojo",
       desc  : 3
 
     },
     {
       srcimg : "AmarilloImg",
-      routerLink : "/nuestrosAjisMash-QFT/5",
+      routerLink : "/nuestrosAjisMash-QTF/5",
       label : "Ají Amarillo Peruano Mash",
       desc  : 2
 
     },    
     {
       srcimg : "habaneroRojo",
-      routerLink : "/nuestrosAjisMash-QFT/6",
+      routerLink : "/nuestrosAjisMash-QTF/6",
       label : "Ají Habanero Rojo Mash",
       desc  : 3
 
     },
     // {
     //   srcimg : "PicanteRojo",
-    //   routerLink : "/nuestrosAjisMash-QFT/7",
+    //   routerLink : "/nuestrosAjisMash-QTF/7",
     //   label : "Ají Picante Rojo",
     //   desc  : 2
 
     // },
     {
       srcimg : "RojoDulce",
-      routerLink : "/nuestrosAjisMash-QFT/8",
+      routerLink : "/nuestrosAjisMash-QTF/8",
       label : "Ají Rojo Dulce Mash",
       desc  : 1
     },
     {
       srcimg : "NagaJolokiaMash",
-      routerLink : "/nuestrosAjisMash-QFT/9",
+      routerLink : "/nuestrosAjisMash-QTF/9",
       label : "Ají Naga Jolokia Mash",
       desc  : 3
     },
@@ -94,9 +94,9 @@ onMounted(() => {
           
             <MainInfoCard
               :srcimg="mashImg"
-              label = "AJI MASH"
-              routerLink = "/contacto-QFT"
-              desc1 ="Producto obtenido a partir de la molienda de ají Jalapeño rojo con presencia de semillas del propio fruto, mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos."
+              label = "AJÍ MASH"
+              routerLink = "/contacto-QTF"
+              desc1 ="Producto obtenido a partir de la molienda con presencia de semillas del propio fruto, mezclado con sal y ácido acético. Libre de material, colores y sabores no característicos."
               desc2 = "Este producto está desarrollado a las necesidades del mercado."
             />
           
