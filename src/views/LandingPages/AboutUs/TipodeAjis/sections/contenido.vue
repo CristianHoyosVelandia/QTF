@@ -55,14 +55,15 @@
   import Mimg2_5   from "@/assets/img/AjiAmarillo/3.jpg"
   import Mimg3_5   from "@/assets/img/AjiAmarillo/4.jpg"
   
-  import mainImg_6 from "@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
+  // import mainImg_6 from "@/assets/img/Pulpa/habanero/habaneroDespulpado.jpg"
+  import mainImg_6 from "@/assets/img/AjiHabaneroRojo/Habanero1.jpg"
   import Mimg1_6   from "@/assets/img/Pulpa/PastaHabanero.jpg"
   import Mimg2_6   from "@/assets/img/AjiHabaneroRojo/3.jpg"
   import Mimg3_6   from "@/assets/img/AjiHabaneroRojo/4.jpg"
   
   import mainImg_7 from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg"
   import Mimg1_7   from "@/assets/img/PicanteRojo/AjiPicanteRojo2.jpg"
-  import Mimg2_7   from "@/assets/img/PicanteRojo/4.jpg"
+  import Mimg2_7   from "@/assets/img/PicanteRojo/3.jpg"
   import Mimg3_7   from "@/assets/img/PicanteRojo/4.jpg"
   
   import mainImg_8 from "@/assets/img/DulceRojo/dulceRojo.png"
@@ -75,7 +76,7 @@
   import Mimg2_9   from "@/assets/img/Joloke/3.jpg"
   import Mimg3_9   from "@/assets/img/Joloke/4.jpg"
   
-  import mainImg_101 from "@/assets/img/CayeneMash/p1.png"
+  import mainImg_101 from "@/assets/img/CayeneMash/p11.png"
   import Mimg1_101   from "@/assets/img/CayeneMash/p3.jpg"
   import Mimg2_101   from "@/assets/img/CayeneMash/c2.jpg"
   import Mimg3_101   from "@/assets/img/CayeneMash/p4.jpg"
@@ -96,7 +97,7 @@
   import Mimg3_104   from "@/assets/img/Joloke/4.jpg"
   
   import mainImg_105 from "@/assets/img/Pulpa/pulpa1.jpg"
-  import Mimg1_105   from "@/assets/img/Pulpa/pulpa.jpg"
+  import Mimg1_105   from "@/assets/img/Pulpa/pulpa2.jpg"
   import Mimg2_105   from "@/assets/img/ajimashJalapenoVerde/ajv1.jpg"
   import Mimg3_105   from "@/assets/img/ajimashJalapenoVerde/ajv4.jpg"
   
@@ -135,7 +136,7 @@
   })
 
   function MountedPage(){
-    console.log('valores de los props del caso mandado es:', props.caso);
+    // console.log('valores de los props del caso mandado es:', props.caso);
     setTimeout(() => {
       switch ( parseInt(props.caso)) {
         case 1:
@@ -240,10 +241,10 @@
         break;
   
         default:
-          mainImg.value   =   mainImg_01;
-          Mimg1.value     =   Mimg1_01;
-          Mimg2.value     =   Mimg2_01;
-          Mimg3.value     =   Mimg3_01;
+          mainImg.value   =   mainImg_4;
+          Mimg1.value     =   Mimg1_4;
+          Mimg2.value     =   Mimg2_4;
+          Mimg3.value     =   Mimg3_4;
         break;
       }
       listCarrousel.value = [

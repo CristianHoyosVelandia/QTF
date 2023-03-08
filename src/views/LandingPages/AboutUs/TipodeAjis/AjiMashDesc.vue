@@ -29,8 +29,12 @@
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
-    body.classList.add("about-us");
-    body.classList.add("bg-gray-200");
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+
     if (document.getElementById("typed")) {
       // eslint-disable-next-line no-unused-vars
       var typed = new Typed("#typed", {
@@ -218,7 +222,7 @@
         break;
       
       case 104:
-          tittle.value ='AJÍ NAGA JOLOKIA MASH',
+          tittle.value ='AJÍ NAGA JOLOKIA DESPULPADO',
           contentido.value = `Producto obtenido a partir de la molienda de ají picante rojo, despulpado, sin presencia de semillas,
                         mezclado con sal y ácido acético de origen natural. Libre de material, colores y sabores no característicos.
                         Este producto está desarrollado a las necesidades del mercado. Este producto es utilizado como ingrediente en 
@@ -256,9 +260,8 @@
         especie.value = 'Capsicum frutescens',
         scoville.value = '30.000 - 70.000',
         presentation.value = 'Tambores por 20 kg, 50 kg, 200 kg, 220 kg.',
-        ingredientes.value = ["Mash ají jalapeño verde", "Ácido acético", "Sal"]
         vidaUtil.value = '24 meses '
-        caso.value = 106
+        caso.value = 4
       break;
     }
   }

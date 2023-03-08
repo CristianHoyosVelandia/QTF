@@ -60,7 +60,10 @@
   import PicanteRojo from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg"
   import rojoPicanteImg from "@/assets/img/PicanteRojo/AjiPicanteRojo.jpg";
   // import habaneroRojo from "@/assets/img/AjiHabaneroRojo/habaneroDespulpado.jpg";
-  import habaneroRojo from "@/assets/img/AjiHabaneroRojo/Habanero.jpg";
+  // import habaneroRojo from "@/assets/img/AjiHabaneroRojo/Habanero.jpg";
+  import habaneroRojo from "@/assets/img/AjiHabaneroRojo/Habanero1.jpg";
+
+  
   import CayeneMash from "@/assets/img/CayeneMash/c1.jpg";
   import NagaJolokiaMash from "@/assets/img/AjiJoloke.jpg";
   import AjijalapenoVerde from "@/assets/img/AjiJalapenoVerde.jpg";

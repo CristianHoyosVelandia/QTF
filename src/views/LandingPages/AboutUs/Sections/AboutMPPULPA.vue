@@ -36,9 +36,9 @@ onMounted(() => {
 
     },
     {
-      srcimg : "JolikiaDespulpado",
+      srcimg : "JolokiaDespulpado",
       routerLink : "/nuestrosAjisMash-QTF/104",
-      label : "Ají Naga Jolikia Despulpado ",
+      label : "Ají Naga Jolokia Despulpado ",
       desc  : 3
 
     },
