@@ -22,14 +22,7 @@ import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.
 import Noticias    from "../layouts/sections/page-sections/features/Noticias.vue";
 import Ubicacion    from "../layouts/sections/page-sections/features/Ubicacion.vue";
 
-
-
-
-import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
 import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
-import NavigationPagination from "../layouts/sections/navigation/pagination/PaginationView.vue";
-import InputAreasForms from "../layouts/sections/input-areas/forms/FormsView.vue";
-import ElButtons from "../layouts/sections/elements/buttons/ButtonsView.vue";
 import RecetasView from '../views/Recetas/RecetasView.vue';
 
 
@@ -122,30 +115,11 @@ const router = createRouter({
       name: "page-features",
       component: PageFeatures,
     },
-    {
-      path: "/sections/navigation/navbars",
-      name: "navigation-navbars",
-      component: NavigationNavbars,
-    },
+
     {
       path: "/sections/navigation/nav-tabs",
       name: "navigation-navtabs",
       component: NavigationNavTabs,
-    },
-    {
-      path: "/sections/navigation/pagination",
-      name: "navigation-pagination",
-      component: NavigationPagination,
-    },
-    {
-      path: "/sections/input-areas/forms",
-      name: "inputareas-forms",
-      component: InputAreasForms,
-    },
-    {
-      path: "/sections/elements/buttons",
-      name: "el-buttons",
-      component: ElButtons,
     },
   ],
 });
