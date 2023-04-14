@@ -1,17 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import PresentationView from "../views/Presentation/PresentationView.vue";
-import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 // Contactanos
-import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import ContatanosView from "../views/LandingPages/ContactUs/ContactanosView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
-import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
-import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
 
 //Materias Primas
 import MateriasPrimasView from "../views/LandingPages/AboutUs/MateriasPrimasView.vue";
-import ajimashJalaPeñoRojoMash from "../views/LandingPages/AboutUs/TipodeAjis/ajimashJalaPeñoRojoMash.vue";
 
 //Vista de Ajis complete
 import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vue";
@@ -21,8 +16,6 @@ import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vu
 import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.vue";
 import Noticias    from "../layouts/sections/page-sections/features/Noticias.vue";
 import Ubicacion    from "../layouts/sections/page-sections/features/Ubicacion.vue";
-
-import NavigationNavTabs from "../layouts/sections/navigation/nav-tabs/NavTabsView.vue";
 import RecetasView from '../views/Recetas/RecetasView.vue';
 
 
@@ -51,11 +44,6 @@ const router = createRouter({
       name: "Materias",
       component: MateriasPrimasView,
     },
-    {
-      path: "/nuestrosAjisJRM-QTF",
-      name: "ajimashJalaPeñoRojoMash",
-      component: ajimashJalaPeñoRojoMash,
-    },
 
     {
       path: "/nuestrosAjisMash-QTF/:id",
@@ -64,17 +52,6 @@ const router = createRouter({
     },
     
     // END PATH PAGEs
-    {
-      path: "/pages/landing-pages/about-us",
-      name: "about",
-      component: AboutView,
-    },
-    {
-      path: "/pages/landing-pages/contact-us",
-      name: "contactus",
-      component: ContactView,
-    },
-
     {
       path: "/contacto-QTF",
       name: "contactanos",
@@ -104,22 +81,6 @@ const router = createRouter({
       path: "/pages/landing-pages/author",
       name: "author",
       component: AuthorView,
-    },
-    {
-      path: "/sections/page-sections/page-headers",
-      name: "page-headers",
-      component: PageHeaders,
-    },
-    {
-      path: "/sections/page-sections/features",
-      name: "page-features",
-      component: PageFeatures,
-    },
-
-    {
-      path: "/sections/navigation/nav-tabs",
-      name: "navigation-navtabs",
-      component: NavigationNavTabs,
     },
   ],
 });
