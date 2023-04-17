@@ -305,7 +305,7 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            to="/Ubicacion"
+                            to="/Location"
                             >
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -405,7 +405,7 @@ watch(
                   
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'Ubicacion' }"
+                    :to="{ name: 'Location' }"
                   >
                     Distribution Centers
                   </RouterLink>
@@ -508,7 +508,7 @@ watch(
                         Contact us
                       </div>
                         <RouterLink
-                          :to="{ name: 'contactanos' }"
+                          :to="{ name: 'contactUS' }"
                           class="dropdown-item border-radius-md"
                         >
                           <i id="material-icons">
@@ -547,13 +547,13 @@ watch(
                 </div>
 
                 <RouterLink
-                  :to="{ name: 'contactanos' }"
+                  :to="{ name: 'contactUS' }"
                   class="dropdown-item border-radius-md"
                 >
                   <i id="material-icons">
                     message
                   </i>
-                  <span> Escribenos </span>
+                  <span> Contact US </span>
                 </RouterLink>
               </div>
             </div>

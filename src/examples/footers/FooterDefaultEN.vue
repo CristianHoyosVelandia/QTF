@@ -70,7 +70,7 @@ defineProps({
           { name: "Our Chilies", href: "Raw-materials" },
           {
             name: "Contact Us",
-            href: "contactanos"
+            href: "contactUS"
           },
           // { name: "Recetas", href: "recetas" },
         ]
@@ -80,11 +80,11 @@ defineProps({
         items: [
           {
             name: "Experience Centers",
-            href: "Ubicacion"
+            href: "Location"
           },
           {
             name: "Guided visits",
-            href: "Ubicacion"
+            href: "Location"
           }
         ]
       }

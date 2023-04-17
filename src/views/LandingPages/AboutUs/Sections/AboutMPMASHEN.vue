@@ -16,41 +16,41 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "RojoMash",
-      routerLink : "/nuestrosAjisMash-QTF/1",
+      routerLink : "/ourChillies-QTF/1",
       label : "Red Chillies (Jalapeño) ",
       desc  : 1
     },
     {
       srcimg : "AjijalapenoVerde",
-      routerLink : "/nuestrosAjisMash-QTF/2",
+      routerLink : "/ourChillies-QTF/2",
       label : "Green Chillies (Jalapeño) ",
       desc  : 1
 
     },
     {
       srcimg : "CayeneMash",
-      routerLink : "/nuestrosAjisMash-QTF/3",
+      routerLink : "/ourChillies-QTF/3",
       label : "Red Chillies (Cayenne)",
       desc  : 2
 
     },
     {
       srcimg : "rojoPicanteImg",
-      routerLink : "/nuestrosAjisMash-QTF/4",
+      routerLink : "/ourChillies-QTF/4",
       label : "Red Hot Chili Peppers",
       desc  : 3
 
     },
     {
       srcimg : "AmarilloImg",
-      routerLink : "/nuestrosAjisMash-QTF/5",
+      routerLink : "/ourChillies-QTF/5",
       label : "Peruvian Yellow Chili Pepper",
       desc  : 2
 
     },    
     {
       srcimg : "habaneroRojo",
-      routerLink : "/nuestrosAjisMash-QTF/6",
+      routerLink : "/ourChillies-QTF/6",
       label : "Habanero peppers",
       desc  : 3
 
@@ -58,13 +58,13 @@ onMounted(() => {
     
     {
       srcimg : "RojoDulce",
-      routerLink : "/nuestrosAjisMash-QTF/8",
+      routerLink : "/ourChillies-QTF/8",
       label : "Sweet Red Chili",
       desc  : 1
     },
     {
       srcimg : "NagaJolokiaMash",
-      routerLink : "/nuestrosAjisMash-QTF/9",
+      routerLink : "/ourChillies-QTF/9",
       label : "Chili Naga Jolokia",
       desc  : 3
     },

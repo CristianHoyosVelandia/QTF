@@ -6,6 +6,8 @@ import PresentationViewEN from "../views/Presentation/PresentationViewEN.vue";
 
 // Contactanos
 import ContatanosView from "../views/LandingPages/ContactUs/ContactanosView.vue";
+import ContactUS from "../views/LandingPages/ContactUs/ContactanosViewEN.vue";
+
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 
 //Materias Primas
@@ -15,6 +17,8 @@ import MateriasPrimasViewEN from "../views/LandingPages/AboutUs/MateriasPrimasVi
 
 //Vista de Ajis complete
 import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vue";
+import AjiMashDescEN from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDescEN.vue";
+
 
 
 //Procesos
@@ -25,6 +29,8 @@ import Noticias    from "../layouts/sections/page-sections/features/Noticias.vue
 import News    from "../layouts/sections/page-sections/features/NoticiasEN.vue";
 
 import Ubicacion    from "../layouts/sections/page-sections/features/Ubicacion.vue";
+import ExperiencesCenters    from "../layouts/sections/page-sections/features/UbicacionEN.vue";
+
 
 
 const router = createRouter({
@@ -65,13 +71,12 @@ const router = createRouter({
       component: News,
     },
 
-
-
     {
       path: "/materias-primas-QTF",
       name: "Materias",
       component: MateriasPrimasView,
     },
+
     {
       path: "/Raw-materials-QTF",
       name: "Raw-materials",
@@ -79,9 +84,15 @@ const router = createRouter({
     },
 
     {
-      path: "/nuestrosAjisMash-QTF/:id",
+      path: "/nuestrosAjis-QTF/:id",
       name: "NuestrosAjis",
       component: AjiMashDesc,
+    },
+
+    {
+      path: "/ourChillies-QTF/:id",
+      name: "ourChili",
+      component: AjiMashDescEN,
     },
     
     // END PATH PAGEs
@@ -90,10 +101,11 @@ const router = createRouter({
       name: "contactanos",
       component: ContatanosView,
     },
+
     {
       path: "/contactUs-QTF",
       name: "contactUS",
-      component: ContatanosView,
+      component: ContactUS,
     },
     
     {
@@ -101,12 +113,19 @@ const router = createRouter({
       name: "Publicaciones",
       component: Noticias,
     },
-    
+
     {
       path: "/Ubicacion",
       name: "Ubicacion",
       component: Ubicacion,
     },
+
+    {
+      path: "/Location",
+      name: "Location",
+      component: ExperiencesCenters,
+    },
+
     {
       path: "/pages/landing-pages/author",
       name: "author",

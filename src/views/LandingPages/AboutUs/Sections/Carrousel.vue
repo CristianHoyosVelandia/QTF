@@ -46,8 +46,7 @@ export default {
   const props = defineProps({
     listCarrousel: { default: 
     [
-      {srcimg:'', routerLink:'/nuestrosAjisMash-QTF/7', label:"Ají Naga Jolokia Mash"},
-      // {srcimg:'', routerLink:'/nuestrosAjisMash-QTF/7', label:"Ají ROjo"}
+      {srcimg:'', routerLink:'/nuestrosAjis-QTF/7', label:"Ají Naga Jolokia Mash"},
     ],         type: Array },
   });
 

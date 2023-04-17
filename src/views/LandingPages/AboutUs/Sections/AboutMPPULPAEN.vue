@@ -17,34 +17,34 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "CayeneDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/101",
-      label : "Pulped Red Chillies (Cayenne )",
+      routerLink : "/ourChillies-QTF/101",
+      label : "Pulped Red Chillies (Cayenne)",
       desc  : 2
     },
     {
       srcimg : "AmarilloDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/102",
+      routerLink : "/ourChillies-QTF/102",
       label : "Pulped Peruvian Yellow Chili",
       desc  : 2
 
     },
     {
       srcimg : "HabaneroRojoDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/103",
+      routerLink : "/ourChillies-QTF/103",
       label : "Pulped Red Habanero Pepper",
       desc  : 3
 
     },
     {
       srcimg : "JolokiaDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/104",
+      routerLink : "/ourChillies-QTF/104",
       label : "Pulped Naga Jolokia Chili Pepper",
       desc  : 3
 
     },
     {
       srcimg : "JalapeñoDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/105",
+      routerLink : "/ourChillies-QTF/105",
       label : "Pulped Jalapeño Pepper (Red - Green)",
       desc  : 1
     },

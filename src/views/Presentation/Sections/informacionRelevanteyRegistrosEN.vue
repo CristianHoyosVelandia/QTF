@@ -1,7 +1,7 @@
 <script setup>
 import RotatingCard from "../../../examples/cards/rotatingCards/RotatingCard.vue";
 import RotatingCardFront from "../../../examples/cards/rotatingCards/RotatingCardFront.vue";
-import RotatingCardBack from "../../../examples/cards/rotatingCards/RotatingCardBack.vue";
+import RotatingCardBack from "../../../examples/cards/rotatingCards/RotatingCardBackEN.vue";
 import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.vue";
 </script>
 <template>
@@ -23,7 +23,7 @@ import DefaultInfoCard from "../../../examples/cards/infoCards/DefaultInfoCard.v
               description=" Created in Valle del Cauca with the aim of processing vegetables (mainly chili peppers); grown and harvested by regional farmers."
               :action="[
                 {
-                  route: '/QTF/contacto-QTF',
+                  route: '/QTF/contactUs-QTF',
                   label: 'Learn More',
                 },
               ]"

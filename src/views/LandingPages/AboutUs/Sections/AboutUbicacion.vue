@@ -16,7 +16,7 @@ import history1 from "@/assets/img/Centros/1.png";
             QTF Quality Tropical Food S.A.S. ZOMAC
           </h3>
           <h4 class="text-white opacity-8 mb-0">
-            Expertos en Ají
+            Chili Pepper Experts.
           </h4>
         </div>
       </div>
@@ -28,7 +28,7 @@ import history1 from "@/assets/img/Centros/1.png";
             href="https://www.google.com/maps/place/Quality+Tropical+Food/@4.3381454,-76.169679,15z/data=!4m2!3m1!1s0x0:0x2ce572f5bdc1240c?sa=X&ved=2ahUKEwjguMKLmc38AhXnSzABHTynAlQQ_BJ6BAhWEAg"
             :profile="{ name: 'QUALITY TROPICAL FOODS S.A.S. ZOMAC,Bolivar Valle', link: 'https://www.google.com/maps/place/Quality+Tropical+Food/@4.3381454,-76.169679,15z/data=!4m2!3m1!1s0x0:0x2ce572f5bdc1240c?sa=X&ved=2ahUKEwjguMKLmc38AhXnSzABHTynAlQQ_BJ6BAhWEAg' }"
             :position="{ label: ' ', color: 'success' }"
-            description="Se crea el 2 de febrero del 2021 mediante matrícula mercantil No. 103835 de la Cámara de Comercio de Tuluá. Su planta de producción se ubica en el callejón san Fernando, finca Ana C, con el objetivo de procesar hortalizas, principalmente ají, el cual es cultivado y cosechado por agricultores de la región."
+            description="Created on February 2, 2021 through commercial registration No. 103835 in Tulua, Valle. Its production plant is located in San Fernando alley, Ana C farm, with the objective of processing vegetables, mainly chili, which is grown and harvested by farmers in the region."
           />
         </div>
       </div>

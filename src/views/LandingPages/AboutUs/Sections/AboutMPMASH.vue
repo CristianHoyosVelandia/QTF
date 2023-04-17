@@ -16,61 +16,61 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "RojoMash",
-      routerLink : "/nuestrosAjisMash-QTF/1",
+      routerLink : "/nuestrosAjis-QTF/1",
       label : "Ají Jalapeño Rojo",
       desc  : 1
     },
     {
       srcimg : "AjijalapenoVerde",
-      routerLink : "/nuestrosAjisMash-QTF/2",
+      routerLink : "/nuestrosAjis-QTF/2",
       label : "Ají Jalapeño Verde Mash",
       desc  : 1
 
     },
     {
       srcimg : "CayeneMash",
-      routerLink : "/nuestrosAjisMash-QTF/3",
+      routerLink : "/nuestrosAjis-QTF/3",
       label : "Ají Cayene Rojo Mash",
       desc  : 2
 
     },
     {
       srcimg : "rojoPicanteImg",
-      routerLink : "/nuestrosAjisMash-QTF/4",
+      routerLink : "/nuestrosAjis-QTF/4",
       label : "Ají Picante Rojo",
       desc  : 3
 
     },
     {
       srcimg : "AmarilloImg",
-      routerLink : "/nuestrosAjisMash-QTF/5",
+      routerLink : "/nuestrosAjis-QTF/5",
       label : "Ají Amarillo Peruano Mash",
       desc  : 2
 
     },    
     {
       srcimg : "habaneroRojo",
-      routerLink : "/nuestrosAjisMash-QTF/6",
+      routerLink : "/nuestrosAjis-QTF/6",
       label : "Ají Habanero Rojo Mash",
       desc  : 3
 
     },
     // {
     //   srcimg : "PicanteRojo",
-    //   routerLink : "/nuestrosAjisMash-QTF/7",
+    //   routerLink : "/nuestrosAjis-QTF/7",
     //   label : "Ají Picante Rojo",
     //   desc  : 2
 
     // },
     {
       srcimg : "RojoDulce",
-      routerLink : "/nuestrosAjisMash-QTF/8",
+      routerLink : "/nuestrosAjis-QTF/8",
       label : "Ají Rojo Dulce Mash",
       desc  : 1
     },
     {
       srcimg : "NagaJolokiaMash",
-      routerLink : "/nuestrosAjisMash-QTF/9",
+      routerLink : "/nuestrosAjis-QTF/9",
       label : "Ají Naga Jolokia Mash",
       desc  : 3
     },

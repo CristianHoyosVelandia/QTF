@@ -8,8 +8,8 @@ const correo = ref({
   asunto: "Correo desde Pagina Web"
 })
 //example components
-import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
-import DefaultFooter from "@/examples/footers/FooterDefault.vue";
+import DefaultNavbar from "@/examples/navbars/NavbarDefaultEN.vue";
+import DefaultFooter from "@/examples/footers/FooterDefaultEN.vue";
 
 //image
 import image from "@/assets/img/aji.jpg";
@@ -62,15 +62,15 @@ import MaterialButton from "@/components/MaterialButton.vue";
     // console.log("entro aqui - >", correo.value)
     // console.log(validateEmail(correo.value.correo))
     if(correo.value.nombre.trim().length == 0){
-      escribirMensaje(msjBox2, false, "Ingrese su nombre.");
+      escribirMensaje(msjBox2, false, "Enter your name.");
       return false;
     } else {
       if(validateEmail(correo.value.correo)==null){
-        escribirMensaje(msjBox2, false, "Ingrese su correo.");
+        escribirMensaje(msjBox2, false, "Enter your email.");
         return false;
       } else {
         if(correo.value.mensaje.trim().length == 0){
-          escribirMensaje(msjBox2, false, "Ingrese un mensaje.");
+          escribirMensaje(msjBox2, false, "Enter a message.");
           return false;
         } else{
           escribirMensaje(msjBox2, true, "")
@@ -130,14 +130,14 @@ import MaterialButton from "@/components/MaterialButton.vue";
               >
                 <div class="bg-gradient-success shadow-success border-radius-md p-3"
                 >
-                  <h3 class="text-white text-success ml-2 mb-0">Contactanos</h3>
+                  <h3 class="text-white text-success ml-2 mb-0"> Contact US</h3>
                 </div>
               </div>
               <div class="card-body ">
                 <p class="pb-3 mb-2">
-                  Si quieres mas información sobre nuestros productos no dudes en contactarnos 
-                  por medio del formulario adjunto o a través de nuestras redes, 
-                  no olvides poner tus datos de contacto para que podamos comunicarnos contigo.
+                  If you want more information about our products, do not hesitate to contact us.
+                  through the attached form or through our networks,
+                  Do not forget to put your contact information so that we can communicate with you.
                 </p>
                 <!-- For further questions, including partnership opportunities,
                   please email hello@creative-tim.com or contact using our
@@ -152,8 +152,8 @@ import MaterialButton from "@/components/MaterialButton.vue";
                           @updateValue ="emitNombre"
                           class="input-group-static mb-3"
                           type="text"
-                          label="Nombre Completo"
-                          placeholder="Ingresa tu nombre aqui"
+                          label="Full name"
+                          placeholder="Enter your name here"
                         />
                       </div>
                       <div class="col-md-6 ps-md-2">
@@ -164,7 +164,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
                           class="input-group-static mb-4"
                           type="email"
                           label="Email"
-                          placeholder="Ingresa tu correo aqui"
+                          placeholder="Enter your email here"
                         />
                       </div>
                     </div>
@@ -177,7 +177,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
                         class="input-group-static mb-0"
                         :rows="2"
                         placeholder=""
-                        > ¿Como podemos Ayudarte? Dejanos tu mensaje.</MaterialTextArea
+                        > How can we help you? Leave us your message.</MaterialTextArea
                       >
                     </div>  
 
@@ -189,7 +189,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
                       <div v-if="msjBox2.status === true" class="alert alert-dismissible mt-2 mb-2" role="alert">
                         <div class="row colorbgAlertSucess">
                           <div class="col colorTextSucess">
-                            <strong> Correo enviado exitosamente</strong> 
+                            <strong> Mail sent successfully </strong> 
                           </div>
 
                           <div class="col divBtnSucess">
@@ -218,7 +218,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
                           variant="gradient"
                           color="success"
                           class="mt-3 mb-0"
-                          >Enviar Mensaje
+                          >Send Message
                         </MaterialButton>
                       </div>
                     </div>

@@ -272,14 +272,14 @@
 
   function Anterior() {
 
-    Router.push(`/nuestrosAjis-QTF/${(parseInt(props.caso)-1)}`)
+    Router.push(`/ourChillies-QTF/${(parseInt(props.caso)-1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);    
   }
 
   function Siguiente() {
-    Router.push(`/nuestrosAjis-QTF/${(parseInt(props.caso)+1)}`)
+    Router.push(`/ourChillies-QTF/${(parseInt(props.caso)+1)}`)
     setTimeout(() => {
       window.location.reload()
     }, 200);
@@ -315,7 +315,7 @@ export default {
       <div class="row align-items-center">
 
         <div class="col-lg-6 col-md-12 col-12">
-          <h3 id="subtittle"> Conoce: </h3>
+          <h3 id="subtittle"> Did you know?: </h3>
           <br>
           <p class="justify-text-justify">
             {{props.content}}
@@ -396,32 +396,32 @@ export default {
             </div>
             <div class="card-body text-center">
               <h5 class="font-weight-bold">
-                <a href="javascript:;" id="subtittle"> Datos Relevantes </a>
+                <a href="javascript:;" id="subtittle"> Relevant Data</a>
               </h5>
               <p class="mb-0" id="justifycontent">
-                <span  class="font-weight-bold" id="subtittle"> Especie: </span>  {{props.especie}}
+                <span  class="font-weight-bold" id="subtittle"> Species: </span>  {{props.especie}}
               </p>
               <br>
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-bold" id="subtittle"> Scoville Unidades: </span> {{props.scoville}}
+                <span class="font-weight-bold" id="subtittle"> Scoville Units: </span> {{props.scoville}}
               </p>
               <br>
-              <h6 class="font-weight-bold" id="subtittle">Composición:</h6>
+              <h6 class="font-weight-bold" id="subtittle">Composition:</h6>
               <p class="mb-0" id="justifycontent">
                 •	{{props.tittle}}
               </p>
               <p class="mb-0" id="justifycontent">    
-                •	Conservantes Naturales
+                •	Natural Preservatives
               </p>
               <br>
 
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-bold" id="subtittle"> Presentación: </span> {{props.presentation}}
+                <span class="font-weight-bold" id="subtittle"> Presentation: </span> {{props.presentation}}
               </p>
               <br>
 
               <p class="mb-0" id="justifycontent">
-                <span class="font-weight-bold" id="subtittle"> Vida Util: </span> {{props.vidaUtil}}
+                <span class="font-weight-bold" id="subtittle"> Useful life: </span> {{props.vidaUtil}}
               </p>
             </div>
           </div>

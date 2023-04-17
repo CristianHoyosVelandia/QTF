@@ -17,34 +17,34 @@ onMounted(() => {
   listCarrousel.value = [
     {
       srcimg : "CayeneDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/101",
+      routerLink : "/nuestrosAjis-QTF/101",
       label : "Ají Cayenne Rojo Despulpado",
       desc  : 2
     },
     {
       srcimg : "AmarilloDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/102",
+      routerLink : "/nuestrosAjis-QTF/102",
       label : "Ají Amarillo Peruano Despulpado",
       desc  : 2
 
     },
     {
       srcimg : "HabaneroRojoDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/103",
+      routerLink : "/nuestrosAjis-QTF/103",
       label : "Ají Habanero Rojo Despulpado",
       desc  : 3
 
     },
     {
       srcimg : "JolokiaDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/104",
+      routerLink : "/nuestrosAjis-QTF/104",
       label : "Ají Naga Jolokia Despulpado ",
       desc  : 3
 
     },
     {
       srcimg : "JalapeñoDespulpado",
-      routerLink : "/nuestrosAjisMash-QTF/105",
+      routerLink : "/nuestrosAjis-QTF/105",
       label : "Ají Jalapeño Despulpado (Rojo - Verde)",
       desc  : 1
     },
