@@ -1,17 +1,14 @@
 <script setup>
-  import { onMounted, onUnmounted, ref} from "vue";
+  import { onMounted, onUnmounted } from "vue";
 
   //example components
-  import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
-  import DefaultFooter from "@/examples/footers/FooterDefault.vue";
-  import Empresa from "../../../../views/LandingPages/AboutUs/Sections/AboutEmpresa.vue"
-  import logonb from "@/assets/img/LogosQTF/iconnbw.png"
+  import DefaultNavbar from "@/examples/navbars/NavbarDefaultEN.vue";
+  import DefaultFooter from "@/examples/footers/FooterDefaultEN.vue";
+  import AboutProcess from "../../../../views/LandingPages/AboutUs/Sections/AboutTeamEN.vue"
   //image
   import bg0 from "@/assets/img/chilop2.jpg";
 
-  const ParamsMash = {
-    "DescItems": "Algunos de nuestros ejemplares:"
-  }
+
   const body = document.getElementsByTagName("body")[0];
   //hooks
   onMounted(() => {
@@ -22,7 +19,6 @@
     });
     body.classList.add("about-us");
     body.classList.add("bg-gray-200");
-    // this.$refs.input.$refs.input.focus()
 
     if (document.getElementById("typed")) {
       // eslint-disable-next-line no-unused-vars
@@ -38,6 +34,7 @@
   });
 
   onUnmounted(() => {
+    
     body.classList.remove("about-us");
     body.classList.remove("bg-gray-200");
   });
@@ -51,9 +48,8 @@
     }"
     transparent
   />
-  <header  class="bg-gradient-dark">
+  <header class="bg-gradient-dark">
     <div
-      id="editFocusNoticias" 
       class="page-header min-vh-85"
       :style="{ backgroundImage: `url(${bg0})` }"
     >
@@ -61,30 +57,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-
-            <img :src="logonb" alt="QTF" class='brandQTF mb-3'>  
-
-            <h2 class="mb-4 text-white opacity-8">
-              ¡Seguimos en movimiento, creciendo juntos!
-            </h2>
+            <br>
+            <h1 class="text-white">
+              Our QTF Process
+            </h1>
+            <p class="lead mb-4 text-white opacity-8">
+              Find out how we get our chili peppers with the best quality.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </header>
   <div class="card card-body bg-gradient-dark shadow-xl mx-3 mx-md-4 mt-n6">
-    <Empresa />
+    <AboutProcess />
   </div>
   <DefaultFooter />
 </template>
-
-<style>
-  .brandQTF {
-    min-height: 25px;
-    min-width: 25px;
-    max-width: 200px;
-    max-height: 200px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-</style>

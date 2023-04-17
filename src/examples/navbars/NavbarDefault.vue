@@ -33,6 +33,7 @@ function calcularHight(ancho) {
 import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
+import Icones from "@/assets/img/iconsLang/EN.png"
 
 const props = defineProps({
   action: {
@@ -378,7 +379,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        to="/HACPP"
+                        to="/Noticias"
                       >
                         HACCP
                       </RouterLink>
@@ -583,6 +584,21 @@ watch(
             <a :href="action.route" class="btn btn-sm mb-0" :class="action.color" onclick="smoothToPricing('pricing-soft-ui')" id = 'icontheme' target="_blank">
               <i class="fab fa-whatsapp" id='icon'></i>
             </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-lg-block d-none ml-2">
+          <li class="nav-item">
+            <RouterLink
+              :to="{ name: 'presentationEN' }"
+            >
+              <img
+                :src="Icones"
+                alt="QTF"
+                height="30"
+                class="arrow ms-2 d-lg-block d-none"
+              />
+              
+            </RouterLink>
           </li>
         </ul>
       </div>

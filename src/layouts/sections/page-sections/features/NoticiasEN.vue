@@ -2,9 +2,9 @@
   import { onMounted, onUnmounted, ref} from "vue";
 
   //example components
-  import DefaultNavbar from "@/examples/navbars/NavbarDefault.vue";
-  import DefaultFooter from "@/examples/footers/FooterDefault.vue";
-  import Empresa from "../../../../views/LandingPages/AboutUs/Sections/AboutEmpresa.vue"
+  import DefaultNavbar from "@/examples/navbars/NavbarDefaultEN.vue";
+  import DefaultFooter from "@/examples/footers/FooterDefaultEN.vue";
+  import Empresa from "../../../../views/LandingPages/AboutUs/Sections/AboutEmpresaEN.vue"
   import logonb from "@/assets/img/LogosQTF/iconnbw.png"
   //image
   import bg0 from "@/assets/img/chilop2.jpg";
@@ -65,7 +65,7 @@
             <img :src="logonb" alt="QTF" class='brandQTF mb-3'>  
 
             <h2 class="mb-4 text-white opacity-8">
-              ¡Seguimos en movimiento, creciendo juntos!
+              We keep moving, growing together!
             </h2>
           </div>
         </div>

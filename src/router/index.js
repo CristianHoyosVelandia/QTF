@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import PresentationView from "../views/Presentation/PresentationView.vue";
+import PresentationViewEN from "../views/Presentation/PresentationViewEN.vue";
+
+
 // Contactanos
 import ContatanosView from "../views/LandingPages/ContactUs/ContactanosView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 
 //Materias Primas
 import MateriasPrimasView from "../views/LandingPages/AboutUs/MateriasPrimasView.vue";
+import MateriasPrimasViewEN from "../views/LandingPages/AboutUs/MateriasPrimasViewEN.vue";
+
 
 //Vista de Ajis complete
 import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vue";
@@ -14,9 +19,12 @@ import AjiMashDesc from "../views/LandingPages/AboutUs/TipodeAjis/AjiMashDesc.vu
 
 //Procesos
 import ProcesosFab from "../layouts/sections/page-sections/features/ProcesosFab.vue";
+import ProcesosFabEN from "../layouts/sections/page-sections/features/ProcesosFabEN.vue";
+
 import Noticias    from "../layouts/sections/page-sections/features/Noticias.vue";
+import News    from "../layouts/sections/page-sections/features/NoticiasEN.vue";
+
 import Ubicacion    from "../layouts/sections/page-sections/features/Ubicacion.vue";
-import RecetasView from '../views/Recetas/RecetasView.vue';
 
 
 const router = createRouter({
@@ -27,12 +35,12 @@ const router = createRouter({
       name: "presentation",
       component: PresentationView,
     },
-    // PATHS PAGES
     {
-      path: "/recetas",
-      name: "recetas",
-      component: RecetasView,
+      path: "/EN/",
+      name: "presentationEN",
+      component: PresentationViewEN,
     },
+    // PATHS PAGES
     {
       path: "/nuestroProceso-QTF",
       name: "procesosFab",
@@ -40,9 +48,34 @@ const router = createRouter({
     },
 
     {
+      path: "/EN/ourProcess-QTF",
+      name: "ourProcess",
+      component: ProcesosFabEN,
+    },
+
+    {
+      path: "/Noticias",
+      name: "Noticias",
+      component: Noticias,
+    },
+
+    {
+      path: "/News",
+      name: "News",
+      component: News,
+    },
+
+
+
+    {
       path: "/materias-primas-QTF",
       name: "Materias",
       component: MateriasPrimasView,
+    },
+    {
+      path: "/Raw-materials-QTF",
+      name: "Raw-materials",
+      component: MateriasPrimasViewEN,
     },
 
     {
@@ -58,20 +91,17 @@ const router = createRouter({
       component: ContatanosView,
     },
     {
-      path: "/Noticias",
-      name: "Noticias",
-      component: Noticias,
+      path: "/contactUs-QTF",
+      name: "contactUS",
+      component: ContatanosView,
     },
+    
     {
       path: "/Publicaciones",
       name: "Publicaciones",
       component: Noticias,
     },
-    {
-      path: "/HACPP",
-      name: "Certificaciones-HACPP",
-      component: Noticias,
-    },
+    
     {
       path: "/Ubicacion",
       name: "Ubicacion",

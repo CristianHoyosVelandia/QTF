@@ -139,7 +139,7 @@ watch(
             ? 'text-dark font-weight-bolder ms-sm-3'
             : 'text-white font-weight-bolder ms-sm-3'
         ]"
-        :to="{ name: 'indexEn' }"
+        :to="{ name: 'presentationEN' }"
         rel="tooltip"
         title="QTF Quality Tropical Foods SAS, expertos en Ají"
         data-placement="bottom"
@@ -208,7 +208,7 @@ watch(
                     ? 'text-dark font-weight-bolder ms-sm-3'
                     : 'text-white font-weight-bolder ms-sm-3'
                 ]"> view_day </i>
-                Nuestra Compañía
+                Our Company
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -228,7 +228,7 @@ watch(
               aria-expanded="false"
             >
               <i class="material-icons opacity-6 me-2 text-md text-dark font-weight-bolder ms-sm-3"> view_day </i>
-                Nuestra Compañía
+                Our Company
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -263,9 +263,9 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Información General
+                              General information
                             </h6>
-                            <span class="text-sm">Conoce nuestra historia</span>
+                            <span class="text-sm"> Learn about our history</span>
                           </div>
                           <img
                             :src="downArrow"
@@ -278,15 +278,15 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        to="/nuestroProceso-QTF"
+                        to="/EN/ourProcess-QTF"
                       >
-                        Proceso de Fabricacion
+                        Manufacturing Process
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        to="/Noticias"
+                        to="/News"
                       >
-                        Noticias
+                        News
                       </RouterLink>
                     </div>
                   </li>
@@ -310,9 +310,9 @@ watch(
                               <h6
                                 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                               >
-                                Centros de Distribución
+                                Distribution Centers
                               </h6>
-                              <span class="text-sm"> ¿Donde estamos? </span>
+                              <span class="text-sm"> Where are we? </span>
                             </RouterLink>
                           </div>
                         </div>
@@ -334,12 +334,12 @@ watch(
                         >
                           <div>
                             <RouterLink
-                            to="/Publicaciones"
+                            to="/News"
                             >
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Publicaciones
+                              Publications
                             </h6>
                             </RouterLink>
                           </div>
@@ -364,7 +364,7 @@ watch(
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
                             >
-                              Certificaciones
+                              Certifications
                             </h6>
                           </div>
                           <img
@@ -378,7 +378,7 @@ watch(
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        to="/HACPP"
+                        to="/News"
                       >
                         HACCP
                       </RouterLink>
@@ -391,37 +391,37 @@ watch(
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mt-3 mb-1"
-                    :to="{ name: 'presentation' }"
+                    :to="{ name: 'presentationEN' }"
                   >
-                    Información General
+                    General Information
                   </RouterLink>
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'Noticias' }"
+                    :to="{ name: 'News' }"
                   >
-                    Noticias
+                    News
                   </RouterLink>
                   
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
                     :to="{ name: 'Ubicacion' }"
                   >
-                    Centros de Distribución
+                    Distribution Centers
                   </RouterLink>
 
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'Noticias' }"
+                    :to="{ name: 'News' }"
                   >
-                    Publicaciones
+                    Publications
                   </RouterLink>
                   
                   <RouterLink
                     class="dropdown-item ps-3 text-dark border-radius-md mb-1"
-                    :to="{ name: 'presentation' }"
+                    :to="{ name: 'presentationEN' }"
                   >
-                    Certificaciones
+                    Certifications
                   </RouterLink>
                 </div>
               </div>
@@ -450,7 +450,7 @@ watch(
                 ]">
                 search
               </i>
-              Productos
+              Products
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -472,7 +472,7 @@ watch(
               <i class="material-icons opacity-6 me-2 text-md text-dark font-weight-bolder ms-sm-3">
                 search
               </i>
-              Productos
+              Products
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -494,18 +494,18 @@ watch(
                     <div class="position-relative">
                       
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
-                        Nuestros Productos y Sabores
+                        Our Products and Flavors
                       </div>
 
                        <RouterLink
-                        :to="{ name: 'Materias' }"
+                        :to="{ name: 'Raw-materials' }"
                         class="dropdown-item border-radius-md"
                         >
-                          <span>Mash y Pulpas</span>
+                          <span>Mash and Pulps</span>
                         </RouterLink>
                         
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
-                        Contactanos
+                        Contact us
                       </div>
                         <RouterLink
                           :to="{ name: 'contactanos' }"
@@ -514,7 +514,7 @@ watch(
                           <i id="material-icons">
                             message
                           </i>
-                          <span> Escribenos </span>
+                          <span> Contact us </span>
                         </RouterLink>
                       <!-- <RouterLink
                         :to="{ name: 'signin-basic' }"
@@ -531,19 +531,19 @@ watch(
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
                 >
-                  Nuestros Productos y Sabores
+                  Our Products and Flavors
                 </div>
                 <RouterLink
-                  :to="{ name: 'Materias' }"
+                  :to="{ name: 'Raw-materials' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>Productos Terminados</span>
+                  <span>Products</span>
                 </RouterLink>
 
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-1"
                 >
-                  Contactanos
+                  Contact us
                 </div>
 
                 <RouterLink
@@ -578,7 +578,7 @@ watch(
 
         </ul>
 
-        <ul class="navbar-nav d-lg-block d-none m-lg-2">
+        <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a :href="action.route" class="btn btn-sm mb-0" :class="action.color" onclick="smoothToPricing('pricing-soft-ui')" id = 'icontheme' target="_blank">
               <i class="fab fa-whatsapp" id='icon'></i>
