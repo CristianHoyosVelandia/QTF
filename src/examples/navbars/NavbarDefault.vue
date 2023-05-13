@@ -34,6 +34,8 @@ import ArrDark from "@/assets/img/down-arrow-dark.svg";
 import downArrow from "@/assets/img/down-arrow.svg";
 import DownArrWhite from "@/assets/img/down-arrow-white.svg";
 import Icones from "@/assets/img/iconsLang/EN.png"
+import pdfQTF from "@/assets/pdf/QTF.pdf"
+
 
 const props = defineProps({
   action: {
@@ -387,7 +389,7 @@ watch(
                   </li>
                 </ul>
               </div>
-              <div class="row d-lg-none">
+              <div class="row d-lg-block">
                 <div class="col-md-12">
 
                   <RouterLink
@@ -419,7 +421,7 @@ watch(
                   </RouterLink>
                   
                   <RouterLink
-                    class="dropdown-item ps-3 text-dark border-radius-md mb-1"
+                    class="dropdown-item ps-3 text-dark border-radius-md"
                     :to="{ name: 'presentation' }"
                   >
                     Certificaciones
@@ -473,7 +475,7 @@ watch(
               <i class="material-icons opacity-6 me-2 text-md text-dark font-weight-bolder ms-sm-3">
                 search
               </i>
-              Productos
+              Explora
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -517,12 +519,13 @@ watch(
                           </i>
                           <span> Escribenos </span>
                         </RouterLink>
-                      <!-- <RouterLink
-                        :to="{ name: 'signin-basic' }"
-                        class="dropdown-item border-radius-md"
+                      <a 
+                        :href="pdfQTF"
+                        download="QTF"
+                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
                       >
-                        <span>Sign In</span>
-                      </RouterLink> -->
+                        Conocenos
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -556,6 +559,24 @@ watch(
                   </i>
                   <span> Escribenos </span>
                 </RouterLink>
+
+                <a 
+                  :href="pdfQTF"
+                  download="QTF"
+                  class="dropdown-item border-radius-md"
+                >
+                  Conocenos
+                </a>
+                <RouterLink
+                  :to="{ name: 'presentationEN' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <i id="material-icons">
+                    language
+                  </i>
+                  <span> Ingles </span>
+                </RouterLink>
+
               </div>
             </div>
           </li>
@@ -586,6 +607,7 @@ watch(
             </a>
           </li>
         </ul>
+
         <ul class="navbar-nav d-lg-block d-none ml-2">
           <li class="nav-item">
             <RouterLink

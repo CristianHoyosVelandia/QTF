@@ -2,6 +2,8 @@
 import { RouterLink } from "vue-router";
 import { ref, watch } from "vue";
 import { useWindowsWidth } from "../../assets/js/useWindowsWidth";
+import pdfQTF from "@/assets/pdf/QTF.pdf"
+
 
 var ancho = window.innerWidth;
 var hancho = calcularHight(ancho);
@@ -179,6 +181,7 @@ watch(
           <span class="navbar-toggler-bar bar1"></span>
           <span class="navbar-toggler-bar bar2"></span>
           <span class="navbar-toggler-bar bar3"></span>
+
         </span>
       </button>
 
@@ -516,6 +519,13 @@ watch(
                           </i>
                           <span> Contact us </span>
                         </RouterLink>
+                      <a 
+                        :href="pdfQTF"
+                        download="QTF"
+                        class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
+                      >
+                        Know us
+                      </a>
                       <!-- <RouterLink
                         :to="{ name: 'signin-basic' }"
                         class="dropdown-item border-radius-md"
@@ -554,6 +564,24 @@ watch(
                     message
                   </i>
                   <span> Contact US </span>
+                </RouterLink>
+
+                <a 
+                  :href="pdfQTF"
+                  download="QTF"
+                  class="dropdown-item border-radius-md"
+                >
+                  Know us
+                </a>
+                <RouterLink
+                
+                  :to="{ name: 'presentation' }"
+                  class="dropdown-item border-radius-md"
+                >
+                  <i id="material-icons">
+                    language
+                  </i>
+                  <span> Español </span>
                 </RouterLink>
               </div>
             </div>
@@ -601,6 +629,8 @@ watch(
             </RouterLink>
           </li>
         </ul>
+
+
       </div>
     </div>
   </nav>
